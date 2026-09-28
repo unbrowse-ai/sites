@@ -10,6 +10,7 @@ claude mcp add --transport http airbnb https://unbrowse.ai/mcp/airbnb.com
 
 | Site | Skill | MCP | Tools |
 |---|---|---|---|
+| Yahoo (yahoo.com) | [`yahoo`](skills/yahoo/SKILL.md) | `https://unbrowse.ai/mcp/yahoo.com` | 4 |
 | Google (google.com) | [`google`](skills/google/SKILL.md) | `https://unbrowse.ai/mcp/google.com` | 4 |
 | Radiofrance (radiofrance.fr) | [`radiofrance-fr`](skills/radiofrance-fr/SKILL.md) | `https://unbrowse.ai/mcp/radiofrance.fr` | 4 |
 | Yahoo (yahoo.co.jp) | [`yahoo-co-jp`](skills/yahoo-co-jp/SKILL.md) | `https://unbrowse.ai/mcp/yahoo.co.jp` | 3 |
@@ -27,7 +28,6 @@ claude mcp add --transport http airbnb https://unbrowse.ai/mcp/airbnb.com
 | Tenor (tenor.com) | [`tenor`](skills/tenor/SKILL.md) | `https://unbrowse.ai/mcp/tenor.com` | 3 |
 | Gaijin (gaijin.net) | [`gaijin`](skills/gaijin/SKILL.md) | `https://unbrowse.ai/mcp/gaijin.net` | 4 |
 | Yummyani (yummyani.me) | [`yummyani-me`](skills/yummyani-me/SKILL.md) | `https://unbrowse.ai/mcp/yummyani.me` | 3 |
-| Malaysiakini (malaysiakini.com) | [`malaysiakini`](skills/malaysiakini/SKILL.md) | `https://unbrowse.ai/mcp/malaysiakini.com` | 2 |
 | Changiairport (changiairport.com) | [`changiairport`](skills/changiairport/SKILL.md) | `https://unbrowse.ai/mcp/changiairport.com` | 4 |
 | Ezviz (ezviz.com) | [`ezviz`](skills/ezviz/SKILL.md) | `https://unbrowse.ai/mcp/ezviz.com` | 2 |
 | Fastly (fastly.com) | [`fastly`](skills/fastly/SKILL.md) | `https://unbrowse.ai/mcp/fastly.com` | 2 |
@@ -57,7 +57,6 @@ claude mcp add --transport http airbnb https://unbrowse.ai/mcp/airbnb.com
 | Oray (oray.com) | [`oray`](skills/oray/SKILL.md) | `https://unbrowse.ai/mcp/oray.com` | 2 |
 | Abebooks (abebooks.com) | [`abebooks`](skills/abebooks/SKILL.md) | `https://unbrowse.ai/mcp/abebooks.com` | 3 |
 | Mariadb (mariadb.org) | [`mariadb`](skills/mariadb/SKILL.md) | `https://unbrowse.ai/mcp/mariadb.org` | 2 |
-| Hotmart (hotmart.com) | [`hotmart`](skills/hotmart/SKILL.md) | `https://unbrowse.ai/mcp/hotmart.com` | 3 |
 | Nydailynews (nydailynews.com) | [`nydailynews`](skills/nydailynews/SKILL.md) | `https://unbrowse.ai/mcp/nydailynews.com` | 2 |
 | Telekom (telekom.com) | [`telekom`](skills/telekom/SKILL.md) | `https://unbrowse.ai/mcp/telekom.com` | 2 |
 | Apnic (apnic.net) | [`apnic`](skills/apnic/SKILL.md) | `https://unbrowse.ai/mcp/apnic.net` | 2 |
@@ -70,5 +69,6 @@ claude mcp add --transport http airbnb https://unbrowse.ai/mcp/airbnb.com
 | Raspberrypi (raspberrypi.org) | [`raspberrypi`](skills/raspberrypi/SKILL.md) | `https://unbrowse.ai/mcp/raspberrypi.org` | 2 |
 | Swr (swr.de) | [`swr-de`](skills/swr-de/SKILL.md) | `https://unbrowse.ai/mcp/swr.de` | 2 |
 | Buffer (buffer.com) | [`buffer`](skills/buffer/SKILL.md) | `https://unbrowse.ai/mcp/buffer.com` | 2 |
+| Bitwarden (bitwarden.com) | [`bitwarden`](skills/bitwarden/SKILL.md) | `https://unbrowse.ai/mcp/bitwarden.com` | 3 |
 
 Any other site: the general [Unbrowse](https://github.com/unbrowse-ai/unbrowse) skill and `https://unbrowse.ai/mcp`.

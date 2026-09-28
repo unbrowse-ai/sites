@@ -298,5 +298,22 @@
     "hash": "074256cdfe37563d",
     "version": "1.0.0",
     "published": {}
+  },
+  "yahoo": {
+    "hash": "43621274abf9d925",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "bitwarden": {
+    "hash": "b374611218d2229f",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "@registry": {
+    "hash": "7e531e699e0eef94",
+    "version": "1.0.0",
+    "published": {
+      "mcp-registry": "2026-09-28T04:59:09.170Z"
+    }
   }
 }

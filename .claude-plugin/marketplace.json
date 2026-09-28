@@ -6,6 +6,21 @@
   },
   "plugins": [
     {
+      "name": "yahoo",
+      "source": "./skills/yahoo",
+      "description": "yahoo.com as MCP tools: Search att.net. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "yahoo": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/yahoo.com"
+        }
+      }
+    },
+    {
       "name": "google",
       "source": "./skills/google",
       "description": "google.com as MCP tools: Google Flights SIN-BKK fare compare. Unofficial.",
@@ -257,21 +272,6 @@
         "yummyani-me": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/yummyani.me"
-        }
-      }
-    },
-    {
-      "name": "malaysiakini",
-      "source": "./skills/malaysiakini",
-      "description": "malaysiakini.com as MCP tools: Search m.malaysiakini.com. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "malaysiakini": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/malaysiakini.com"
         }
       }
     },
@@ -711,21 +711,6 @@
       }
     },
     {
-      "name": "hotmart",
-      "source": "./skills/hotmart",
-      "description": "hotmart.com as MCP tools: Browse products by category on Hotmart marketplace. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "hotmart": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/hotmart.com"
-        }
-      }
-    },
-    {
       "name": "nydailynews",
       "source": "./skills/nydailynews",
       "description": "nydailynews.com as MCP tools: Search nydailynews.com. Unofficial.",
@@ -902,6 +887,21 @@
         "buffer": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/buffer.com"
+        }
+      }
+    },
+    {
+      "name": "bitwarden",
+      "source": "./skills/bitwarden",
+      "description": "bitwarden.com as MCP tools: Read Bitwarden pricing for personal and business plans. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "bitwarden": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/bitwarden.com"
         }
       }
     }
