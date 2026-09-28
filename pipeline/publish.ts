@@ -209,6 +209,8 @@ console.log(`BUILT ${packs.length} packs → ${OUT}`);
 const statePath = REPO ? join(REPO, "state.json") : join(OUT, "state.json");
 const state: State = existsSync(statePath) ? JSON.parse(readFileSync(statePath, "utf8")) : {};
 let fresh = 0;
+/** Hosts a Smithery listing is waiting for: Unbrowse's site-hosts workflow attaches them (pending-hosts.txt). */
+const pendingHosts: string[] = [];
 for (const p of packs) {
   const prev = state[p.slug];
   // The version moves when the pack's content does; each target records the hash it last published, so a target
@@ -233,7 +235,7 @@ for (const p of packs) {
   const host = appHost(p.host);
   if (TARGETS.has("smithery") && host && !entry.published["smithery-mcp"]) {
     if (fresh++ >= MAX_NEW) console.log(`hold ${p.slug} on smithery mcp: MAX_NEW=${MAX_NEW} new per run`);
-    else if (!(await ensureHost(host))) console.log(`hold ${p.slug} on smithery mcp: ${host} not attached (set CLOUDFLARE_API_TOKEN)`);
+    else if (!(await ensureHost(host))) { pendingHosts.push(host); console.log(`hold ${p.slug} on smithery mcp: ${host} not attached yet (pending-hosts.txt)`); }
     else attempt("smithery-mcp", () => run("smithery", ["mcp", "publish", `https://${host}/mcp`, "-n", `unbrowse/${p.slug}`]));
   }
   // Its listing's name, description and homepage: the scan leaves them empty, which costs the listing's score.
@@ -301,6 +303,7 @@ Any other site: the general [Unbrowse](https://github.com/unbrowse-ai/unbrowse) 
     description: "Websites as agent tools (unofficial): each plugin is one site's remote MCP server and skill, compiled by Unbrowse from the site's own requests.",
     plugins: listed.map((p) => ({ name: p.slug, source: `./skills/${p.slug}`, description: String(p.server.description), strict: false, skills: ["./"], mcpServers: { [p.slug]: { type: "http", url: appMcpUrl(ORIGIN, p.host) } } })),
   }, null, 2) + "\n");
+  writeFileSync(join(REPO, "pending-hosts.txt"), `# Site hosts a Smithery listing is waiting for; lekt9/unbrowse6 .github/workflows/site-hosts.yml attaches them.\n${pendingHosts.sort().join("\n")}\n`);
   if (!DRY) writeFileSync(statePath, JSON.stringify(state, null, 2) + "\n");
   run("git", ["add", "-A"], REPO);
   const dirty = DRY || execFileSync("git", ["status", "--porcelain"], { cwd: REPO, encoding: "utf8" }).trim();
