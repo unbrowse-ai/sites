@@ -6,7 +6,8 @@
 //   repo          every pack → github.com/unbrowse-ai/sites (skills.sh, SkillsMP, Claude/Codex plugin marketplace).
 //   mcp-registry  ONE entry, io.github.unbrowse-ai/sites with {site} as a URL variable. Its terms (§9.4) forbid
 //                 near-identical servers under different names, so never one entry per site. Needs mcp-publisher login.
-//   smithery      one skill per site (unbrowse/<slug>), at most MAX_NEW new per run. Needs SMITHERY_API_KEY + smithery CLI.
+//   smithery      per site: an MCP server at its own host (https://<app>-mcp.unbrowse.ai/mcp, attached with
+//                 CLOUDFLARE_API_TOKEN) and a skill, both unbrowse/<slug>; at most MAX_NEW new per run.
 //   clawhub       curated only: packs named in --curated (curated.txt in CI), else --hosts. Its policy bans flooding with near-identical skills.
 // Env: UNBROWSE_ORIGIN (default https://unbrowse.ai), UNBROWSE_API_KEY (--verify runs one call per site),
 // SITES_REPO (this repo's checkout), MAX_NEW (new per-site listings per run, default 10).
@@ -26,6 +27,31 @@ const packSlug = (host: string) => {
 };
 const packLabel = (host: string) => { const n = host.replace(/^www\./, "").split(".")[0]!; return n.charAt(0).toUpperCase() + n.slice(1); };
 const appMcpUrl = (origin: string, app: string) => `${origin}/mcp/${app}`;
+/** The app's own MCP host (airbnb.com → airbnb-com-mcp.unbrowse.ai). Mirrors appHost in Unbrowse's site-pack.ts. */
+const appHost = (app: string) => {
+  const label = app.toLowerCase().replace(/-/g, "--").replace(/\./g, "-");
+  if (label.length + 4 > 63 || /^..--/.test(label) || !/^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/.test(label)) return undefined;
+  return `${label}-mcp.unbrowse.ai`;
+};
+const CF_ACCOUNT = "6d81c1b653effb2e0eac5ee071107122";
+const CF_ZONE = "73934a4d815fde770167414fc3ead04b";
+/**
+ * The app's host answers with its own server card: attach it to unbrowse-site-hosts first when a Cloudflare token
+ * (Workers custom domains) is set, else only use a host that is already attached.
+ */
+async function ensureHost(host: string): Promise<boolean> {
+  const card = async () => (await fetchRetry(`https://${host}/.well-known/mcp/server-card.json`).catch(() => undefined))?.ok ?? false;
+  if (await card()) return true;
+  const token = process.env.CLOUDFLARE_API_TOKEN;
+  if (!token || DRY) return false;
+  const r = await fetch(`https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT}/workers/domains`, {
+    method: "PUT", headers: { authorization: `Bearer ${token}`, "content-type": "application/json" },
+    body: JSON.stringify({ environment: "production", hostname: host, service: "unbrowse-site-hosts", zone_id: CF_ZONE }),
+  });
+  if (!((await r.json().catch(() => ({}))) as { success?: boolean }).success) return false;
+  for (let i = 0; i < 12; i++) { if (await card()) return true; await new Promise((res) => setTimeout(res, 10_000)); }
+  return false;
+}
 /** The official MCP Registry entry: every indexed site through one server, the site a URL variable. */
 const sitesServerJson = (origin: string): Record<string, unknown> => ({
   $schema: "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
@@ -186,6 +212,14 @@ for (const p of packs) {
   if (TARGETS.has("smithery") && entry.published.smithery !== p.hash) {
     if (entry.published.smithery || fresh++ < MAX_NEW) attempt("smithery", () => run("smithery", ["skill", "publish", dir, "--namespace", "unbrowse", "-n", p.slug]));
     else console.log(`hold ${p.slug} on smithery: MAX_NEW=${MAX_NEW} new per run`);
+  }
+  // Smithery MCP: the app's own host (its scanner reads the server card at a host's root). Listed once; the URL and
+  // card stay current by themselves. Counts against the same MAX_NEW.
+  const host = appHost(p.host);
+  if (TARGETS.has("smithery") && host && !entry.published["smithery-mcp"]) {
+    if (fresh++ >= MAX_NEW) console.log(`hold ${p.slug} on smithery mcp: MAX_NEW=${MAX_NEW} new per run`);
+    else if (!(await ensureHost(host))) console.log(`hold ${p.slug} on smithery mcp: ${host} not attached (set CLOUDFLARE_API_TOKEN)`);
+    else attempt("smithery-mcp", () => run("smithery", ["mcp", "publish", `https://${host}/mcp`, "-n", `unbrowse/${p.slug}`]));
   }
   if (TARGETS.has("clawhub") && CURATED.has(p.host) && entry.published.clawhub !== p.hash) {
     attempt("clawhub", () => run("clawhub", ["--no-input", "skill", "publish", dir, "--slug", `unbrowse-${p.slug}`, "--name", `Unbrowse for ${p.label} (unofficial)`, "--owner", "unbrowse", "--version", version,
