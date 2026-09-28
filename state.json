@@ -10,28 +10,36 @@
     "hash": "45082ce6ab6c8d8f",
     "version": "1.0.1",
     "published": {
-      "smithery": "45082ce6ab6c8d8f"
+      "smithery": "45082ce6ab6c8d8f",
+      "smithery-mcp": "45082ce6ab6c8d8f",
+      "smithery-meta": "45082ce6ab6c8d8f"
     }
   },
   "yahoo-co-jp": {
     "hash": "33325486ac320b0b",
     "version": "1.0.1",
     "published": {
-      "smithery": "33325486ac320b0b"
+      "smithery": "33325486ac320b0b",
+      "smithery-mcp": "33325486ac320b0b",
+      "smithery-meta": "33325486ac320b0b"
     }
   },
   "microsoft": {
     "hash": "6fdd6d01bfe175a1",
     "version": "1.0.1",
     "published": {
-      "smithery": "6fdd6d01bfe175a1"
+      "smithery": "6fdd6d01bfe175a1",
+      "smithery-mcp": "6fdd6d01bfe175a1",
+      "smithery-meta": "6fdd6d01bfe175a1"
     }
   },
   "milelion": {
     "hash": "05dcb11f6f8b7553",
     "version": "1.0.1",
     "published": {
-      "smithery": "05dcb11f6f8b7553"
+      "smithery": "05dcb11f6f8b7553",
+      "smithery-mcp": "05dcb11f6f8b7553",
+      "smithery-meta": "05dcb11f6f8b7553"
     }
   },
   "siriusxm": {
@@ -48,7 +56,9 @@
     "hash": "c83921234f8b7f6d",
     "version": "1.0.1",
     "published": {
-      "smithery": "c83921234f8b7f6d"
+      "smithery": "c83921234f8b7f6d",
+      "smithery-mcp": "c83921234f8b7f6d",
+      "smithery-meta": "c83921234f8b7f6d"
     }
   },
   "univie-ac-at": {
@@ -69,13 +79,19 @@
   "detik": {
     "hash": "b39c87cb764d61ba",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "b39c87cb764d61ba",
+      "smithery-mcp": "b39c87cb764d61ba",
+      "smithery-meta": "b39c87cb764d61ba"
+    }
   },
   "mathworks": {
     "hash": "a0f521d15884461f",
     "version": "1.0.1",
     "published": {
-      "smithery": "a0f521d15884461f"
+      "smithery": "a0f521d15884461f",
+      "smithery-mcp": "a0f521d15884461f",
+      "smithery-meta": "a0f521d15884461f"
     }
   },
   "ntv-co-jp": {
@@ -86,7 +102,11 @@
   "phonepe": {
     "hash": "108f049f6e9166af",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "108f049f6e9166af",
+      "smithery-mcp": "108f049f6e9166af",
+      "smithery-meta": "108f049f6e9166af"
+    }
   },
   "tenor": {
     "hash": "fb3e60eb8795effc",
@@ -96,12 +116,20 @@
   "gaijin": {
     "hash": "cc83c851fc201ae0",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "cc83c851fc201ae0",
+      "smithery-mcp": "cc83c851fc201ae0",
+      "smithery-meta": "cc83c851fc201ae0"
+    }
   },
   "malaysiakini": {
     "hash": "17abc11752fde40c",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "17abc11752fde40c",
+      "smithery-mcp": "17abc11752fde40c",
+      "smithery-meta": "17abc11752fde40c"
+    }
   },
   "changiairport": {
     "hash": "829dd004fdd3c3da",
@@ -111,7 +139,11 @@
   "ezviz": {
     "hash": "609a04791c385407",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "609a04791c385407",
+      "smithery-mcp": "609a04791c385407",
+      "smithery-meta": "609a04791c385407"
+    }
   },
   "fastly": {
     "hash": "164641ba6467fd9c",
@@ -148,7 +180,11 @@
   "lokalise": {
     "hash": "3520de529405491d",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "3520de529405491d",
+      "smithery-mcp": "3520de529405491d",
+      "smithery-meta": "3520de529405491d"
+    }
   },
   "matomo": {
     "hash": "1f70ecfcc3475f23",
@@ -163,7 +199,11 @@
   "primevideo": {
     "hash": "725c6eb4085d7611",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "725c6eb4085d7611",
+      "smithery-mcp": "725c6eb4085d7611",
+      "smithery-meta": "725c6eb4085d7611"
+    }
   },
   "clickup": {
     "hash": "17acbbfa1e9807bd",
@@ -178,7 +218,11 @@
   "namasha": {
     "hash": "6501ea957a8c796e",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "6501ea957a8c796e",
+      "smithery-mcp": "6501ea957a8c796e",
+      "smithery-meta": "6501ea957a8c796e"
+    }
   },
   "faz": {
     "hash": "f62f4ff614178c44",
@@ -193,12 +237,20 @@
   "brevo": {
     "hash": "e03c0c9facead891",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "e03c0c9facead891",
+      "smithery-mcp": "e03c0c9facead891",
+      "smithery-meta": "e03c0c9facead891"
+    }
   },
   "domaindetails": {
     "hash": "702c8b277f0fd693",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "702c8b277f0fd693",
+      "smithery-mcp": "702c8b277f0fd693",
+      "smithery-meta": "702c8b277f0fd693"
+    }
   },
   "fortinet": {
     "hash": "21bdbb330e9f3bf4",
@@ -208,32 +260,56 @@
   "afrinic": {
     "hash": "dc2c94355a014096",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "dc2c94355a014096",
+      "smithery-mcp": "dc2c94355a014096",
+      "smithery-meta": "dc2c94355a014096"
+    }
   },
   "mobilefuse": {
     "hash": "7e3a92230149bf17",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "7e3a92230149bf17",
+      "smithery-mcp": "7e3a92230149bf17",
+      "smithery-meta": "7e3a92230149bf17"
+    }
   },
   "ndr-de": {
     "hash": "5c7ae3f5813ca35c",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "5c7ae3f5813ca35c",
+      "smithery-mcp": "5c7ae3f5813ca35c",
+      "smithery-meta": "5c7ae3f5813ca35c"
+    }
   },
   "oray": {
     "hash": "d1ed99f7dcf707a5",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "d1ed99f7dcf707a5",
+      "smithery-mcp": "d1ed99f7dcf707a5",
+      "smithery-meta": "d1ed99f7dcf707a5"
+    }
   },
   "abebooks": {
     "hash": "3eb216450a6fb81c",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "3eb216450a6fb81c",
+      "smithery-mcp": "3eb216450a6fb81c",
+      "smithery-meta": "3eb216450a6fb81c"
+    }
   },
   "mariadb": {
     "hash": "30d3059c2fce3607",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "30d3059c2fce3607",
+      "smithery-mcp": "30d3059c2fce3607",
+      "smithery-meta": "30d3059c2fce3607"
+    }
   },
   "hotmart": {
     "hash": "3f8c0865a48d977d",
@@ -248,32 +324,56 @@
   "telekom": {
     "hash": "324b3c7a3e2bec71",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "324b3c7a3e2bec71",
+      "smithery-mcp": "324b3c7a3e2bec71",
+      "smithery-meta": "324b3c7a3e2bec71"
+    }
   },
   "apnic": {
     "hash": "5e1d4b40b144dd2b",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "5e1d4b40b144dd2b",
+      "smithery-mcp": "5e1d4b40b144dd2b",
+      "smithery-meta": "5e1d4b40b144dd2b"
+    }
   },
   "permutive": {
     "hash": "bf0570f5496c0a30",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "bf0570f5496c0a30",
+      "smithery-mcp": "bf0570f5496c0a30",
+      "smithery-meta": "bf0570f5496c0a30"
+    }
   },
   "aruba-it": {
     "hash": "553c0b6626bb0507",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "553c0b6626bb0507",
+      "smithery-mcp": "553c0b6626bb0507",
+      "smithery-meta": "553c0b6626bb0507"
+    }
   },
   "komoot": {
     "hash": "6dc796315367bcf3",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "6dc796315367bcf3",
+      "smithery-mcp": "6dc796315367bcf3",
+      "smithery-meta": "6dc796315367bcf3"
+    }
   },
   "aepd-es": {
     "hash": "8c837ee6999e8a99",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "8c837ee6999e8a99",
+      "smithery-mcp": "8c837ee6999e8a99",
+      "smithery-meta": "8c837ee6999e8a99"
+    }
   },
   "reolink": {
     "hash": "4823033e66d730a0",
@@ -283,22 +383,38 @@
   "creativecommons": {
     "hash": "220f1eb0ab74ac35",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "220f1eb0ab74ac35",
+      "smithery-mcp": "220f1eb0ab74ac35",
+      "smithery-meta": "220f1eb0ab74ac35"
+    }
   },
   "raspberrypi": {
     "hash": "cb703a8dcd43f8eb",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "cb703a8dcd43f8eb",
+      "smithery-mcp": "cb703a8dcd43f8eb",
+      "smithery-meta": "cb703a8dcd43f8eb"
+    }
   },
   "swr-de": {
     "hash": "d0cdbc737f2ce55b",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "d0cdbc737f2ce55b",
+      "smithery-mcp": "d0cdbc737f2ce55b",
+      "smithery-meta": "d0cdbc737f2ce55b"
+    }
   },
   "buffer": {
     "hash": "50aeafcf58abca83",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "50aeafcf58abca83",
+      "smithery-mcp": "50aeafcf58abca83",
+      "smithery-meta": "50aeafcf58abca83"
+    }
   },
   "yahoo": {
     "hash": "2deae659878733b1",
@@ -310,7 +426,11 @@
   "bitwarden": {
     "hash": "c1252fb8d7560801",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "c1252fb8d7560801",
+      "smithery-mcp": "c1252fb8d7560801",
+      "smithery-meta": "c1252fb8d7560801"
+    }
   },
   "@registry": {
     "hash": "7e531e699e0eef94",
@@ -323,20 +443,28 @@
     "hash": "b4c3041a4632f48f",
     "version": "1.0.0",
     "published": {
-      "smithery": "b4c3041a4632f48f"
+      "smithery": "b4c3041a4632f48f",
+      "smithery-mcp": "b4c3041a4632f48f",
+      "smithery-meta": "b4c3041a4632f48f"
     }
   },
   "kompas": {
     "hash": "026d911bf6ce2192",
     "version": "1.0.0",
     "published": {
-      "smithery": "026d911bf6ce2192"
+      "smithery": "026d911bf6ce2192",
+      "smithery-mcp": "026d911bf6ce2192",
+      "smithery-meta": "026d911bf6ce2192"
     }
   },
   "epfl-ch": {
     "hash": "15ccb10f66227e45",
     "version": "1.0.0",
-    "published": {}
+    "published": {
+      "smithery": "15ccb10f66227e45",
+      "smithery-mcp": "15ccb10f66227e45",
+      "smithery-meta": "15ccb10f66227e45"
+    }
   },
   "nih": {
     "hash": "611d8f420712d285",
@@ -346,27 +474,45 @@
   "liftoff": {
     "hash": "2c49798072208854",
     "version": "1.0.0",
-    "published": {}
+    "published": {
+      "smithery": "2c49798072208854"
+    }
   },
   "flipsnack": {
     "hash": "0f31d4563321ff9e",
     "version": "1.0.0",
-    "published": {}
+    "published": {
+      "smithery": "0f31d4563321ff9e",
+      "smithery-mcp": "0f31d4563321ff9e",
+      "smithery-meta": "0f31d4563321ff9e"
+    }
   },
   "hoekee-com-sg": {
     "hash": "3cee95405a42ca7e",
     "version": "1.0.0",
-    "published": {}
+    "published": {
+      "smithery": "3cee95405a42ca7e",
+      "smithery-mcp": "3cee95405a42ca7e",
+      "smithery-meta": "3cee95405a42ca7e"
+    }
   },
   "virtualbox": {
     "hash": "f3855683a9d25d26",
     "version": "1.0.0",
-    "published": {}
+    "published": {
+      "smithery": "f3855683a9d25d26",
+      "smithery-mcp": "f3855683a9d25d26",
+      "smithery-meta": "f3855683a9d25d26"
+    }
   },
   "hometeamns-sg": {
     "hash": "beea230e4ec6b47c",
     "version": "1.0.0",
-    "published": {}
+    "published": {
+      "smithery": "beea230e4ec6b47c",
+      "smithery-mcp": "beea230e4ec6b47c",
+      "smithery-meta": "beea230e4ec6b47c"
+    }
   },
   "respawn": {
     "hash": "0b593a06e2643c36",
@@ -376,21 +522,142 @@
   "spamcop": {
     "hash": "10f3996e84f8da15",
     "version": "1.0.0",
-    "published": {}
+    "published": {
+      "smithery": "10f3996e84f8da15",
+      "smithery-mcp": "10f3996e84f8da15",
+      "smithery-meta": "10f3996e84f8da15"
+    }
   },
   "magnite": {
     "hash": "348f7375f8a75ee4",
     "version": "1.0.0",
-    "published": {}
+    "published": {
+      "smithery": "348f7375f8a75ee4",
+      "smithery-mcp": "348f7375f8a75ee4",
+      "smithery-meta": "348f7375f8a75ee4"
+    }
   },
   "gameinstaller-ru": {
     "hash": "1da41b7d4986569b",
     "version": "1.0.0",
-    "published": {}
+    "published": {
+      "smithery": "1da41b7d4986569b",
+      "smithery-mcp": "1da41b7d4986569b",
+      "smithery-meta": "1da41b7d4986569b"
+    }
   },
   "barracuda": {
     "hash": "9562c4554ae33a17",
     "version": "1.0.0",
-    "published": {}
+    "published": {
+      "smithery": "9562c4554ae33a17",
+      "smithery-mcp": "9562c4554ae33a17",
+      "smithery-meta": "9562c4554ae33a17"
+    }
+  },
+  "mydlink": {
+    "hash": "0a2a6054435a0648",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "0a2a6054435a0648"
+    }
+  },
+  "expressen-se": {
+    "hash": "6c85eba09230395c",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "6c85eba09230395c"
+    }
+  },
+  "v2ex": {
+    "hash": "ce340d669e9641bc",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "ce340d669e9641bc"
+    }
+  },
+  "orf-at": {
+    "hash": "ddb026617736d06b",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "ddb026617736d06b"
+    }
+  },
+  "apple": {
+    "hash": "fbb30663fae66050",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "fbb30663fae66050"
+    }
+  },
+  "sinarharian-com-my": {
+    "hash": "422a40972fc9ba53",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "422a40972fc9ba53"
+    }
+  },
+  "kijiji-ca": {
+    "hash": "5a25688c65dad56a",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "5a25688c65dad56a"
+    }
+  },
+  "aramco": {
+    "hash": "a590102691b3e001",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "a590102691b3e001"
+    }
+  },
+  "docs-rs": {
+    "hash": "b5a54a0b5d48df49",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "b5a54a0b5d48df49"
+    }
+  },
+  "overdrive": {
+    "hash": "b59ef84eb60b38ea",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "b59ef84eb60b38ea"
+    }
+  },
+  "ibbs-pro": {
+    "hash": "db95c627c9d891dc",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "db95c627c9d891dc"
+    }
+  },
+  "wordunscrambler-me": {
+    "hash": "e1a450c8c65d8dfa",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "e1a450c8c65d8dfa"
+    }
+  },
+  "manhuaplus": {
+    "hash": "8898db3a32e6bcdc",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "8898db3a32e6bcdc"
+    }
+  },
+  "debian": {
+    "hash": "3d3ddda69ee48e4d",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "3d3ddda69ee48e4d"
+    }
+  },
+  "52acgyxj": {
+    "hash": "5fe703de6a05f6d5",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "5fe703de6a05f6d5"
+    }
   }
 }

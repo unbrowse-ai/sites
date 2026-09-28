@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.unbrowse-ai/52acgyxj",
+  "title": "Unbrowse for 52acgyxj (unofficial)",
+  "description": "52acgyxj.com as MCP tools: Search 52acgyxj.com. Unofficial.",
+  "version": "1.0.0",
+  "websiteUrl": "https://unbrowse.ai/sites/52acgyxj.com",
+  "repository": {
+    "url": "https://github.com/unbrowse-ai/unbrowse",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://unbrowse.ai/mcp/52acgyxj.com"
+    }
+  ]
+}

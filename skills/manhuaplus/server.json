@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.unbrowse-ai/manhuaplus",
+  "title": "Unbrowse for Manhuaplus (unofficial)",
+  "description": "manhuaplus.org as MCP tools: Search manhuaplus.org. Unofficial.",
+  "version": "1.0.0",
+  "websiteUrl": "https://unbrowse.ai/sites/manhuaplus.org",
+  "repository": {
+    "url": "https://github.com/unbrowse-ai/unbrowse",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://unbrowse.ai/mcp/manhuaplus.org"
+    }
+  ]
+}

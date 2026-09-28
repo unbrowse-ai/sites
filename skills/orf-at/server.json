@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.unbrowse-ai/orf-at",
+  "title": "Unbrowse for Orf (unofficial)",
+  "description": "orf.at as MCP tools: Read latest news on orf.at. Unofficial.",
+  "version": "1.0.0",
+  "websiteUrl": "https://unbrowse.ai/sites/orf.at",
+  "repository": {
+    "url": "https://github.com/unbrowse-ai/unbrowse",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://unbrowse.ai/mcp/orf.at"
+    }
+  ]
+}
