@@ -1,6 +1,6 @@
 ---
 name: google
-description: "Google (google.com) for agents: Google Flights SIN-BKK fare compare; Search Google results; Search thinkwithgoogle.com; Read a page on google.com — through Unbrowse's scoped MCP for google.com (unofficial), which replays google.com's own first-party API (no browser, verified results). Use when the user wants anything from google.com, e.g. google flights sin-bkk fare compare."
+description: "Google (google.com) for agents: Google Flights SIN-BKK fare compare; Search Google results; Open a place page on Google Maps; Get directions on Google Maps — through Unbrowse's scoped MCP for google.com (unofficial), which replays google.com's own first-party API (no browser, verified results). Use when the user wants anything from google.com, e.g. google flights sin-bkk fare compare."
 ---
 
 # Unbrowse for Google (google.com)
@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `google_com__get_travel_flights` — Google Flights SIN-BKK fare compare
 
-Google Flights SIN-BKK fare compare.
+Google Flights SIN-BKK fare compare. No inputs. Returns the page's title, readable text and links. Read-only on google.com.
 
 - `q` (string) — optional, e.g. "Flights from Singapore to Bangkok on 2026-11-14"
 
@@ -38,7 +38,7 @@ Google Flights SIN-BKK fare compare.
 
 ### `google_com__get_complete_s` — Search Google results
 
-Search Google results.
+Search Google results. Inputs: q; gs_pcrt. Returns text. Read-only on google.com.
 
 - `q` (string, required)
 - `gs_pcrt` (integer, required) — gs pcrt
@@ -57,9 +57,57 @@ Search Google results.
 {"q":"<q>","gs_pcrt":"<gs_pcrt>"}
 ```
 
+### `google_com__get_preview_place` — Open a place page on Google Maps
+
+Open a place page on Google Maps. No inputs. Returns text. Read-only on google.com.
+
+- `authuser` (integer) — optional, e.g. "0"
+- `q` (string) — optional, e.g. "Jamaica Defence Force Co-Operative Credit Union Limited"
+
+```json
+{"authuser":0,"q":"Jamaica Defence Force Co-Operative Credit Union Limited"}
+```
+
+### `google_com__render_page` — Get directions on Google Maps
+
+Get directions on Google Maps. Inputs: origin. Returns the page's title, readable text and links. Read-only on google.com.
+
+- `origin` (string, required) — origin — what to search for on google.com
+
+```json
+{"origin":"<origin>"}
+```
+
+### `google_com__get_s` — Search places on Google Maps
+
+Search places on Google Maps. Inputs: query. Returns text. Read-only on google.com.
+
+- `query` (string, required) — query (typed during “fill Search Google Maps”)
+- `tbm` (string) — optional, e.g. "map"
+- `gs_ri` (string) — optional, e.g. "maps"
+- `suggest` (string) — optional, e.g. "p"
+- `authuser` (integer) — optional, e.g. "0"
+- `psi` (string) — optional, e.g. "9v-5aouUM8PF1e8PuqvU8Qk.1790574592065.1"
+- `ech` (integer) — optional, e.g. "1"
+
+```json
+{"query":"<query>"}
+```
+
+### `news_google_com__get_rss_search` — Google News search (RSS)
+
+Google News search (RSS). Inputs: query. Returns text. Read-only on news.google.com.
+
+- `query` (string, required) — query (typed during “search”)
+- `ceid` (string) — optional, e.g. "US:en"
+
+```json
+{"query":"<query>"}
+```
+
 ### `business_google_com__get_resources_search` — Search thinkwithgoogle.com
 
-Read resources search on business.google.com on Think with Google - Marketing Research, Insights, and Trends (business.google.com) in one call. Recorded for: “search business.google.com for article”; “search business.google.com for description”; “search business.google.com for description — Search thinkwithgoogle.com for description”. Learned from 2 browser traces; chains get_resources_search.
+Read resources search on business.google.com on Think with Google - Marketing Research, Insights, and Trends (business.google.com). Use for requests like “search business.google.com for article”; “search business.google.com for description”; “search business.google.com for description — Search thinkwithgoogle.com for description”. Learned from 2 browser traces; chains get_resources_search. Inputs: query e.g. "article". Returns resources, nextPageToken. Read-only on business.google.com.
 
 - `query` (string, required) — query (typed during “fill Search”), e.g. "article", "description"
 
@@ -69,7 +117,7 @@ Read resources search on business.google.com on Think with Google - Marketing Re
 
 ### `google_com__read_page` — Read a page on google.com
 
-Read any page on google.com — a path such as /news/2026/some-story, or a full google.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on google.com — a path such as /news/2026/some-story, or a full google.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on google.com.
 
 - `path` (string, required) — A page on google.com: a path like /about, or a full URL on google.com
 

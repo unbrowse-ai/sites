@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `ezviz_com__get_search` — Search ezviz.com
 
-Search ezviz.com with its own search (homepage search form) and read the results page as title, text and links. One first-party HTTP request, no browser.
+Search ezviz.com with its own search (homepage search form) and read the results page as title, text and links. One first-party HTTP request, no browser. Inputs: query. Returns the page's title, readable text and links. Read-only on ezviz.com.
 
 - `query` (string, required) — query — what to search for on ezviz.com
 
@@ -38,7 +38,7 @@ Search ezviz.com with its own search (homepage search form) and read the results
 
 ### `ezviz_com__read_page` — Read a page on ezviz.com
 
-Read any page on ezviz.com — a path such as /news/2026/some-story, or a full ezviz.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on ezviz.com — a path such as /news/2026/some-story, or a full ezviz.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on ezviz.com.
 
 - `path` (string, required) — A page on ezviz.com: a path like /about, or a full URL on ezviz.com
 

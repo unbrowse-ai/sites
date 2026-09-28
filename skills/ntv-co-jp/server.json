@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/ntv-co-jp",
   "title": "Unbrowse for Ntv (unofficial)",
   "description": "ntv.co.jp as MCP tools: Browse drama programs on NTV. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/ntv.co.jp",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

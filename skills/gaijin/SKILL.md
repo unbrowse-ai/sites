@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `store_gaijin_net__get_story_php` — Open a product details page on Gaijin.Net Store
 
-Open a product details page on Gaijin.Net Store.
+Open a product details page on Gaijin.Net Store. No inputs. Returns the page's title, readable text and links. Read-only on store.gaijin.net.
 
 - `title` (string) — optional, e.g. "10000-Golden-Eagles"
 - `ppupPurchaseItemId` (integer) — optional, e.g. "3748"
@@ -39,7 +39,7 @@ Open a product details page on Gaijin.Net Store.
 
 ### `store_gaijin_net__get_search_php` — Search products on Gaijin.Net Store
 
-Search products on Gaijin.Net Store.
+Search products on Gaijin.Net Store. Inputs: query. Returns the page's title, readable text and links. Read-only on store.gaijin.net.
 
 - `query` (string, required) — query (typed during “fill e13”)
 
@@ -49,7 +49,7 @@ Search products on Gaijin.Net Store.
 
 ### `store_gaijin_net__get_storefront_php` — Browse store category by game on Gaijin.Net Store
 
-Browse store category by game on Gaijin.Net Store.
+Browse store category by game on Gaijin.Net Store. No inputs. Returns the page's title, readable text and links. Read-only on store.gaijin.net.
 
 - `category` (string) — optional, e.g. "WarThunder"
 
@@ -59,7 +59,7 @@ Browse store category by game on Gaijin.Net Store.
 
 ### `gaijin_net__read_page` — Read a page on gaijin.net
 
-Read a page on gaijin.net.
+Read a page on gaijin.net. Inputs: path. Returns the page's title, readable text and links. Read-only on gaijin.net.
 
 - `path` (string, required) — A page on gaijin.net: a path like /about, or a full URL on gaijin.net
 

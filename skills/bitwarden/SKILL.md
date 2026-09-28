@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `bitwarden_com__get_pricing_all` — Read Bitwarden pricing for personal and business plans
 
-Read Bitwarden pricing for personal and business plans.
+Read Bitwarden pricing for personal and business plans. No inputs. Returns text. Read-only on bitwarden.com.
 
 - none
 
@@ -38,7 +38,7 @@ Read Bitwarden pricing for personal and business plans.
 
 ### `bitwarden_com__get_solutions_healthcare` — Browse Bitwarden product and solution pages
 
-Browse Bitwarden product and solution pages.
+Browse Bitwarden product and solution pages. No inputs. Returns component, props, url, version, clearHistory, encryptHistory. Read-only on bitwarden.com.
 
 - none
 
@@ -48,7 +48,7 @@ Browse Bitwarden product and solution pages.
 
 ### `bitwarden_com__read_page` — Read a page on bitwarden.com
 
-Read any page on bitwarden.com — a path such as /news/2026/some-story, or a full bitwarden.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on bitwarden.com — a path such as /news/2026/some-story, or a full bitwarden.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on bitwarden.com.
 
 - `path` (string, required) — A page on bitwarden.com: a path like /about, or a full URL on bitwarden.com
 

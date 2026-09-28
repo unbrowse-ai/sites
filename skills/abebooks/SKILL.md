@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `abebooks_com__get_servlet_highlight_inventory` — Search abebooks.com
 
-Read servlet highlight inventory on www.abebooks.com on AbeBooks | Shop for Books, Art &amp; Collectibles (www.abebooks.com) in one call. Recorded for: “search www.abebooks.com for curated”; “search www.abebooks.com for curated — Search abebooks.com for curated”. Learned from 1 browser trace; chains load_root → get_servlet_highlight_inventory.
+Read servlet highlight inventory on www.abebooks.com on AbeBooks | Shop for Books, Art &amp; Collectibles (www.abebooks.com). Use for requests like “search www.abebooks.com for curated”; “search www.abebooks.com for curated — Search abebooks.com for curated”. Learned from 1 browser trace; chains load_root → get_servlet_highlight_inventory. Inputs: query e.g. "curated". Returns highlightedItemsMap, priceLabel, shippingLabel, widgetTitle, freeShippingLabel, locale. Read-only on abebooks.com.
 
 - `query` (string, required) — query (typed during “fill Enter keyword title, author, or ISBN”), e.g. "curated"
 
@@ -38,7 +38,7 @@ Read servlet highlight inventory on www.abebooks.com on AbeBooks | Shop for Book
 
 ### `abebooks_com__get_servlet_search_results` — Search books on AbeBooks
 
-Search books on AbeBooks.
+Search books on AbeBooks. Inputs: Enter keyword title, author, or ISBN. Returns the page's title, readable text and links. Read-only on abebooks.com.
 
 - `Enter keyword title, author, or ISBN` (string, required) — Enter keyword title, author, or ISBN (typed during “fill Enter keyword title, author, or ISBN”)
 - `sts` (string) — optional, e.g. "t"
@@ -50,7 +50,7 @@ Search books on AbeBooks.
 
 ### `abebooks_com__read_page` — Read a page on abebooks.com
 
-Read any page on abebooks.com — a path such as /news/2026/some-story, or a full abebooks.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on abebooks.com — a path such as /news/2026/some-story, or a full abebooks.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on abebooks.com.
 
 - `path` (string, required) — A page on abebooks.com: a path like /about, or a full URL on abebooks.com
 

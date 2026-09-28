@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `currently_att_yahoo_com__get_yhs_search` — Search att.net
 
-Read yhs search on currently.att.yahoo.com on Currently.com - AT&amp;T Yahoo Email, News, Sports &amp; More (currently.att.yahoo.com) in one call. Recorded for: “search currently.att.yahoo.com for trump”; “search currently.att.yahoo.com for navy”; “search currently.att.yahoo.com for navy — Search att.net for navy”. Learned from 2 browser traces; chains load_root → get_yhs_search.
+Read yhs search on currently.att.yahoo.com on Currently.com - AT&amp;T Yahoo Email, News, Sports &amp; More (currently.att.yahoo.com). Use for requests like “search currently.att.yahoo.com for trump”; “search currently.att.yahoo.com for navy”; “search currently.att.yahoo.com for navy — Search att.net for navy”. Learned from 2 browser traces; chains load_root → get_yhs_search. Inputs: query e.g. "trump". Returns the page's title, readable text and links. Read-only on currently.att.yahoo.com.
 
 - `query` (string, required) — query (typed during “fill Search Query for Search the web”), e.g. "trump", "navy"
 
@@ -38,7 +38,7 @@ Read yhs search on currently.att.yahoo.com on Currently.com - AT&amp;T Yahoo Ema
 
 ### `malaysia_yahoo_com__get_search` — Search yahoo.com
 
-Read search on malaysia.yahoo.com on Yahoo! Malaysia | Mail, Weather, Search, Politics, News, Finance, Sports and Videos (malaysia.yahoo.com) in one call. Recorded for: “search malaysia.yahoo.com for najib”; “search malaysia.yahoo.com for fine”; “search malaysia.yahoo.com for fine — Search yahoo.com for fine”. Learned from 2 browser traces; chains get_root → get_search.
+Read search on malaysia.yahoo.com on Yahoo! Malaysia | Mail, Weather, Search, Politics, News, Finance, Sports and Videos (malaysia.yahoo.com). Use for requests like “search malaysia.yahoo.com for najib”; “search malaysia.yahoo.com for fine”; “search malaysia.yahoo.com for fine — Search yahoo.com for fine”. Learned from 2 browser traces; chains get_root → get_search. Inputs: query e.g. "najib". Returns the page's title, readable text and links. Read-only on malaysia.yahoo.com.
 
 - `query` (string, required) — query (typed during “fill Search Query for Search the web”), e.g. "najib", "fine"
 - `p` (string) — optional, e.g. "us"
@@ -52,7 +52,7 @@ Read search on malaysia.yahoo.com on Yahoo! Malaysia | Mail, Weather, Search, Po
 
 ### `sg_news_yahoo_com__get_search` — Search sg.news.yahoo.com
 
-Read search on sg.news.yahoo.com on Latest news and current events updates | Yahoo News Singapore (sg.news.yahoo.com) in one call. Recorded for: “search sg.news.yahoo.com for trump”; “search sg.news.yahoo.com for after”; “search sg.news.yahoo.com for after — Search sg.news.yahoo.com for after”. Learned from 2 browser traces; chains load_root → get_search.
+Read search on sg.news.yahoo.com on Latest news and current events updates | Yahoo News Singapore (sg.news.yahoo.com). Use for requests like “search sg.news.yahoo.com for trump”; “search sg.news.yahoo.com for after”; “search sg.news.yahoo.com for after — Search sg.news.yahoo.com for after”. Learned from 2 browser traces; chains load_root → get_search. Inputs: query e.g. "trump". Returns the page's title, readable text and links. Read-only on sg.news.yahoo.com.
 
 - `query` (string, required) — query (typed during “fill Search Query for Search the web”), e.g. "trump", "after"
 - `fr` (string) — optional, e.g. "uh3_news_web"
@@ -64,7 +64,7 @@ Read search on sg.news.yahoo.com on Latest news and current events updates | Yah
 
 ### `tech_yahoo_com__read_page` — Read a page on tech.yahoo.com
 
-Read any page on tech.yahoo.com — a path such as /news/2026/some-story, or a full tech.yahoo.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on tech.yahoo.com — a path such as /news/2026/some-story, or a full tech.yahoo.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on tech.yahoo.com.
 
 - `path` (string, required) — A page on tech.yahoo.com: a path like /about, or a full URL on tech.yahoo.com
 

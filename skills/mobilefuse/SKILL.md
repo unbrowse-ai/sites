@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `mobilefuse_com__render_page` — Search mobilefuse news articles
 
-Search mobilefuse news articles.
+Search mobilefuse news articles. Inputs: search. Returns the page's title, readable text and links. Read-only on mobilefuse.com.
 
 - `search` (string, required) — search — what to search for on mobilefuse.com
 
@@ -38,7 +38,7 @@ Search mobilefuse news articles.
 
 ### `mobilefuse_com__read_page` — Read a page on mobilefuse.com
 
-Read any page on mobilefuse.com — a path such as /news/2026/some-story, or a full mobilefuse.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on mobilefuse.com — a path such as /news/2026/some-story, or a full mobilefuse.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on mobilefuse.com.
 
 - `path` (string, required) — A page on mobilefuse.com: a path like /about, or a full URL on mobilefuse.com
 

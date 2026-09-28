@@ -1,37 +1,37 @@
 {
   "google": {
-    "hash": "719b95706f350133",
-    "version": "1.0.0",
+    "hash": "8162f29fb5c9dbe6",
+    "version": "1.0.1",
     "published": {}
   },
   "radiofrance-fr": {
-    "hash": "8cce98d05453a8ff",
-    "version": "1.0.0",
+    "hash": "45082ce6ab6c8d8f",
+    "version": "1.0.1",
     "published": {}
   },
   "yahoo-co-jp": {
-    "hash": "abc2c238d629c958",
-    "version": "1.0.0",
+    "hash": "33325486ac320b0b",
+    "version": "1.0.1",
     "published": {}
   },
   "microsoft": {
-    "hash": "28aace5c3f1d6b7a",
-    "version": "1.0.0",
+    "hash": "6fdd6d01bfe175a1",
+    "version": "1.0.1",
     "published": {}
   },
   "milelion": {
-    "hash": "a9fde098df5754ba",
-    "version": "1.0.0",
+    "hash": "05dcb11f6f8b7553",
+    "version": "1.0.1",
     "published": {}
   },
   "siriusxm": {
-    "hash": "f065b6969458f310",
-    "version": "1.0.0",
+    "hash": "c412504138cfad6e",
+    "version": "1.0.1",
     "published": {}
   },
   "databricks": {
-    "hash": "0ad2bbcafa55d8a8",
-    "version": "1.0.0",
+    "hash": "c83921234f8b7f6d",
+    "version": "1.0.1",
     "published": {}
   },
   "univie-ac-at": {
@@ -45,28 +45,28 @@
     "published": {}
   },
   "buymeacoffee": {
-    "hash": "4796d691809523c2",
-    "version": "1.0.0",
+    "hash": "fa6dd78f4f0a4b90",
+    "version": "1.0.1",
     "published": {}
   },
   "detik": {
-    "hash": "00b25d601df60cd4",
-    "version": "1.0.0",
+    "hash": "b39c87cb764d61ba",
+    "version": "1.0.1",
     "published": {}
   },
   "mathworks": {
-    "hash": "ae6526cb69f8246a",
-    "version": "1.0.0",
+    "hash": "a0f521d15884461f",
+    "version": "1.0.1",
     "published": {}
   },
   "ntv-co-jp": {
-    "hash": "5e1fc51e63fb657a",
-    "version": "1.0.0",
+    "hash": "dc5beb8355377d37",
+    "version": "1.0.1",
     "published": {}
   },
   "phonepe": {
-    "hash": "c921cf264a3fe7d8",
-    "version": "1.0.0",
+    "hash": "108f049f6e9166af",
+    "version": "1.0.1",
     "published": {}
   },
   "tenor": {
@@ -75,18 +75,18 @@
     "published": {}
   },
   "gaijin": {
-    "hash": "bdb31b628feea694",
-    "version": "1.0.0",
+    "hash": "cc83c851fc201ae0",
+    "version": "1.0.1",
     "published": {}
   },
   "yummyani-me": {
-    "hash": "d5789d95e4730723",
-    "version": "1.0.0",
+    "hash": "019e28370c3b517e",
+    "version": "1.0.1",
     "published": {}
   },
   "malaysiakini": {
-    "hash": "f515ac83f9a82432",
-    "version": "1.0.0",
+    "hash": "17abc11752fde40c",
+    "version": "1.0.1",
     "published": {}
   },
   "changiairport": {
@@ -95,33 +95,33 @@
     "published": {}
   },
   "ezviz": {
-    "hash": "8bce48a211af077c",
-    "version": "1.0.0",
+    "hash": "609a04791c385407",
+    "version": "1.0.1",
     "published": {}
   },
   "fastly": {
-    "hash": "984ab02616174137",
-    "version": "1.0.0",
+    "hash": "164641ba6467fd9c",
+    "version": "1.0.1",
     "published": {}
   },
   "in": {
-    "hash": "b62948d350858a33",
-    "version": "1.0.0",
+    "hash": "b6a8517add7bb98b",
+    "version": "1.0.1",
     "published": {}
   },
   "brobokep": {
-    "hash": "39cce1956fce5418",
-    "version": "1.0.0",
+    "hash": "649e934673135ccc",
+    "version": "1.0.1",
     "published": {}
   },
   "supabase": {
-    "hash": "e5af6d2cea9dda9a",
-    "version": "1.0.0",
+    "hash": "5cfeb6ec92ccdcf2",
+    "version": "1.0.1",
     "published": {}
   },
   "playgama": {
-    "hash": "e17c94a43cc5a2aa",
-    "version": "1.0.0",
+    "hash": "fb8bb9f1414184f4",
+    "version": "1.0.1",
     "published": {}
   },
   "rottentomatoes": {
@@ -130,23 +130,23 @@
     "published": {}
   },
   "gitlab": {
-    "hash": "2b2b50f3253f7d48",
-    "version": "1.0.0",
+    "hash": "b13ac99e447e6f3e",
+    "version": "1.0.1",
     "published": {}
   },
   "lokalise": {
-    "hash": "c51141dbbc2295a8",
-    "version": "1.0.0",
+    "hash": "3520de529405491d",
+    "version": "1.0.1",
     "published": {}
   },
   "manhwaclub": {
-    "hash": "f200fea981a775a0",
-    "version": "1.0.0",
+    "hash": "2041012f8d0a58f4",
+    "version": "1.0.1",
     "published": {}
   },
   "arivumani": {
-    "hash": "328e9eff8b7bff25",
-    "version": "1.0.0",
+    "hash": "3f1b3d123af49a8a",
+    "version": "1.0.1",
     "published": {}
   },
   "matomo": {
@@ -160,8 +160,8 @@
     "published": {}
   },
   "primevideo": {
-    "hash": "bfc64e7a82420040",
-    "version": "1.0.0",
+    "hash": "725c6eb4085d7611",
+    "version": "1.0.1",
     "published": {}
   },
   "clickup": {
@@ -175,8 +175,8 @@
     "published": {}
   },
   "namasha": {
-    "hash": "d6672102b7619be7",
-    "version": "1.0.0",
+    "hash": "6501ea957a8c796e",
+    "version": "1.0.1",
     "published": {}
   },
   "faz": {
@@ -185,18 +185,18 @@
     "published": {}
   },
   "kaspersky": {
-    "hash": "3617ad4ad01157f4",
-    "version": "1.0.0",
+    "hash": "20d9994c73dad0a3",
+    "version": "1.0.1",
     "published": {}
   },
   "brevo": {
-    "hash": "3f9749aa49c8c1d4",
-    "version": "1.0.0",
+    "hash": "e03c0c9facead891",
+    "version": "1.0.1",
     "published": {}
   },
   "domaindetails": {
-    "hash": "9c0bd56fded9308b",
-    "version": "1.0.0",
+    "hash": "702c8b277f0fd693",
+    "version": "1.0.1",
     "published": {}
   },
   "fortinet": {
@@ -205,33 +205,33 @@
     "published": {}
   },
   "afrinic": {
-    "hash": "b7d3c07499010cfc",
-    "version": "1.0.0",
+    "hash": "dc2c94355a014096",
+    "version": "1.0.1",
     "published": {}
   },
   "mobilefuse": {
-    "hash": "31a4ab61ebfdc6af",
-    "version": "1.0.0",
+    "hash": "7e3a92230149bf17",
+    "version": "1.0.1",
     "published": {}
   },
   "ndr-de": {
-    "hash": "55dcb67895cf869a",
-    "version": "1.0.0",
+    "hash": "5c7ae3f5813ca35c",
+    "version": "1.0.1",
     "published": {}
   },
   "oray": {
-    "hash": "c9c7eafcf67c1b27",
-    "version": "1.0.0",
+    "hash": "d1ed99f7dcf707a5",
+    "version": "1.0.1",
     "published": {}
   },
   "abebooks": {
-    "hash": "570fb6ad0570aa18",
-    "version": "1.0.0",
+    "hash": "3eb216450a6fb81c",
+    "version": "1.0.1",
     "published": {}
   },
   "mariadb": {
-    "hash": "e35fe6babb5135ea",
-    "version": "1.0.0",
+    "hash": "30d3059c2fce3607",
+    "version": "1.0.1",
     "published": {}
   },
   "hotmart": {
@@ -240,73 +240,73 @@
     "published": {}
   },
   "nydailynews": {
-    "hash": "5cf477a9f5e3409d",
-    "version": "1.0.0",
+    "hash": "3d8b43f6d8378688",
+    "version": "1.0.1",
     "published": {}
   },
   "telekom": {
-    "hash": "a0cd2cf2ebba1a61",
-    "version": "1.0.0",
+    "hash": "324b3c7a3e2bec71",
+    "version": "1.0.1",
     "published": {}
   },
   "apnic": {
-    "hash": "ecebc4d9782fec27",
-    "version": "1.0.0",
+    "hash": "5e1d4b40b144dd2b",
+    "version": "1.0.1",
     "published": {}
   },
   "permutive": {
-    "hash": "87caa381b7d4d033",
-    "version": "1.0.0",
+    "hash": "bf0570f5496c0a30",
+    "version": "1.0.1",
     "published": {}
   },
   "aruba-it": {
-    "hash": "fe3a6417ce9377d6",
-    "version": "1.0.0",
+    "hash": "553c0b6626bb0507",
+    "version": "1.0.1",
     "published": {}
   },
   "komoot": {
-    "hash": "dc47d12f202247da",
-    "version": "1.0.0",
+    "hash": "6dc796315367bcf3",
+    "version": "1.0.1",
     "published": {}
   },
   "aepd-es": {
-    "hash": "322c88436959331d",
-    "version": "1.0.0",
+    "hash": "8c837ee6999e8a99",
+    "version": "1.0.1",
     "published": {}
   },
   "reolink": {
-    "hash": "d2b395489bc1382a",
-    "version": "1.0.0",
+    "hash": "4823033e66d730a0",
+    "version": "1.0.1",
     "published": {}
   },
   "creativecommons": {
-    "hash": "88ea5a554b260eee",
-    "version": "1.0.0",
+    "hash": "220f1eb0ab74ac35",
+    "version": "1.0.1",
     "published": {}
   },
   "raspberrypi": {
-    "hash": "eb7da9325e3eaa93",
-    "version": "1.0.0",
+    "hash": "cb703a8dcd43f8eb",
+    "version": "1.0.1",
     "published": {}
   },
   "swr-de": {
-    "hash": "2d0fcdf930ad6148",
-    "version": "1.0.0",
+    "hash": "d0cdbc737f2ce55b",
+    "version": "1.0.1",
     "published": {}
   },
   "buffer": {
-    "hash": "074256cdfe37563d",
-    "version": "1.0.0",
+    "hash": "50aeafcf58abca83",
+    "version": "1.0.1",
     "published": {}
   },
   "yahoo": {
-    "hash": "43621274abf9d925",
-    "version": "1.0.0",
+    "hash": "2deae659878733b1",
+    "version": "1.0.1",
     "published": {}
   },
   "bitwarden": {
-    "hash": "b374611218d2229f",
-    "version": "1.0.0",
+    "hash": "c1252fb8d7560801",
+    "version": "1.0.1",
     "published": {}
   },
   "@registry": {
@@ -315,5 +315,55 @@
     "published": {
       "mcp-registry": "2026-09-28T04:59:09.170Z"
     }
+  },
+  "gamer-com-tw": {
+    "hash": "b4c3041a4632f48f",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "kompas": {
+    "hash": "026d911bf6ce2192",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "epfl-ch": {
+    "hash": "15ccb10f66227e45",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "nih": {
+    "hash": "611d8f420712d285",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "liftoff": {
+    "hash": "2c49798072208854",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "flipsnack": {
+    "hash": "0f31d4563321ff9e",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "hoekee-com-sg": {
+    "hash": "3cee95405a42ca7e",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "virtualbox": {
+    "hash": "f3855683a9d25d26",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "hometeamns-sg": {
+    "hash": "beea230e4ec6b47c",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "dropmms": {
+    "hash": "f56f62b9eeccc659",
+    "version": "1.0.0",
+    "published": {}
   }
 }

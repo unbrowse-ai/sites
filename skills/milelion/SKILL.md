@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `milelion_com__get_search` — Search milelion.com
 
-Search milelion.com with its own search (homepage search form) and read the results page as title, text and links. One first-party HTTP request, no browser.
+Search milelion.com with its own search (homepage search form) and read the results page as title, text and links. One first-party HTTP request, no browser. Inputs: query. Returns the page's title, readable text and links. Read-only on milelion.com.
 
 - `query` (string, required) — query — what to search for on milelion.com
 
@@ -38,7 +38,7 @@ Search milelion.com with its own search (homepage search form) and read the resu
 
 ### `milelion_com__read_page` — Read a page on milelion.com
 
-Read any page on milelion.com — a path such as /news/2026/some-story, or a full milelion.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on milelion.com — a path such as /news/2026/some-story, or a full milelion.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on milelion.com.
 
 - `path` (string, required) — A page on milelion.com: a path like /about, or a full URL on milelion.com
 

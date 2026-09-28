@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.unbrowse-ai/nih",
+  "title": "Unbrowse for Nih (unofficial)",
+  "description": "nih.gov as MCP tools: Search pubmed.ncbi.nlm.nih.gov. Unofficial.",
+  "version": "1.0.0",
+  "websiteUrl": "https://unbrowse.ai/sites/nih.gov",
+  "repository": {
+    "url": "https://github.com/unbrowse-ai/unbrowse",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://unbrowse.ai/mcp/nih.gov"
+    }
+  ]
+}

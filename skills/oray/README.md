@@ -4,7 +4,7 @@ oray.com as agent tools, compiled by [Unbrowse](https://unbrowse.ai) from the si
 
 | Tool | What it does |
 |---|---|
-| `store_oray_com__get_catalog_7_b1_7_d` | Browse the Oray store catalog with product prices |
+| `store_oray_com__get_catalog` | Browse the Oray store catalog with product prices |
 | `oray_com__read_page` | Read a page on oray.com |
 
 **MCP** (remote, streamable HTTP, OAuth): `https://unbrowse.ai/mcp/oray.com`

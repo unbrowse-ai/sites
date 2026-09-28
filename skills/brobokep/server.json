@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/brobokep",
   "title": "Unbrowse for Brobokep (unofficial)",
   "description": "brobokep.org as MCP tools: Search brobokep.org. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/brobokep.org",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

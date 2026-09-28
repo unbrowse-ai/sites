@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `fastly_com__get_public_search_marketing` — Search fastly.net
 
-Read public search marketing on www.fastly.com on Powering the best of the internet | Fastly (www.fastly.com) in one call. Recorded for: “search www.fastly.com for customer”; “search www.fastly.com for story”; “search www.fastly.com for story — Search fastly.net for story”. Learned from 2 browser traces; chains get_public_search_marketing.
+Read public search marketing on www.fastly.com on Powering the best of the internet | Fastly (www.fastly.com). Use for requests like “search www.fastly.com for customer”; “search www.fastly.com for story”; “search www.fastly.com for story — Search fastly.net for story”. Learned from 2 browser traces; chains get_public_search_marketing. Inputs: query e.g. "customer". Read-only on fastly.com.
 
 - `query` (string, required) — query (typed during “fill Search”), e.g. "customer", "story"
 
@@ -38,7 +38,7 @@ Read public search marketing on www.fastly.com on Powering the best of the inter
 
 ### `fastly_com__read_page` — Read a page on fastly.com
 
-Read any page on fastly.com — a path such as /news/2026/some-story, or a full fastly.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on fastly.com — a path such as /news/2026/some-story, or a full fastly.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on fastly.com.
 
 - `path` (string, required) — A page on fastly.com: a path like /about, or a full URL on fastly.com
 

@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/mobilefuse",
   "title": "Unbrowse for Mobilefuse (unofficial)",
   "description": "mobilefuse.com as MCP tools: Search mobilefuse news articles. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/mobilefuse.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

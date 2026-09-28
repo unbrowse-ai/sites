@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `bokepsin_in_net__get_search` — Search bokepsin.in.net
 
-Search bokepsin.in.net with its own search (homepage search form) and read the results page as title, text and links. One first-party HTTP request, no browser.
+Search bokepsin.in.net with its own search (homepage search form) and read the results page as title, text and links. One first-party HTTP request, no browser. Inputs: query. Returns the page's title, readable text and links. Read-only on bokepsin.in.net.
 
 - `query` (string, required) — query — what to search for on bokepsin.in.net
 
@@ -38,7 +38,7 @@ Search bokepsin.in.net with its own search (homepage search form) and read the r
 
 ### `avtub_in_net__get_search` — Search avtub.in.net
 
-Search avtub.in.net with its own search (homepage search form) and read the results page as title, text and links. One first-party HTTP request, no browser.
+Search avtub.in.net with its own search (homepage search form) and read the results page as title, text and links. One first-party HTTP request, no browser. Inputs: query. Returns the page's title, readable text and links. Read-only on avtub.in.net.
 
 - `query` (string, required) — query — what to search for on avtub.in.net
 
@@ -48,7 +48,7 @@ Search avtub.in.net with its own search (homepage search form) and read the resu
 
 ### `bokepsin_in_net__read_page` — Read a page on bokepsin.in.net
 
-Read any page on bokepsin.in.net — a path such as /news/2026/some-story, or a full bokepsin.in.net URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on bokepsin.in.net — a path such as /news/2026/some-story, or a full bokepsin.in.net URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on bokepsin.in.net.
 
 - `path` (string, required) — A page on bokepsin.in.net: a path like /about, or a full URL on bokepsin.in.net
 

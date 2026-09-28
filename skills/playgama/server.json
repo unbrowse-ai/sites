@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/playgama",
   "title": "Unbrowse for Playgama (unofficial)",
   "description": "playgama.com as MCP tools: Search playgama.com. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/playgama.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

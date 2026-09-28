@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `databricks_com__get_data_strategy_page_data_json` — Browse Databricks blog posts by category
 
-Browse Databricks blog posts by category.
+Browse Databricks blog posts by category. Inputs: blog. Returns componentChunkName, path, result, staticQueryHashes, slicesMap. Read-only on databricks.com.
 
 - `blog` (string, required)
 
@@ -38,7 +38,7 @@ Browse Databricks blog posts by category.
 
 ### `databricks_com__get_data_lakehouse_page_data_json` — Browse product pages on Databricks
 
-Browse product pages on Databricks.
+Browse product pages on Databricks. No inputs. Returns componentChunkName, path, result, staticQueryHashes, slicesMap. Read-only on databricks.com.
 
 - none
 
@@ -48,7 +48,7 @@ Browse product pages on Databricks.
 
 ### `databricks_com__read_page` — Read a page on databricks.com
 
-Read any page on databricks.com — a path such as /news/2026/some-story, or a full databricks.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on databricks.com — a path such as /news/2026/some-story, or a full databricks.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on databricks.com.
 
 - `path` (string, required) — A page on databricks.com: a path like /about, or a full URL on databricks.com
 

@@ -26,9 +26,9 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ## Tools
 
-### `swr_de__get_baden_wuerttemberg_7_b3_7_d` — Open a SWR news article page
+### `swr_de__get_baden_wuerttemberg` — Open a SWR news article page
 
-Open a SWR news article page.
+Open a SWR news article page. No inputs. Returns title, text, links. Read-only on swr.de.
 
 - `width` (integer) — optional, e.g. "320"
 
@@ -38,7 +38,7 @@ Open a SWR news article page.
 
 ### `swr_de__read_page` — Read a page on swr.de
 
-Read any page on swr.de — a path such as /news/2026/some-story, or a full swr.de URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on swr.de — a path such as /news/2026/some-story, or a full swr.de URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on swr.de.
 
 - `path` (string, required) — A page on swr.de: a path like /about, or a full URL on swr.de
 
@@ -61,7 +61,7 @@ Always there too: `unbrowse.run` (a task on swr.de in plain words), `unbrowse.in
 Every tool is also a REST call:
 
 ```sh
-curl -s https://unbrowse.ai/api/v1/sites/swr.de/call/swr_de__get_baden_wuerttemberg_7_b3_7_d \
+curl -s https://unbrowse.ai/api/v1/sites/swr.de/call/swr_de__get_baden_wuerttemberg \
   -H "authorization: Bearer $UNBROWSE_API_KEY" -H "content-type: application/json" \
   -d '{"width":320}'
 ```

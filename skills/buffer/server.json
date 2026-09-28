@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/buffer",
   "title": "Unbrowse for Buffer (unofficial)",
   "description": "buffer.com as MCP tools: Read a Buffer blog article. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/buffer.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

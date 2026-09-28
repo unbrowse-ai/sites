@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.unbrowse-ai/detik",
   "title": "Unbrowse for Detik (unofficial)",
-  "description": "detik.com as MCP tools: Create anonymous on detik.com — detikcom - Informasi Berita Terkini dan Terb",
-  "version": "1.0.0",
+  "description": "detik.com as MCP tools: Search news on detik. Unofficial.",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/detik.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

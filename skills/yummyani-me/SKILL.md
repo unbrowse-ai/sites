@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `old_yummyani_me__get_search_2` — Search yummyani.me
 
-Read search 2 on old.yummyani.me on YummyAnime &mdash; Watch anime online free in high quality (old.yummyani.me) in one call. Recorded for: “search old.yummyani.me for season”; “search old.yummyani.me for anime”; “search old.yummyani.me for anime — Search yummyani.me for anime”. Learned from 2 browser traces; chains get_search_2.
+Read search 2 on old.yummyani.me on YummyAnime &mdash; Watch anime online free in high quality (old.yummyani.me). Use for requests like “search old.yummyani.me for season”; “search old.yummyani.me for anime”; “search old.yummyani.me for anime — Search yummyani.me for anime”. Learned from 2 browser traces; chains get_search_2. Inputs: query e.g. "season". Returns response. Read-only on old.yummyani.me.
 
 - `query` (string, required) — query (typed during “fill Search anime by title”), e.g. "season", "anime"
 
@@ -38,7 +38,7 @@ Read search 2 on old.yummyani.me on YummyAnime &mdash; Watch anime online free i
 
 ### `yummyani_me__get_search_2` — Search anime by name
 
-Search anime by name.
+Search anime by name. Inputs: query. Returns the page's title, readable text and links. Read-only on yummyani.me.
 
 - `query` (string, required) — query (typed during “fill Найти аниме по названию”)
 
@@ -48,7 +48,7 @@ Search anime by name.
 
 ### `old_yummyani_me__read_page` — Browse TOP-100 anime rankings
 
-Browse TOP-100 anime rankings.
+Browse TOP-100 anime rankings. Inputs: path. Returns the page's title, readable text and links. Read-only on old.yummyani.me.
 
 - `path` (string, required) — A page on old.yummyani.me: a path like /about, or a full URL on old.yummyani.me
 

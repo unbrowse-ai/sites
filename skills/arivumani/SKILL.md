@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `arivumani_net__get_search` — Search arivumani.net
 
-Search arivumani.net with its own search (homepage search form) and read the results page as title, text and links. One first-party HTTP request, no browser.
+Search arivumani.net with its own search (homepage search form) and read the results page as title, text and links. One first-party HTTP request, no browser. Inputs: query. Returns the page's title, readable text and links. Read-only on arivumani.net.
 
 - `query` (string, required) — query — what to search for on arivumani.net
 
@@ -38,7 +38,7 @@ Search arivumani.net with its own search (homepage search form) and read the res
 
 ### `arivumani_net__read_page` — Read a page on arivumani.net
 
-Read any page on arivumani.net — a path such as /news/2026/some-story, or a full arivumani.net URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on arivumani.net — a path such as /news/2026/some-story, or a full arivumani.net URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on arivumani.net.
 
 - `path` (string, required) — A page on arivumani.net: a path like /about, or a full URL on arivumani.net
 

@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `manhwaclub_net__get_search` — Search manhwaclub.net
 
-Search manhwaclub.net with its own search (homepage search form) and read the results page as title, text and links. One first-party HTTP request, no browser.
+Search manhwaclub.net with its own search (homepage search form) and read the results page as title, text and links. One first-party HTTP request, no browser. Inputs: query. Returns the page's title, readable text and links. Read-only on manhwaclub.net.
 
 - `query` (string, required) — query — what to search for on manhwaclub.net
 
@@ -38,7 +38,7 @@ Search manhwaclub.net with its own search (homepage search form) and read the re
 
 ### `manhwaclub_net__read_page` — Read a page on manhwaclub.net
 
-Read any page on manhwaclub.net — a path such as /news/2026/some-story, or a full manhwaclub.net URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on manhwaclub.net — a path such as /news/2026/some-story, or a full manhwaclub.net URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on manhwaclub.net.
 
 - `path` (string, required) — A page on manhwaclub.net: a path like /about, or a full URL on manhwaclub.net
 

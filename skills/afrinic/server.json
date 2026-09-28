@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/afrinic",
   "title": "Unbrowse for Afrinic (unofficial)",
   "description": "afrinic.net as MCP tools: Query AFRINIC RDAP for an IP address. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/afrinic.net",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

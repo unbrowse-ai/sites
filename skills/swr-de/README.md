@@ -4,7 +4,7 @@ swr.de as agent tools, compiled by [Unbrowse](https://unbrowse.ai) from the site
 
 | Tool | What it does |
 |---|---|
-| `swr_de__get_baden_wuerttemberg_7_b3_7_d` | Open a SWR news article page |
+| `swr_de__get_baden_wuerttemberg` | Open a SWR news article page |
 | `swr_de__read_page` | Read a page on swr.de |
 
 **MCP** (remote, streamable HTTP, OAuth): `https://unbrowse.ai/mcp/swr.de`

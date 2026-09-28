@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `news_yahoo_co_jp__get_search` — Search news.yahoo.co.jp
 
-Search news.yahoo.co.jp with its own search (homepage search form) and read the results page as title, text and links. One first-party HTTP request, no browser.
+Search news.yahoo.co.jp with its own search (homepage search form) and read the results page as title, text and links. One first-party HTTP request, no browser. Inputs: query. Returns the page's title, readable text and links. Read-only on news.yahoo.co.jp.
 
 - `query` (string, required) — query — what to search for on news.yahoo.co.jp
 
@@ -38,7 +38,7 @@ Search news.yahoo.co.jp with its own search (homepage search form) and read the 
 
 ### `auctions_yahoo_co_jp__get_search` — Search auctions.yahoo.co.jp
 
-Search auctions.yahoo.co.jp with its own search (homepage search form) and read the results page as title, text and links. One first-party HTTP request, no browser.
+Search auctions.yahoo.co.jp with its own search (homepage search form) and read the results page as title, text and links. One first-party HTTP request, no browser. Inputs: query. Returns the page's title, readable text and links. Read-only on auctions.yahoo.co.jp.
 
 - `query` (string, required) — query — what to search for on auctions.yahoo.co.jp
 
@@ -48,7 +48,7 @@ Search auctions.yahoo.co.jp with its own search (homepage search form) and read 
 
 ### `news_yahoo_co_jp__read_page` — Read a page on news.yahoo.co.jp
 
-Read any page on news.yahoo.co.jp — a path such as /news/2026/some-story, or a full news.yahoo.co.jp URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on news.yahoo.co.jp — a path such as /news/2026/some-story, or a full news.yahoo.co.jp URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on news.yahoo.co.jp.
 
 - `path` (string, required) — A page on news.yahoo.co.jp: a path like /about, or a full URL on news.yahoo.co.jp
 

@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `projects_raspberrypi_org__get_projects_search` — Search projects on Raspberry Pi projects site
 
-Search projects on Raspberry Pi projects site.
+Search projects on Raspberry Pi projects site. Inputs: query. Returns projects. Read-only on projects.raspberrypi.org.
 
 - `query` (string, required) — query (typed during “fill Search”)
 
@@ -38,7 +38,7 @@ Search projects on Raspberry Pi projects site.
 
 ### `raspberrypi_org__read_page` — Read a page on raspberrypi.org
 
-Read any page on raspberrypi.org — a path such as /news/2026/some-story, or a full raspberrypi.org URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on raspberrypi.org — a path such as /news/2026/some-story, or a full raspberrypi.org URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on raspberrypi.org.
 
 - `path` (string, required) — A page on raspberrypi.org: a path like /about, or a full URL on raspberrypi.org
 

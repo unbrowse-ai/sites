@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/arivumani",
   "title": "Unbrowse for Arivumani (unofficial)",
   "description": "arivumani.net as MCP tools: Search arivumani.net. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/arivumani.net",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

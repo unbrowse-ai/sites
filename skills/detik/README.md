@@ -4,7 +4,6 @@ detik.com as agent tools, compiled by [Unbrowse](https://unbrowse.ai) from the s
 
 | Tool | What it does |
 |---|---|
-| `detik_com__post_anonymous` | Create anonymous on detik.com — detikcom - Informasi Berita Terkini dan Terbaru Hari Ini |
 | `detik_com__get_search_searchall` | Search news on detik |
 | `detik_com__get_search` | Search detik.com |
 | `detik_com__read_page` | Read a page on detik.com |

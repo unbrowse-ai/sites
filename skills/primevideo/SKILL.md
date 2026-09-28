@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `primevideo_com__get_search` — Search amazonvideo.com
 
-Read search on www.primevideo.com on Welcome to Prime Video (www.primevideo.com) in one call. Recorded for: “search www.primevideo.com for trial”; “search www.primevideo.com for trial — Search amazonvideo.com for trial”. Learned from 1 browser trace; chains get_offers_nonprimehomepage → get_search_suggestions → get_search.
+Read search on www.primevideo.com on Welcome to Prime Video (www.primevideo.com). Use for requests like “search www.primevideo.com for trial”; “search www.primevideo.com for trial — Search amazonvideo.com for trial”. Learned from 1 browser trace; chains get_offers_nonprimehomepage → get_search_suggestions → get_search. Inputs: query e.g. "trial"; type (optional) e.g. "CONTENT_CARDS". Returns the page's title, readable text and links. Read-only on primevideo.com.
 
 - `query` (string, required) — query (typed during “fill Search”), e.g. "trial"
 - `type` (string) — type, e.g. "CONTENT_CARDS", "WORDS"
@@ -39,7 +39,7 @@ Read search on www.primevideo.com on Welcome to Prime Video (www.primevideo.com)
 
 ### `primevideo_com__read_page` — Read a page on primevideo.com
 
-Read any page on primevideo.com — a path such as /news/2026/some-story, or a full primevideo.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on primevideo.com — a path such as /news/2026/some-story, or a full primevideo.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on primevideo.com.
 
 - `path` (string, required) — A page on primevideo.com: a path like /about, or a full URL on primevideo.com
 

@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `nydailynews_com__get_search` — Search nydailynews.com
 
-Search nydailynews.com with its own search (homepage search form) and read the results page as title, text and links. One first-party HTTP request, no browser.
+Search nydailynews.com with its own search (homepage search form) and read the results page as title, text and links. One first-party HTTP request, no browser. Inputs: query. Returns the page's title, readable text and links. Read-only on nydailynews.com.
 
 - `query` (string, required) — query — what to search for on nydailynews.com
 
@@ -38,7 +38,7 @@ Search nydailynews.com with its own search (homepage search form) and read the r
 
 ### `nydailynews_com__read_page` — Read a page on nydailynews.com
 
-Read any page on nydailynews.com — a path such as /news/2026/some-story, or a full nydailynews.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on nydailynews.com — a path such as /news/2026/some-story, or a full nydailynews.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on nydailynews.com.
 
 - `path` (string, required) — A page on nydailynews.com: a path like /about, or a full URL on nydailynews.com
 

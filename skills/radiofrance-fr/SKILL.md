@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `radiofrance_fr__get_recherche_data_json` — Search Radio France
 
-Search Radio France.
+Search Radio France. Inputs: query. Returns type, nodes. Read-only on radiofrance.fr.
 
 - `query` (string, required) — query (typed during “fill Rechercher un podcast, un épisode, une personnalité”)
 - `x_sveltekit_trailing_slash` (integer) — optional, e.g. "1"
@@ -40,7 +40,7 @@ Search Radio France.
 
 ### `radiofrance_fr__get_serie_l_epopee_de_lady_liberty_data_json` — Open a podcast page
 
-Open a podcast page.
+Open a podcast page. Inputs: franceinter. Returns type, nodes. Read-only on radiofrance.fr.
 
 - `franceinter` (string, required)
 - `x_sveltekit_invalidated` (integer) — optional, e.g. "1100"
@@ -51,7 +51,7 @@ Open a podcast page.
 
 ### `radiofrance_fr__get_podcasts_data_json` — Browse podcasts by station
 
-Browse podcasts by station.
+Browse podcasts by station. No inputs. Returns type, nodes. Read-only on radiofrance.fr.
 
 - `x_sveltekit_invalidated` (integer) — optional, e.g. "1100"
 
@@ -61,7 +61,7 @@ Browse podcasts by station.
 
 ### `radiofrance_fr__read_page` — Read a page on radiofrance.fr
 
-Read any page on radiofrance.fr — a path such as /news/2026/some-story, or a full radiofrance.fr URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on radiofrance.fr — a path such as /news/2026/some-story, or a full radiofrance.fr URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on radiofrance.fr.
 
 - `path` (string, required) — A page on radiofrance.fr: a path like /about, or a full URL on radiofrance.fr
 

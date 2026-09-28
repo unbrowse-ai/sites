@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `komoot_com__get_1_355235_103_796882_elements` — Open a komoot tour (route) detail page
 
-Open a komoot tour (route) detail page.
+Open a komoot tour (route) detail page. No inputs. Returns page. Read-only on komoot.com.
 
 - `layout` (string) — optional, e.g. "classic"
 - `profile` (integer) — optional, e.g. "1"
@@ -43,7 +43,7 @@ Open a komoot tour (route) detail page.
 
 ### `komoot_com__read_page` — Read a page on komoot.com
 
-Read any page on komoot.com — a path such as /news/2026/some-story, or a full komoot.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on komoot.com — a path such as /news/2026/some-story, or a full komoot.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on komoot.com.
 
 - `path` (string, required) — A page on komoot.com: a path like /about, or a full URL on komoot.com
 

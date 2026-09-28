@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/mariadb",
   "title": "Unbrowse for Mariadb (unofficial)",
   "description": "mariadb.org as MCP tools: Search mariadb.org. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/mariadb.org",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

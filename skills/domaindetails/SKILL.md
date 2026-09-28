@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `domaindetails_com__render_page` — Look up domain WHOIS/RDAP details
 
-Look up domain WHOIS/RDAP details.
+Look up domain WHOIS/RDAP details. Inputs: domain. Returns the page's title, readable text and links. Read-only on domaindetails.com.
 
 - `domain` (string, required) — domain — what to search for on domaindetails.com
 
@@ -38,7 +38,7 @@ Look up domain WHOIS/RDAP details.
 
 ### `domaindetails_com__read_page` — Read a page on domaindetails.com
 
-Read any page on domaindetails.com — a path such as /news/2026/some-story, or a full domaindetails.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on domaindetails.com — a path such as /news/2026/some-story, or a full domaindetails.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on domaindetails.com.
 
 - `path` (string, required) — A page on domaindetails.com: a path like /about, or a full URL on domaindetails.com
 

@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/kaspersky",
   "title": "Unbrowse for Kaspersky (unofficial)",
   "description": "kaspersky.com as MCP tools: Search kaspersky.com. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/kaspersky.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

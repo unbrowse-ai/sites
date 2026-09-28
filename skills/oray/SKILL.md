@@ -26,9 +26,9 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ## Tools
 
-### `store_oray_com__get_catalog_7_b1_7_d` — Browse the Oray store catalog with product prices
+### `store_oray_com__get_catalog` — Browse the Oray store catalog with product prices
 
-Browse the Oray store catalog with product prices.
+Browse the Oray store catalog with product prices. Inputs: path_1. Returns data. Read-only on store.oray.com.
 
 - `path_1` (integer, required) — path 1
 
@@ -38,7 +38,7 @@ Browse the Oray store catalog with product prices.
 
 ### `oray_com__read_page` — Read a page on oray.com
 
-Read any page on oray.com — a path such as /news/2026/some-story, or a full oray.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on oray.com — a path such as /news/2026/some-story, or a full oray.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on oray.com.
 
 - `path` (string, required) — A page on oray.com: a path like /about, or a full URL on oray.com
 
@@ -61,7 +61,7 @@ Always there too: `unbrowse.run` (a task on oray.com in plain words), `unbrowse.
 Every tool is also a REST call:
 
 ```sh
-curl -s https://unbrowse.ai/api/v1/sites/store.oray.com/call/store_oray_com__get_catalog_7_b1_7_d \
+curl -s https://unbrowse.ai/api/v1/sites/store.oray.com/call/store_oray_com__get_catalog \
   -H "authorization: Bearer $UNBROWSE_API_KEY" -H "content-type: application/json" \
   -d '{"path_1":"<path_1>"}'
 ```

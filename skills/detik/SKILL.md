@@ -1,6 +1,6 @@
 ---
 name: detik
-description: "Detik (detik.com) for agents: Create anonymous on detik.com — detikcom - Informasi Berita Terkini dan Terbaru Hari Ini; Search news on detik; Search detik.com; Read a page on detik.com — through Unbrowse's scoped MCP for detik.com (unofficial), which replays detik.com's own first-party API (no browser, verified results). Use when the user wants anything from detik.com, e.g. create anonymous on detik.com — detikcom - informasi berita terkini dan terbaru hari ini."
+description: "Detik (detik.com) for agents: Search news on detik; Search detik.com; Read a page on detik.com — through Unbrowse's scoped MCP for detik.com (unofficial), which replays detik.com's own first-party API (no browser, verified results). Use when the user wants anything from detik.com, e.g. search news on detik."
 ---
 
 # Unbrowse for Detik (detik.com)
@@ -26,19 +26,9 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ## Tools
 
-### `detik_com__post_anonymous` — Create anonymous on detik.com — detikcom - Informasi Berita Terkini dan Terbaru Hari Ini
-
-Create anonymous on detik.com — detikcom - Informasi Berita Terkini dan Terbaru Hari Ini.
-
-- `query` (string, required)
-
-```json
-{"query":"<query>"}
-```
-
 ### `detik_com__get_search_searchall` — Search news on detik
 
-Search news on detik.
+Search news on detik. Inputs: query. Returns the page's title, readable text and links. Read-only on detik.com.
 
 - `query` (string, required)
 
@@ -48,7 +38,7 @@ Search news on detik.
 
 ### `detik_com__get_search` — Search detik.com
 
-Search detik.com with its own search (homepage search form) and read the results page as title, text and links. One first-party HTTP request, no browser.
+Search detik.com with its own search (homepage search form) and read the results page as title, text and links. One first-party HTTP request, no browser. Inputs: query. Returns the page's title, readable text and links. Read-only on detik.com.
 
 - `query` (string, required) — query — what to search for on detik.com
 
@@ -58,7 +48,7 @@ Search detik.com with its own search (homepage search form) and read the results
 
 ### `detik_com__read_page` — Read a page on detik.com
 
-Read any page on detik.com — a path such as /news/2026/some-story, or a full detik.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on detik.com — a path such as /news/2026/some-story, or a full detik.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on detik.com.
 
 - `path` (string, required) — A page on detik.com: a path like /about, or a full URL on detik.com
 
@@ -81,7 +71,7 @@ Always there too: `unbrowse.run` (a task on detik.com in plain words), `unbrowse
 Every tool is also a REST call:
 
 ```sh
-curl -s https://unbrowse.ai/api/v1/sites/detik.com/call/detik_com__post_anonymous \
+curl -s https://unbrowse.ai/api/v1/sites/detik.com/call/detik_com__get_search_searchall \
   -H "authorization: Bearer $UNBROWSE_API_KEY" -H "content-type: application/json" \
   -d '{"query":"<query>"}'
 ```

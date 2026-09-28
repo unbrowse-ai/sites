@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `brevo_com__get_plans_all` — View Brevo pricing plans
 
-View Brevo pricing plans.
+View Brevo pricing plans. No inputs. Returns currency_code, user_seat, discount_percentages, plans. Read-only on brevo.com.
 
 - none
 - 1 more of the site's own parameters (locale, paging and the like), sent as recorded
@@ -39,7 +39,7 @@ View Brevo pricing plans.
 
 ### `brevo_com__get_7_h098_web` — Explore Brevo homepage and product categories
 
-Explore Brevo homepage and product categories.
+Explore Brevo homepage and product categories. No inputs. Returns AjaxWatches, BehaviorSignalSettings, Domains, ElementBlocks, NamedElementBlocks, ElementDeferreds, ElementKeeps, ElementWatches. Read-only on brevo.com.
 
 - none
 
@@ -49,7 +49,7 @@ Explore Brevo homepage and product categories.
 
 ### `brevo_com__read_page` — Read a page on brevo.com
 
-Read any page on brevo.com — a path such as /news/2026/some-story, or a full brevo.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on brevo.com — a path such as /news/2026/some-story, or a full brevo.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on brevo.com.
 
 - `path` (string, required) — A page on brevo.com: a path like /about, or a full URL on brevo.com
 

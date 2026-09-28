@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/manhwaclub",
   "title": "Unbrowse for Manhwaclub (unofficial)",
   "description": "manhwaclub.net as MCP tools: Search manhwaclub.net. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/manhwaclub.net",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

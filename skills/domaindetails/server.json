@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/domaindetails",
   "title": "Unbrowse for Domaindetails (unofficial)",
   "description": "domaindetails.com as MCP tools: Look up domain WHOIS/RDAP details. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/domaindetails.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

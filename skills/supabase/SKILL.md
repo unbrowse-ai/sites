@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `supabase_com__get_partners_catalog` — Browse the Supabase blog
 
-Browse the Supabase blog.
+Browse the Supabase blog. No inputs. Returns text. Read-only on supabase.com.
 
 - none
 
@@ -38,7 +38,7 @@ Browse the Supabase blog.
 
 ### `supabase_com__read_page` — Read a page on supabase.com
 
-Read any page on supabase.com — a path such as /news/2026/some-story, or a full supabase.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on supabase.com — a path such as /news/2026/some-story, or a full supabase.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on supabase.com.
 
 - `path` (string, required) — A page on supabase.com: a path like /about, or a full URL on supabase.com
 

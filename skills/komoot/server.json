@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/komoot",
   "title": "Unbrowse for Komoot (unofficial)",
   "description": "komoot.com as MCP tools: Open a komoot tour (route) detail page. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/komoot.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

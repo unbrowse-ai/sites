@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `creativecommons_org__get_root` — Search creativecommons.org
 
-Read root on creativecommons.org on Building tools for shared knowledge - Creative Commons (creativecommons.org) in one call. Recorded for: “search creativecommons.org for licenses”; “search creativecommons.org for commons”; “search creativecommons.org for commons — Search creativecommons.org for commons”. Learned from 2 browser traces; chains get_root.
+Read root on creativecommons.org on Building tools for shared knowledge - Creative Commons (creativecommons.org). Use for requests like “search creativecommons.org for licenses”; “search creativecommons.org for commons”; “search creativecommons.org for commons — Search creativecommons.org for commons”. Learned from 2 browser traces; chains get_root. Inputs: query e.g. "licenses". Returns the page's title, readable text and links. Read-only on creativecommons.org.
 
 - `query` (string, required) — query (typed during “fill Search”), e.g. "licenses", "commons"
 
@@ -38,7 +38,7 @@ Read root on creativecommons.org on Building tools for shared knowledge - Creati
 
 ### `creativecommons_org__read_page` — Read a page on creativecommons.org
 
-Read any page on creativecommons.org — a path such as /news/2026/some-story, or a full creativecommons.org URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on creativecommons.org — a path such as /news/2026/some-story, or a full creativecommons.org URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on creativecommons.org.
 
 - `path` (string, required) — A page on creativecommons.org: a path like /about, or a full URL on creativecommons.org
 

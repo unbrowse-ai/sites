@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `playgama_com__get_search` — Search playgama.com
 
-Search playgama.com with its own search (published OpenSearch description) and read the results page as title, text and links. One first-party HTTP request, no browser.
+Search playgama.com with its own search (published OpenSearch description) and read the results page as title, text and links. One first-party HTTP request, no browser. Inputs: query. Returns the page's title, readable text and links. Read-only on playgama.com.
 
 - `query` (string, required) — query — what to search for on playgama.com
 
@@ -38,7 +38,7 @@ Search playgama.com with its own search (published OpenSearch description) and r
 
 ### `playgama_com__read_page` — Read a page on playgama.com
 
-Read any page on playgama.com — a path such as /news/2026/some-story, or a full playgama.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on playgama.com — a path such as /news/2026/some-story, or a full playgama.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on playgama.com.
 
 - `path` (string, required) — A page on playgama.com: a path like /about, or a full URL on playgama.com
 

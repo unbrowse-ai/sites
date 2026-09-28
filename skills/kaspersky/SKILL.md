@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `kaspersky_com__get_search_search` — Search kaspersky.com
 
-Read search search on www.kaspersky.com on Kaspersky Cyber Security Solutions for Home and Business | Kaspersky (www.kaspersky.com) in one call. Recorded for: “search www.kaspersky.com for find”; “search www.kaspersky.com for premium”; “search www.kaspersky.com for premium — Search kaspersky.com for premium”. Learned from 2 browser traces; chains get_search_search.
+Read search search on www.kaspersky.com on Kaspersky Cyber Security Solutions for Home and Business | Kaspersky (www.kaspersky.com). Use for requests like “search www.kaspersky.com for find”; “search www.kaspersky.com for premium”; “search www.kaspersky.com for premium — Search kaspersky.com for premium”. Learned from 2 browser traces; chains get_search_search. Inputs: query e.g. "find". Returns count, pages, records. Read-only on kaspersky.com.
 
 - `query` (string, required) — query (typed during “fill Find what you need”), e.g. "find", "premium"
 
@@ -38,7 +38,7 @@ Read search search on www.kaspersky.com on Kaspersky Cyber Security Solutions fo
 
 ### `kaspersky_com__read_page` — Read a page on kaspersky.com
 
-Read any page on kaspersky.com — a path such as /news/2026/some-story, or a full kaspersky.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on kaspersky.com — a path such as /news/2026/some-story, or a full kaspersky.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on kaspersky.com.
 
 - `path` (string, required) — A page on kaspersky.com: a path like /about, or a full URL on kaspersky.com
 

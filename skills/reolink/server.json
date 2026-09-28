@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/reolink",
   "title": "Unbrowse for Reolink (unofficial)",
   "description": "reolink.com as MCP tools: Browse Reolink homepage. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/reolink.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

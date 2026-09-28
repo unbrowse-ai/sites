@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `aepd_es__get_buscador` — Search AEPD publications and resolutions
 
-Search AEPD publications and resolutions.
+Search AEPD publications and resolutions. Inputs: query. Returns the page's title, readable text and links. Read-only on aepd.es.
 
 - `query` (string, required) — query (typed during “fill Buscador general”)
 
@@ -38,7 +38,7 @@ Search AEPD publications and resolutions.
 
 ### `aepd_es__get_preguntas_frecuentes_buscador` — Search AEPD frequently asked questions
 
-Search AEPD frequently asked questions.
+Search AEPD frequently asked questions. Inputs: query. Returns the page's title, readable text and links. Read-only on aepd.es.
 
 - `query` (string, required) — query (typed during “fill Formulario de búsqueda de preguntas frecuentes”)
 
@@ -48,7 +48,7 @@ Search AEPD frequently asked questions.
 
 ### `aepd_es__read_page` — Read a page on aepd.es
 
-Read any page on aepd.es — a path such as /news/2026/some-story, or a full aepd.es URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on aepd.es — a path such as /news/2026/some-story, or a full aepd.es URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on aepd.es.
 
 - `path` (string, required) — A page on aepd.es: a path like /about, or a full URL on aepd.es
 

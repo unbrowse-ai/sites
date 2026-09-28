@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `brobokep_org__get_search` — Search brobokep.org
 
-Search brobokep.org with its own search (homepage search form) and read the results page as title, text and links. One first-party HTTP request, no browser.
+Search brobokep.org with its own search (homepage search form) and read the results page as title, text and links. One first-party HTTP request, no browser. Inputs: query. Returns the page's title, readable text and links. Read-only on brobokep.org.
 
 - `query` (string, required) — query — what to search for on brobokep.org
 
@@ -38,7 +38,7 @@ Search brobokep.org with its own search (homepage search form) and read the resu
 
 ### `brobokep_org__read_page` — Read a page on brobokep.org
 
-Read any page on brobokep.org — a path such as /news/2026/some-story, or a full brobokep.org URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on brobokep.org — a path such as /news/2026/some-story, or a full brobokep.org URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on brobokep.org.
 
 - `path` (string, required) — A page on brobokep.org: a path like /about, or a full URL on brobokep.org
 

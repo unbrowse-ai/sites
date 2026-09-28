@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `lokalise_com__get_ai_agents_next_d_locale_oc_rest_page_txt` — Open a Lokalise product feature page
 
-Open a Lokalise product feature page.
+Open a Lokalise product feature page. Inputs: product. Returns text. Read-only on lokalise.com.
 
 - `product` (string, required)
 
@@ -38,7 +38,7 @@ Open a Lokalise product feature page.
 
 ### `lokalise_com__get_blog_next_d_locale_blog_page_txt` — Read Lokalise blog
 
-Read Lokalise blog.
+Read Lokalise blog. No inputs. Returns text. Read-only on lokalise.com.
 
 - none
 
@@ -48,7 +48,7 @@ Read Lokalise blog.
 
 ### `lokalise_com__get_webinars_next_d_locale_oc_rest_page_txt` — Browse webinars library
 
-Browse webinars library.
+Browse webinars library. Inputs: name. Returns text. Read-only on lokalise.com.
 
 - `name` (string, required)
 
@@ -58,7 +58,7 @@ Browse webinars library.
 
 ### `lokalise_com__read_page` — Read a page on lokalise.com
 
-Read any page on lokalise.com — a path such as /news/2026/some-story, or a full lokalise.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on lokalise.com — a path such as /news/2026/some-story, or a full lokalise.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on lokalise.com.
 
 - `path` (string, required) — A page on lokalise.com: a path like /about, or a full URL on lokalise.com
 

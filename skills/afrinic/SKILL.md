@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `rdap_afrinic_net__get_ip_196_1_0_0` — Query AFRINIC RDAP for an IP address
 
-Query AFRINIC RDAP for an IP address.
+Query AFRINIC RDAP for an IP address. Inputs: rdap. Returns rdapConformance, notices, handle, lang, links, events, status, port43. Read-only on rdap.afrinic.net.
 
 - `rdap` (string, required)
 
@@ -38,7 +38,7 @@ Query AFRINIC RDAP for an IP address.
 
 ### `afrinic_net__read_page` — Read a page on afrinic.net
 
-Read any page on afrinic.net — a path such as /news/2026/some-story, or a full afrinic.net URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on afrinic.net — a path such as /news/2026/some-story, or a full afrinic.net URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on afrinic.net.
 
 - `path` (string, required) — A page on afrinic.net: a path like /about, or a full URL on afrinic.net
 

@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/bitwarden",
   "title": "Unbrowse for Bitwarden (unofficial)",
   "description": "bitwarden.com as MCP tools: Read Bitwarden pricing for personal and business plans. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/bitwarden.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

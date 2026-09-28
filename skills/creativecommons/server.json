@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/creativecommons",
   "title": "Unbrowse for Creativecommons (unofficial)",
   "description": "creativecommons.org as MCP tools: Search creativecommons.org. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/creativecommons.org",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

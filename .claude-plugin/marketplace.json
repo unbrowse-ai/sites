@@ -4,6 +4,7 @@
     "name": "Unbrowse",
     "url": "https://unbrowse.ai"
   },
+  "description": "Websites as agent tools (unofficial): each plugin is one site's remote MCP server and skill, compiled by Unbrowse from the site's own requests.",
   "plugins": [
     {
       "name": "yahoo",
@@ -32,6 +33,21 @@
         "google": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/google.com"
+        }
+      }
+    },
+    {
+      "name": "gamer-com-tw",
+      "source": "./skills/gamer-com-tw",
+      "description": "gamer.com.tw as MCP tools: Browse a forum board. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "gamer-com-tw": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/gamer.com.tw"
         }
       }
     },
@@ -96,6 +112,21 @@
       }
     },
     {
+      "name": "kompas",
+      "source": "./skills/kompas",
+      "description": "kompas.com as MCP tools: Search news. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "kompas": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/kompas.com"
+        }
+      }
+    },
+    {
       "name": "siriusxm",
       "source": "./skills/siriusxm",
       "description": "siriusxm.com as MCP tools: Search SiriusXM. Unofficial.",
@@ -126,36 +157,6 @@
       }
     },
     {
-      "name": "univie-ac-at",
-      "source": "./skills/univie-ac-at",
-      "description": "univie.ac.at as MCP tools: Search ufind.univie.ac.at. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "univie-ac-at": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/univie.ac.at"
-        }
-      }
-    },
-    {
-      "name": "tmz",
-      "source": "./skills/tmz",
-      "description": "tmz.com as MCP tools: Search TMZ news articles. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "tmz": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/tmz.com"
-        }
-      }
-    },
-    {
       "name": "buymeacoffee",
       "source": "./skills/buymeacoffee",
       "description": "buymeacoffee.com as MCP tools: Browse featured creators on Buy Me a Coffee homepage. Unofficial.",
@@ -167,21 +168,6 @@
         "buymeacoffee": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/buymeacoffee.com"
-        }
-      }
-    },
-    {
-      "name": "detik",
-      "source": "./skills/detik",
-      "description": "detik.com as MCP tools: Create anonymous on detik.com — detikcom - Informasi Berita Terkini dan Terb",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "detik": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/detik.com"
         }
       }
     },
@@ -231,17 +217,17 @@
       }
     },
     {
-      "name": "tenor",
-      "source": "./skills/tenor",
-      "description": "tenor.com as MCP tools: Search GIFs. Unofficial.",
+      "name": "epfl-ch",
+      "source": "./skills/epfl-ch",
+      "description": "epfl.ch as MCP tools: Search the EPFL website. Unofficial.",
       "strict": false,
       "skills": [
         "./"
       ],
       "mcpServers": {
-        "tenor": {
+        "epfl-ch": {
           "type": "http",
-          "url": "https://unbrowse.ai/mcp/tenor.com"
+          "url": "https://unbrowse.ai/mcp/epfl.ch"
         }
       }
     },
@@ -276,17 +262,17 @@
       }
     },
     {
-      "name": "changiairport",
-      "source": "./skills/changiairport",
-      "description": "changiairport.com as MCP tools: Create search all on www.changiairport.com — Changi Airport Departur",
+      "name": "malaysiakini",
+      "source": "./skills/malaysiakini",
+      "description": "malaysiakini.com as MCP tools: Search m.malaysiakini.com. Unofficial.",
       "strict": false,
       "skills": [
         "./"
       ],
       "mcpServers": {
-        "changiairport": {
+        "malaysiakini": {
           "type": "http",
-          "url": "https://unbrowse.ai/mcp/changiairport.com"
+          "url": "https://unbrowse.ai/mcp/malaysiakini.com"
         }
       }
     },
@@ -381,21 +367,6 @@
       }
     },
     {
-      "name": "rottentomatoes",
-      "source": "./skills/rottentomatoes",
-      "description": "rottentomatoes.com as MCP tools: Open a movie detail page. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "rottentomatoes": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/rottentomatoes.com"
-        }
-      }
-    },
-    {
       "name": "gitlab",
       "source": "./skills/gitlab",
       "description": "gitlab.com as MCP tools: View GitLab pricing tiers and plans. Unofficial.",
@@ -407,6 +378,21 @@
         "gitlab": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/gitlab.com"
+        }
+      }
+    },
+    {
+      "name": "nih",
+      "source": "./skills/nih",
+      "description": "nih.gov as MCP tools: Search pubmed.ncbi.nlm.nih.gov. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "nih": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/nih.gov"
         }
       }
     },
@@ -456,36 +442,6 @@
       }
     },
     {
-      "name": "matomo",
-      "source": "./skills/matomo",
-      "description": "matomo.org as MCP tools: Search matomo.org. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "matomo": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/matomo.org"
-        }
-      }
-    },
-    {
-      "name": "almasryalyoum",
-      "source": "./skills/almasryalyoum",
-      "description": "almasryalyoum.com as MCP tools: Search news articles. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "almasryalyoum": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/almasryalyoum.com"
-        }
-      }
-    },
-    {
       "name": "primevideo",
       "source": "./skills/primevideo",
       "description": "primevideo.com as MCP tools: Search amazonvideo.com. Unofficial.",
@@ -501,36 +457,6 @@
       }
     },
     {
-      "name": "clickup",
-      "source": "./skills/clickup",
-      "description": "clickup.com as MCP tools: Search templates. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "clickup": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/clickup.com"
-        }
-      }
-    },
-    {
-      "name": "archlinux",
-      "source": "./skills/archlinux",
-      "description": "archlinux.org as MCP tools: Read latest news. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "archlinux": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/archlinux.org"
-        }
-      }
-    },
-    {
       "name": "namasha",
       "source": "./skills/namasha",
       "description": "namasha.com as MCP tools: Search namasha.com. Unofficial.",
@@ -542,21 +468,6 @@
         "namasha": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/namasha.com"
-        }
-      }
-    },
-    {
-      "name": "faz",
-      "source": "./skills/faz",
-      "description": "faz.net as MCP tools: Search articles. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "faz": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/faz.net"
         }
       }
     },
@@ -602,21 +513,6 @@
         "domaindetails": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/domaindetails.com"
-        }
-      }
-    },
-    {
-      "name": "fortinet",
-      "source": "./skills/fortinet",
-      "description": "fortinet.com as MCP tools: Search the Fortinet site. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "fortinet": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/fortinet.com"
         }
       }
     },
@@ -902,6 +798,111 @@
         "bitwarden": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/bitwarden.com"
+        }
+      }
+    },
+    {
+      "name": "liftoff",
+      "source": "./skills/liftoff",
+      "description": "liftoff.ai as MCP tools: Search liftoff.ai. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "liftoff": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/liftoff.ai"
+        }
+      }
+    },
+    {
+      "name": "flipsnack",
+      "source": "./skills/flipsnack",
+      "description": "flipsnack.com as MCP tools: Open a flipsnack template page. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "flipsnack": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/flipsnack.com"
+        }
+      }
+    },
+    {
+      "name": "detik",
+      "source": "./skills/detik",
+      "description": "detik.com as MCP tools: Search news on detik. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "detik": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/detik.com"
+        }
+      }
+    },
+    {
+      "name": "hoekee-com-sg",
+      "source": "./skills/hoekee-com-sg",
+      "description": "hoekee.com.sg as MCP tools: Search hoekee.com.sg. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "hoekee-com-sg": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/hoekee.com.sg"
+        }
+      }
+    },
+    {
+      "name": "virtualbox",
+      "source": "./skills/virtualbox",
+      "description": "virtualbox.org as MCP tools: Search virtualbox.org. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "virtualbox": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/virtualbox.org"
+        }
+      }
+    },
+    {
+      "name": "hometeamns-sg",
+      "source": "./skills/hometeamns-sg",
+      "description": "hometeamns.sg as MCP tools: Search hometeamns.sg. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "hometeamns-sg": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/hometeamns.sg"
+        }
+      }
+    },
+    {
+      "name": "dropmms",
+      "source": "./skills/dropmms",
+      "description": "dropmms.com as MCP tools: Search dropmms.com. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "dropmms": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/dropmms.com"
         }
       }
     }

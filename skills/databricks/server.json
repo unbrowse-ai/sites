@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/databricks",
   "title": "Unbrowse for Databricks (unofficial)",
   "description": "databricks.com as MCP tools: Browse Databricks blog posts by category. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/databricks.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

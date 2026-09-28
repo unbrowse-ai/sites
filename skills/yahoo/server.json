@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/yahoo",
   "title": "Unbrowse for Yahoo (unofficial)",
   "description": "yahoo.com as MCP tools: Search att.net. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/yahoo.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

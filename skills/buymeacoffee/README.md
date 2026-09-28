@@ -4,7 +4,7 @@ buymeacoffee.com as agent tools, compiled by [Unbrowse](https://unbrowse.ai) fro
 
 | Tool | What it does |
 |---|---|
-| `buymeacoffee_com__get_project_7_b4_7_d` | Browse featured creators on Buy Me a Coffee homepage |
+| `buymeacoffee_com__get_project` | Browse featured creators on Buy Me a Coffee homepage |
 | `buymeacoffee_com__get_list_kaleighcohen` | View a creator's shop items |
 | `buymeacoffee_com__get_creator_kaleighcohen` | Read a creator's posts feed |
 | `buymeacoffee_com__read_page` | Read a page on buymeacoffee.com |

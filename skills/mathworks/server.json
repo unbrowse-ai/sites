@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/mathworks",
   "title": "Unbrowse for Mathworks (unofficial)",
   "description": "mathworks.com as MCP tools: Open a documentation reference page. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/mathworks.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

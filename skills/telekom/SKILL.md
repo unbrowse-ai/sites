@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `telekom_com__get_en_search_search_json` — Search telekom.net
 
-Read en search search json on www.telekom.com on Home | Deutsche Telekom (www.telekom.com) in one call. Recorded for: “search www.telekom.com for customer”; “search www.telekom.com for deutsche”; “search www.telekom.com for deutsche — Search telekom.net for deutsche”. Learned from 2 browser traces; chains get_csrf_token_json → get_en_search_search_json.
+Read en search search json on www.telekom.com on Home | Deutsche Telekom (www.telekom.com). Use for requests like “search www.telekom.com for customer”; “search www.telekom.com for deutsche”; “search www.telekom.com for deutsche — Search telekom.net for deutsche”. Learned from 2 browser traces; chains get_csrf_token_json → get_en_search_search_json. Inputs: query e.g. "customer". Returns searchTerm, searchType, page, pageSize, numberOfResults, numberOfPages, more, filters. Read-only on telekom.com.
 
 - `query` (string, required) — query (typed during “fill Search”), e.g. "customer", "deutsche"
 
@@ -38,7 +38,7 @@ Read en search search json on www.telekom.com on Home | Deutsche Telekom (www.te
 
 ### `telekom_com__read_page` — Read a page on telekom.com
 
-Read any page on telekom.com — a path such as /news/2026/some-story, or a full telekom.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on telekom.com — a path such as /news/2026/some-story, or a full telekom.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on telekom.com.
 
 - `path` (string, required) — A page on telekom.com: a path like /about, or a full URL on telekom.com
 

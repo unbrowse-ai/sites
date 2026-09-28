@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/aruba-it",
   "title": "Unbrowse for Aruba (unofficial)",
   "description": "aruba.it as MCP tools: Browse Aruba hosting plans and pricing. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/aruba.it",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

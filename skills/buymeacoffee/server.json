@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/buymeacoffee",
   "title": "Unbrowse for Buymeacoffee (unofficial)",
   "description": "buymeacoffee.com as MCP tools: Browse featured creators on Buy Me a Coffee homepage. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/buymeacoffee.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

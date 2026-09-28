@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `aruba_it__get_en` — Browse Aruba hosting plans and pricing
 
-Browse Aruba hosting plans and pricing.
+Browse Aruba hosting plans and pricing. No inputs. Returns the page's title, readable text and links. Read-only on aruba.it.
 
 - `pk_campaign` (string) — optional, e.g. "internal-link"
 
@@ -38,7 +38,7 @@ Browse Aruba hosting plans and pricing.
 
 ### `aruba_it__read_page` — Read a page on aruba.it
 
-Read any page on aruba.it — a path such as /news/2026/some-story, or a full aruba.it URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on aruba.it — a path such as /news/2026/some-story, or a full aruba.it URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on aruba.it.
 
 - `path` (string, required) — A page on aruba.it: a path like /about, or a full URL on aruba.it
 

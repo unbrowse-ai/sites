@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/microsoft",
   "title": "Unbrowse for Microsoft (unofficial)",
   "description": "microsoft.com as MCP tools: Search windows.com. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/microsoft.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

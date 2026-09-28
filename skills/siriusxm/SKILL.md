@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `siriusxm_com__get_search` — Search SiriusXM
 
-Search SiriusXM.
+Search SiriusXM. Inputs: query. Returns hits, nbHits, page, nbPages, hitsPerPage, exhaustiveNbHits, exhaustiveTypo, exhaustive. Read-only on siriusxm.com.
 
 - `query` (string, required) — query (typed during “fill Search SiriusXM”)
 - `hitsPerPage` (integer) — optional, e.g. "20"
@@ -39,7 +39,7 @@ Search SiriusXM.
 
 ### `siriusxm_com__get_mountain_purejazz` — Open a channel page
 
-Open a channel page.
+Open a channel page. Inputs: channel. Returns utcExpireTime, channels. Read-only on siriusxm.com.
 
 - `channel` (string, required)
 
@@ -49,7 +49,7 @@ Open a channel page.
 
 ### `siriusxm_com__read_page` — Read a page on siriusxm.com
 
-Read any page on siriusxm.com — a path such as /news/2026/some-story, or a full siriusxm.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on siriusxm.com — a path such as /news/2026/some-story, or a full siriusxm.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on siriusxm.com.
 
 - `path` (string, required) — A page on siriusxm.com: a path like /about, or a full URL on siriusxm.com
 

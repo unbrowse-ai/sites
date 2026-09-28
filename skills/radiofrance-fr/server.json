@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/radiofrance-fr",
   "title": "Unbrowse for Radiofrance (unofficial)",
   "description": "radiofrance.fr as MCP tools: Search Radio France. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/radiofrance.fr",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

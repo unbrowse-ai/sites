@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `microsoft_com__get_msstoreapiprod_autosuggest` — Search windows.com
 
-Read msstoreapiprod autosuggest on www.microsoft.com on Experience the Power of AI with Windows 11 OS, Computers &amp; Apps | Microsoft Windows (www.microsoft.com) in one call. Recorded for: “search www.microsoft.com for windows”; “search www.microsoft.com for formerly”; “search www.microsoft.com for formerly — Search windows.com for formerly”. Learned from 2 browser traces; chains get_en_sg_windows → get_search_explore → get_msstoreapiprod_autosuggest.
+Read msstoreapiprod autosuggest on www.microsoft.com on Experience the Power of AI with Windows 11 OS, Computers &amp; Apps | Microsoft Windows (www.microsoft.com). Use for requests like “search www.microsoft.com for windows”; “search www.microsoft.com for formerly”; “search www.microsoft.com for formerly — Search windows.com for formerly”. Learned from 2 browser traces; chains get_en_sg_windows → get_search_explore → get_msstoreapiprod_autosuggest. Inputs: query e.g. "windows". Returns ResultSets, ErrorSets. Read-only on microsoft.com.
 
 - `query` (string, required) — query (typed during “fill Search Microsoft.com”), e.g. "windows", "formerly"
 
@@ -38,7 +38,7 @@ Read msstoreapiprod autosuggest on www.microsoft.com on Experience the Power of 
 
 ### `microsoft_com__read_page` — Read a page on microsoft.com
 
-Read any page on microsoft.com — a path such as /news/2026/some-story, or a full microsoft.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on microsoft.com — a path such as /news/2026/some-story, or a full microsoft.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on microsoft.com.
 
 - `path` (string, required) — A page on microsoft.com: a path like /about, or a full URL on microsoft.com
 

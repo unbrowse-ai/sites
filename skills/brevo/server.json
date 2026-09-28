@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/brevo",
   "title": "Unbrowse for Brevo (unofficial)",
   "description": "brevo.com as MCP tools: View Brevo pricing plans. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/brevo.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

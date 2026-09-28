@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `about_gitlab_com__get_pricing_payload_json` — View GitLab pricing tiers and plans
 
-View GitLab pricing tiers and plans.
+View GitLab pricing tiers and plans. No inputs. Returns data. Read-only on about.gitlab.com.
 
 - none
 
@@ -38,7 +38,7 @@ View GitLab pricing tiers and plans.
 
 ### `gitlab_com__render_page` — Search GitLab explore projects by name
 
-Search GitLab explore projects by name.
+Search GitLab explore projects by name. Inputs: name. Returns the page's title, readable text and links. Read-only on gitlab.com.
 
 - `name` (string, required) — name — what to search for on gitlab.com
 
@@ -48,7 +48,7 @@ Search GitLab explore projects by name.
 
 ### `docs_gitlab_com__read_page` — Read a docs.gitlab.com page by name
 
-Read a docs.gitlab.com page by name.
+Read a docs.gitlab.com page by name. Inputs: name. Returns the page's title, readable text and links. Read-only on docs.gitlab.com.
 
 - `name` (string, required)
 

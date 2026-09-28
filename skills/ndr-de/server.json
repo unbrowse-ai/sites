@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/ndr-de",
   "title": "Unbrowse for Ndr (unofficial)",
   "description": "ndr.de as MCP tools: Search ndr.de. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/ndr.de",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

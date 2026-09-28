@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `buffer_com__get_resources_guides_courses` — Read a Buffer blog article
 
-Read a Buffer blog article.
+Read a Buffer blog article. Inputs: resource. Returns text. Read-only on buffer.com.
 
 - `resource` (string, required)
 
@@ -38,7 +38,7 @@ Read a Buffer blog article.
 
 ### `buffer_com__read_page` — Read a page on buffer.com
 
-Read any page on buffer.com — a path such as /news/2026/some-story, or a full buffer.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on buffer.com — a path such as /news/2026/some-story, or a full buffer.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on buffer.com.
 
 - `path` (string, required) — A page on buffer.com: a path like /about, or a full URL on buffer.com
 

@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `ntv_co_jp__get_programs_programs_json` — Browse drama programs on NTV
 
-Browse drama programs on NTV.
+Browse drama programs on NTV. No inputs. Returns text. Read-only on ntv.co.jp.
 
 - none
 
@@ -38,7 +38,7 @@ Browse drama programs on NTV.
 
 ### `ntv_co_jp__render_page` — Search NTV programs and articles by keyword
 
-Search NTV programs and articles by keyword.
+Search NTV programs and articles by keyword. Inputs: query. Returns the page's title, readable text and links. Read-only on ntv.co.jp.
 
 - `query` (string, required) — query — what to search for on ntv.co.jp
 

@@ -26,9 +26,9 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ## Tools
 
-### `buymeacoffee_com__get_project_7_b4_7_d` — Browse featured creators on Buy Me a Coffee homepage
+### `buymeacoffee_com__get_project` — Browse featured creators on Buy Me a Coffee homepage
 
-Browse featured creators on Buy Me a Coffee homepage.
+Browse featured creators on Buy Me a Coffee homepage. No inputs. Returns data, links, meta. Read-only on buymeacoffee.com.
 
 - `page` (integer) — optional, e.g. "1"
 - `per_page` (integer) — optional, e.g. "10"
@@ -39,7 +39,7 @@ Browse featured creators on Buy Me a Coffee homepage.
 
 ### `buymeacoffee_com__get_list_kaleighcohen` — View a creator's shop items
 
-View a creator's shop items.
+View a creator's shop items. No inputs. Returns data, links, meta. Read-only on buymeacoffee.com.
 
 - `page` (integer) — optional, e.g. "1"
 
@@ -49,7 +49,7 @@ View a creator's shop items.
 
 ### `buymeacoffee_com__get_creator_kaleighcohen` — Read a creator's posts feed
 
-Read a creator's posts feed.
+Read a creator's posts feed. No inputs. Returns data, type, links, meta. Read-only on buymeacoffee.com.
 
 - `per_page` (integer) — optional, e.g. "9"
 - `page` (integer) — optional, e.g. "1"
@@ -61,7 +61,7 @@ Read a creator's posts feed.
 
 ### `buymeacoffee_com__read_page` — Read a page on buymeacoffee.com
 
-Read any page on buymeacoffee.com — a path such as /news/2026/some-story, or a full buymeacoffee.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path.
+Read any page on buymeacoffee.com — a path such as /news/2026/some-story, or a full buymeacoffee.com URL — and get its title, readable text and links. One first-party HTTP request, no browser. Follow a returned link by passing its href back as the path. Inputs: path e.g. "/". Returns the page's title, readable text and links. Read-only on buymeacoffee.com.
 
 - `path` (string, required) — A page on buymeacoffee.com: a path like /about, or a full URL on buymeacoffee.com
 
@@ -84,7 +84,7 @@ Always there too: `unbrowse.run` (a task on buymeacoffee.com in plain words), `u
 Every tool is also a REST call:
 
 ```sh
-curl -s https://unbrowse.ai/api/v1/sites/buymeacoffee.com/call/buymeacoffee_com__get_project_7_b4_7_d \
+curl -s https://unbrowse.ai/api/v1/sites/buymeacoffee.com/call/buymeacoffee_com__get_project \
   -H "authorization: Bearer $UNBROWSE_API_KEY" -H "content-type: application/json" \
   -d '{"page":1,"per_page":10}'
 ```

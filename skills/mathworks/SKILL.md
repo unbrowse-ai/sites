@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `mathworks_com__get_r2026b_docset_json` — Open a documentation reference page
 
-Open a documentation reference page.
+Open a documentation reference page. No inputs. Returns schema, schemaVersion, documentation_set. Read-only on mathworks.com.
 
 - `d_visid_ver` (string) — optional, e.g. "5.2.0"
 - `d_fieldgroup` (string) — optional, e.g. "A"
@@ -41,7 +41,7 @@ Open a documentation reference page.
 
 ### `blogs_mathworks_com__get_announcements_blogs` — Browse the latest MATLAB blog posts
 
-Browse the latest MATLAB blog posts.
+Browse the latest MATLAB blog posts. No inputs. Returns data. Read-only on blogs.mathworks.com.
 
 - none
 
@@ -51,7 +51,7 @@ Browse the latest MATLAB blog posts.
 
 ### `mathworks_com__read_page` — Browse MATLAB and Simulink products catalog
 
-Browse MATLAB and Simulink products catalog.
+Browse MATLAB and Simulink products catalog. Inputs: path. Returns the page's title, readable text and links. Read-only on mathworks.com.
 
 - `path` (string, required) — A page on mathworks.com: a path like /about, or a full URL on mathworks.com
 

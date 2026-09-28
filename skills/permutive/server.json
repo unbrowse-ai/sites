@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/permutive",
   "title": "Unbrowse for Permutive (unofficial)",
   "description": "permutive.com as MCP tools: Open a Permutive resource article. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/permutive.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",
