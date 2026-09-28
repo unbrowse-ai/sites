@@ -221,6 +221,19 @@ for (const p of packs) {
     else if (!(await ensureHost(host))) console.log(`hold ${p.slug} on smithery mcp: ${host} not attached (set CLOUDFLARE_API_TOKEN)`);
     else attempt("smithery-mcp", () => run("smithery", ["mcp", "publish", `https://${host}/mcp`, "-n", `unbrowse/${p.slug}`]));
   }
+  // Its listing's name, description and homepage: the scan leaves them empty, which costs the listing's score.
+  if (TARGETS.has("smithery") && entry.published["smithery-mcp"] && entry.published["smithery-meta"] !== p.hash && !DRY) {
+    const r = await fetchRetry(`https://api.smithery.ai/servers/unbrowse/${p.slug}`, {
+      method: "PATCH", headers: { authorization: `Bearer ${process.env.SMITHERY_API_KEY}`, "content-type": "application/json" },
+      body: JSON.stringify({
+        displayName: `Unbrowse for ${p.label} (unofficial)`,
+        description: `${p.host} as MCP tools: ${p.tools.map((t) => t.title.replace(/\.$/, "")).join("; ")}. Compiled by Unbrowse from the site's own requests; verified results, no browser. Not affiliated with ${p.host}.`.slice(0, 1000),
+        homepage: `${ORIGIN}/sites/${p.host}`,
+      }),
+    }).catch(() => undefined);
+    if (r?.ok) entry.published["smithery-meta"] = p.hash;
+    else console.error(`FAIL smithery-meta ${p.slug}: ${r?.status ?? "network"}`);
+  }
   if (TARGETS.has("clawhub") && CURATED.has(p.host) && entry.published.clawhub !== p.hash) {
     attempt("clawhub", () => run("clawhub", ["--no-input", "skill", "publish", dir, "--slug", `unbrowse-${p.slug}`, "--name", `Unbrowse for ${p.label} (unofficial)`, "--owner", "unbrowse", "--version", version,
       "--changelog", `Tools: ${p.tools.map((t) => t.title).join("; ")}`]));

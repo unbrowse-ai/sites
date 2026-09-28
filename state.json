@@ -39,7 +39,9 @@
     "version": "1.0.1",
     "published": {
       "clawhub": "c412504138cfad6e",
-      "smithery": "c412504138cfad6e"
+      "smithery": "c412504138cfad6e",
+      "smithery-mcp": "c412504138cfad6e",
+      "smithery-meta": "c412504138cfad6e"
     }
   },
   "databricks": {
