@@ -24,7 +24,7 @@ const packSlug = (host: string) => {
   if (parts.length > 1 && GENERIC_TLD.has(parts[parts.length - 1]!)) parts.pop();
   return parts.join("-").replace(/[^a-z0-9-]/g, "-").replace(/-+/g, "-").replace(/^-|-$/g, "").slice(0, 60) || "site";
 };
-const packLabel = (host: string) => packSlug(host).split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+const packLabel = (host: string) => { const n = host.replace(/^www\./, "").split(".")[0]!; return n.charAt(0).toUpperCase() + n.slice(1); };
 const appMcpUrl = (origin: string, app: string) => `${origin}/mcp/${app}`;
 /** The official MCP Registry entry: every indexed site through one server, the site a URL variable. */
 const sitesServerJson = (origin: string): Record<string, unknown> => ({
@@ -84,7 +84,7 @@ async function build(entry: { host: string; searches?: number; tools?: number })
   if (!skill || !serverText) return { host, skip: "no public tools worth publishing" };
   const tools = [...skill.matchAll(/^### `([^`]+)` — (.+)$/gm)].map((m) => ({ name: m[1]!, title: m[2]! }) as PackTool);
   if (!tools.length) return { host, skip: "no tools in skill" };
-  if (entry.tools === undefined && tools.length < 2 && tools.every((t) => /^Read (any|a) page/i.test(t.title))) return { host, skip: "only a page reader" };
+  if (tools.every((t) => /__read_page$/.test(t.name))) return { host, skip: "only a page reader" };
   const server = JSON.parse(serverText) as Record<string, unknown>;
   const hash = createHash("sha256").update(skill).update(serverText).digest("hex").slice(0, 16);
   return { host, slug: packSlug(host), label: packLabel(host), tools, skill, server, hash };
@@ -116,7 +116,7 @@ ${p.tools.map((t) => `| \`${t.name}\` | ${t.title.replace(/\|/g, "\\|")} |`).joi
 claude mcp add --transport http ${p.slug} ${url}
 \`\`\`
 
-**Skill**: \`npx skills add unbrowse.ai --skill ${p.slug}\` (or \`npx skills add unbrowse-ai/sites --skill ${p.slug}\`) — see [SKILL.md](SKILL.md).
+**Skill**: \`npx skills add https://unbrowse.ai --skill ${p.slug}\` (or \`npx skills add unbrowse-ai/sites --skill ${p.slug}\`) — see [SKILL.md](SKILL.md).
 
 REST + OpenAPI: ${ORIGIN}/api/v1/sites/${p.host}/openapi.json
 `;
@@ -209,7 +209,7 @@ if (TARGETS.has("repo")) {
 Unofficial: not affiliated with or endorsed by any site listed. Each folder is a website as agent tools, compiled by [Unbrowse](https://unbrowse.ai) from the site's own first-party requests: a scoped remote MCP server (only that site's tools) and a SKILL.md that uses it. Regenerated from the live registry; a site is listed only when its tools passed verification.
 
 \`\`\`sh
-npx skills add unbrowse.ai --skill airbnb               # one skill, from unbrowse.ai
+npx skills add https://unbrowse.ai --skill airbnb               # one skill, from unbrowse.ai
 npx skills add unbrowse-ai/sites --skill airbnb         # the same, from this repo
 claude mcp add --transport http airbnb ${appMcpUrl(ORIGIN, "airbnb.com")}
 \`\`\`
