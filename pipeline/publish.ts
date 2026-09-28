@@ -52,6 +52,7 @@ const CURATED = new Set(opt("curated", opt("hosts")).split(",").map((h) => h.tri
 const REPO = process.env.SITES_REPO ? resolve(process.env.SITES_REPO) : undefined;
 
 type Pack = { host: string; slug: string; label: string; tools: PackTool[]; skill: string; server: Record<string, unknown>; hash: string; verified?: boolean };
+/** Per pack: its content hash and version, and per target the hash that target last published. */
 type State = Record<string, { hash: string; version: string; published: Record<string, string> }>;
 
 async function getJson<T>(path: string): Promise<T> {
@@ -157,27 +158,24 @@ const state: State = existsSync(statePath) ? JSON.parse(readFileSync(statePath, 
 let fresh = 0;
 for (const p of packs) {
   const prev = state[p.slug];
-  if (prev?.hash === p.hash) continue;
-  // MAX_NEW caps new Smithery listings per run only; the repo and the other targets take every pack.
-  const smithery = TARGETS.has("smithery") && !prev?.published.smithery && (fresh < MAX_NEW ? (++fresh, true) : (console.log(`hold ${p.slug} on smithery: MAX_NEW=${MAX_NEW} per run`), false));
-  const version = prev ? bump(prev.version) : "1.0.0";
+  // The version moves when the pack's content does; each target records the hash it last published, so a target
+  // switched on later still reaches packs that have not changed.
+  const version = !prev ? "1.0.0" : prev.hash === p.hash ? prev.version : bump(prev.version);
   p.server.version = version;
-  state[p.slug] = { hash: p.hash, version, published: { ...(prev?.published ?? {}) } };
+  const entry = (state[p.slug] = { hash: p.hash, version, published: { ...(prev?.published ?? {}) } });
   write(join(OUT, "skills"), p);
   const dir = join(OUT, "skills", p.slug);
-  const mark = (target: string) => { state[p.slug]!.published[target] = new Date().toISOString(); };
-  try {
-    if (smithery) {
-      run("smithery", ["mcp", "publish", String((p.server.remotes as { url: string }[])[0]!.url), "-n", `@unbrowse/${p.slug}`]);
-      mark("smithery");
-    }
-    if (TARGETS.has("clawhub") && CURATED.has(p.host)) {
-      run("clawhub", ["skill", "publish", dir, "--slug", `unbrowse-${p.slug}`, "--owner", "unbrowse", "--version", version, "--changelog", `Tools: ${p.tools.map((t) => t.title).join("; ")}`]);
-      mark("clawhub");
-    }
-  } catch (e) {
-    console.error(`FAIL ${p.slug}: ${(e as Error).message.split("\n")[0]}`);
-    state[p.slug] = prev ?? { hash: "", version: "0.0.0", published: {} };
+  const attempt = (target: string, fn: () => void) => {
+    try { fn(); entry.published[target] = p.hash; } catch (e) { console.error(`FAIL ${target} ${p.slug}: ${(e as Error).message.split("\n")[0]}`); }
+  };
+  // Smithery lists the server URL, which never changes: once per app, at most MAX_NEW new ones per run.
+  if (TARGETS.has("smithery") && !entry.published.smithery) {
+    if (fresh++ < MAX_NEW) attempt("smithery", () => run("smithery", ["mcp", "publish", String((p.server.remotes as { url: string }[])[0]!.url), "-n", `unbrowse/${p.slug}`]));
+    else console.log(`hold ${p.slug} on smithery: MAX_NEW=${MAX_NEW} per run`);
+  }
+  if (TARGETS.has("clawhub") && CURATED.has(p.host) && entry.published.clawhub !== p.hash) {
+    attempt("clawhub", () => run("clawhub", ["--no-input", "skill", "publish", dir, "--slug", `unbrowse-${p.slug}`, "--name", `Unbrowse for ${p.label} (unofficial)`, "--owner", "unbrowse", "--version", version,
+      "--changelog", `Tools: ${p.tools.map((t) => t.title).join("; ")}`, "--source-repo", "unbrowse-ai/sites", "--source-path", `skills/${p.slug}`]));
   }
 }
 

@@ -1,2 +1,5 @@
 # Apps also published to ClawHub, one per line. Its policy bans flooding with near-identical skills: keep this short,
 # and add an app only when its pack has real usage.
+siriusxm.com
+gitlab.com
+tmz.com
