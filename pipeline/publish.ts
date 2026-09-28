@@ -158,8 +158,8 @@ let fresh = 0;
 for (const p of packs) {
   const prev = state[p.slug];
   if (prev?.hash === p.hash) continue;
-  // A new per-site listing counts against MAX_NEW only where it creates one (Smithery); the repo takes every pack.
-  if (!prev && TARGETS.has("smithery") && ++fresh > MAX_NEW) { console.log(`hold ${p.slug}: MAX_NEW=${MAX_NEW} new listings per run`); continue; }
+  // MAX_NEW caps new Smithery listings per run only; the repo and the other targets take every pack.
+  const smithery = TARGETS.has("smithery") && !prev?.published.smithery && (fresh < MAX_NEW ? (++fresh, true) : (console.log(`hold ${p.slug} on smithery: MAX_NEW=${MAX_NEW} per run`), false));
   const version = prev ? bump(prev.version) : "1.0.0";
   p.server.version = version;
   state[p.slug] = { hash: p.hash, version, published: { ...(prev?.published ?? {}) } };
@@ -167,7 +167,7 @@ for (const p of packs) {
   const dir = join(OUT, "skills", p.slug);
   const mark = (target: string) => { state[p.slug]!.published[target] = new Date().toISOString(); };
   try {
-    if (TARGETS.has("smithery") && !prev?.published.smithery) {
+    if (smithery) {
       run("smithery", ["mcp", "publish", String((p.server.remotes as { url: string }[])[0]!.url), "-n", `@unbrowse/${p.slug}`]);
       mark("smithery");
     }
