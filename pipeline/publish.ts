@@ -224,6 +224,7 @@ Any other site: the general [Unbrowse](https://github.com/unbrowse-ai/unbrowse) 
   mkdirSync(join(REPO, ".claude-plugin"), { recursive: true });
   writeFileSync(join(REPO, ".claude-plugin", "marketplace.json"), JSON.stringify({
     name: "unbrowse-sites", owner: { name: "Unbrowse", url: "https://unbrowse.ai" },
+    description: "Websites as agent tools (unofficial): each plugin is one site's remote MCP server and skill, compiled by Unbrowse from the site's own requests.",
     plugins: listed.map((p) => ({ name: p.slug, source: `./skills/${p.slug}`, description: String(p.server.description), strict: false, skills: ["./"], mcpServers: { [p.slug]: { type: "http", url: appMcpUrl(ORIGIN, p.host) } } })),
   }, null, 2) + "\n");
   if (!DRY) writeFileSync(statePath, JSON.stringify(state, null, 2) + "\n");
