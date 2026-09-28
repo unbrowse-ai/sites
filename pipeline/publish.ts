@@ -129,6 +129,19 @@ async function build(entry: { host: string; searches?: number; tools?: number })
   return { host, slug: packSlug(host), label: packLabel(host), tools, skill, server, hash };
 }
 
+const BLOCKED = new Set(readFileSync("blocked.txt", "utf8").split("\n").map((l) => l.trim().toLowerCase()).filter((l) => l && !l.startsWith("#")));
+// Words that mark an adult site in its host or its homepage's title and description, in the languages seen so far.
+const ADULT = /\b(porn\w*|xxx|sex\w*|bokep|ngentot|nsfw|hentai|escort\w*|onlyfans|nude\w*|erotic\w*|desi (mms|videos?)|mms videos?|jav|18\+)\b|porn|bokep|xvideo|mms\./i;
+
+/** Whether the site is fit to carry Unbrowse's name: not blocked, and its host and homepage do not read adult. */
+async function fitToList(host: string): Promise<string | undefined> {
+  if (BLOCKED.has(host)) return "blocked.txt";
+  if (ADULT.test(host)) return "adult host";
+  const html = await (await fetchRetry(`https://${host}/`, { headers: { "user-agent": "Mozilla/5.0 (compatible; UnbrowseSites/1.0)" } }, 15_000).catch(() => undefined))?.text().catch(() => "") ?? "";
+  const head = [/<title[^>]*>([^<]{0,300})/i, /<meta[^>]+name=["']description["'][^>]+content=["']([^"']{0,400})/i, /<meta[^>]+name=["']rating["'][^>]+content=["']([^"']+)/i].map((re) => re.exec(html)?.[1] ?? "").join(" ");
+  return ADULT.test(head) || /\b(adult|mature|rta-5042)/i.test(/<meta[^>]+name=["']rating["'][^>]+content=["']([^"']+)/i.exec(html)?.[1] ?? "") ? "adult homepage" : undefined;
+}
+
 /** One real call: the REST example the skill itself documents. The pack ships only if it returns a verified result. */
 async function verify(p: Pack): Promise<boolean> {
   if (!KEY) return true;
@@ -180,6 +193,8 @@ const packs: Pack[] = [];
 for (const entry of entries) {
   if (packs.length >= LIMIT) break;
   const host = entry.host;
+  const unfit = await fitToList(host);
+  if (unfit) { console.log(`skip ${host}: ${unfit}`); continue; }
   const p = await build(entry);
   if ("skip" in p) { console.log(`skip ${host}: ${p.skip}`); continue; }
   if (flag("verify") && !(p.verified = await verify(p))) { console.log(`skip ${host}: first tool did not return a verified result`); continue; }

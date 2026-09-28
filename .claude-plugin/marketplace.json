@@ -232,21 +232,6 @@
       }
     },
     {
-      "name": "yummyani-me",
-      "source": "./skills/yummyani-me",
-      "description": "yummyani.me as MCP tools: Search yummyani.me. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "yummyani-me": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/yummyani.me"
-        }
-      }
-    },
-    {
       "name": "malaysiakini",
       "source": "./skills/malaysiakini",
       "description": "malaysiakini.com as MCP tools: Search m.malaysiakini.com. Unofficial.",
@@ -307,21 +292,6 @@
       }
     },
     {
-      "name": "brobokep",
-      "source": "./skills/brobokep",
-      "description": "brobokep.org as MCP tools: Search brobokep.org. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "brobokep": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/brobokep.org"
-        }
-      }
-    },
-    {
       "name": "supabase",
       "source": "./skills/supabase",
       "description": "supabase.com as MCP tools: Browse the Supabase blog. Unofficial.",
@@ -378,36 +348,6 @@
         "lokalise": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/lokalise.com"
-        }
-      }
-    },
-    {
-      "name": "manhwaclub",
-      "source": "./skills/manhwaclub",
-      "description": "manhwaclub.net as MCP tools: Search manhwaclub.net. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "manhwaclub": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/manhwaclub.net"
-        }
-      }
-    },
-    {
-      "name": "arivumani",
-      "source": "./skills/arivumani",
-      "description": "arivumani.net as MCP tools: Search arivumani.net. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "arivumani": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/arivumani.net"
         }
       }
     },
@@ -828,21 +768,6 @@
         "hometeamns-sg": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/hometeamns.sg"
-        }
-      }
-    },
-    {
-      "name": "dropmms",
-      "source": "./skills/dropmms",
-      "description": "dropmms.com as MCP tools: Search dropmms.com. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "dropmms": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/dropmms.com"
         }
       }
     },

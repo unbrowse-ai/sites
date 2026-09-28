@@ -98,11 +98,6 @@
     "version": "1.0.1",
     "published": {}
   },
-  "yummyani-me": {
-    "hash": "019e28370c3b517e",
-    "version": "1.0.1",
-    "published": {}
-  },
   "malaysiakini": {
     "hash": "17abc11752fde40c",
     "version": "1.0.1",
@@ -125,11 +120,6 @@
   },
   "in": {
     "hash": "b6a8517add7bb98b",
-    "version": "1.0.1",
-    "published": {}
-  },
-  "brobokep": {
-    "hash": "649e934673135ccc",
     "version": "1.0.1",
     "published": {}
   },
@@ -157,16 +147,6 @@
   },
   "lokalise": {
     "hash": "3520de529405491d",
-    "version": "1.0.1",
-    "published": {}
-  },
-  "manhwaclub": {
-    "hash": "2041012f8d0a58f4",
-    "version": "1.0.1",
-    "published": {}
-  },
-  "arivumani": {
-    "hash": "3f1b3d123af49a8a",
     "version": "1.0.1",
     "published": {}
   },
@@ -385,11 +365,6 @@
   },
   "hometeamns-sg": {
     "hash": "beea230e4ec6b47c",
-    "version": "1.0.0",
-    "published": {}
-  },
-  "dropmms": {
-    "hash": "f56f62b9eeccc659",
     "version": "1.0.0",
     "published": {}
   },

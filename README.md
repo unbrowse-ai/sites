@@ -25,18 +25,14 @@ claude mcp add --transport http airbnb https://unbrowse.ai/mcp/airbnb.com
 | Epfl (epfl.ch) | [`epfl-ch`](skills/epfl-ch/SKILL.md) | `https://unbrowse.ai/mcp/epfl.ch` | 2 |
 | Gaijin (gaijin.net) | [`gaijin`](skills/gaijin/SKILL.md) | `https://unbrowse.ai/mcp/gaijin.net` | 4 |
 | Respawn (respawn.com) | [`respawn`](skills/respawn/SKILL.md) | `https://unbrowse.ai/mcp/respawn.com` | 3 |
-| Yummyani (yummyani.me) | [`yummyani-me`](skills/yummyani-me/SKILL.md) | `https://unbrowse.ai/mcp/yummyani.me` | 3 |
 | Malaysiakini (malaysiakini.com) | [`malaysiakini`](skills/malaysiakini/SKILL.md) | `https://unbrowse.ai/mcp/malaysiakini.com` | 2 |
 | Ezviz (ezviz.com) | [`ezviz`](skills/ezviz/SKILL.md) | `https://unbrowse.ai/mcp/ezviz.com` | 2 |
 | Fastly (fastly.com) | [`fastly`](skills/fastly/SKILL.md) | `https://unbrowse.ai/mcp/fastly.com` | 2 |
 | In (in.net) | [`in`](skills/in/SKILL.md) | `https://unbrowse.ai/mcp/in.net` | 3 |
-| Brobokep (brobokep.org) | [`brobokep`](skills/brobokep/SKILL.md) | `https://unbrowse.ai/mcp/brobokep.org` | 2 |
 | Supabase (supabase.com) | [`supabase`](skills/supabase/SKILL.md) | `https://unbrowse.ai/mcp/supabase.com` | 2 |
 | Playgama (playgama.com) | [`playgama`](skills/playgama/SKILL.md) | `https://unbrowse.ai/mcp/playgama.com` | 2 |
 | Gitlab (gitlab.com) | [`gitlab`](skills/gitlab/SKILL.md) | `https://unbrowse.ai/mcp/gitlab.com` | 3 |
 | Lokalise (lokalise.com) | [`lokalise`](skills/lokalise/SKILL.md) | `https://unbrowse.ai/mcp/lokalise.com` | 4 |
-| Manhwaclub (manhwaclub.net) | [`manhwaclub`](skills/manhwaclub/SKILL.md) | `https://unbrowse.ai/mcp/manhwaclub.net` | 2 |
-| Arivumani (arivumani.net) | [`arivumani`](skills/arivumani/SKILL.md) | `https://unbrowse.ai/mcp/arivumani.net` | 2 |
 | Primevideo (primevideo.com) | [`primevideo`](skills/primevideo/SKILL.md) | `https://unbrowse.ai/mcp/primevideo.com` | 2 |
 | Namasha (namasha.com) | [`namasha`](skills/namasha/SKILL.md) | `https://unbrowse.ai/mcp/namasha.com` | 3 |
 | Kaspersky (kaspersky.com) | [`kaspersky`](skills/kaspersky/SKILL.md) | `https://unbrowse.ai/mcp/kaspersky.com` | 2 |
@@ -65,7 +61,6 @@ claude mcp add --transport http airbnb https://unbrowse.ai/mcp/airbnb.com
 | Hoekee (hoekee.com.sg) | [`hoekee-com-sg`](skills/hoekee-com-sg/SKILL.md) | `https://unbrowse.ai/mcp/hoekee.com.sg` | 2 |
 | Virtualbox (virtualbox.org) | [`virtualbox`](skills/virtualbox/SKILL.md) | `https://unbrowse.ai/mcp/virtualbox.org` | 3 |
 | Hometeamns (hometeamns.sg) | [`hometeamns-sg`](skills/hometeamns-sg/SKILL.md) | `https://unbrowse.ai/mcp/hometeamns.sg` | 2 |
-| Dropmms (dropmms.com) | [`dropmms`](skills/dropmms/SKILL.md) | `https://unbrowse.ai/mcp/dropmms.com` | 2 |
 | Spamcop (spamcop.net) | [`spamcop`](skills/spamcop/SKILL.md) | `https://unbrowse.ai/mcp/spamcop.net` | 3 |
 | Magnite (magnite.com) | [`magnite`](skills/magnite/SKILL.md) | `https://unbrowse.ai/mcp/magnite.com` | 3 |
 | Gameinstaller (gameinstaller.ru) | [`gameinstaller-ru`](skills/gameinstaller-ru/SKILL.md) | `https://unbrowse.ai/mcp/gameinstaller.ru` | 3 |
