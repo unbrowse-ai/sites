@@ -175,7 +175,7 @@ for (const p of packs) {
   }
   if (TARGETS.has("clawhub") && CURATED.has(p.host) && entry.published.clawhub !== p.hash) {
     attempt("clawhub", () => run("clawhub", ["--no-input", "skill", "publish", dir, "--slug", `unbrowse-${p.slug}`, "--name", `Unbrowse for ${p.label} (unofficial)`, "--owner", "unbrowse", "--version", version,
-      "--changelog", `Tools: ${p.tools.map((t) => t.title).join("; ")}`, "--source-repo", "unbrowse-ai/sites", "--source-path", `skills/${p.slug}`]));
+      "--changelog", `Tools: ${p.tools.map((t) => t.title).join("; ")}`]));
   }
 }
 

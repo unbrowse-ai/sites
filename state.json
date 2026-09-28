@@ -27,7 +27,9 @@
   "siriusxm": {
     "hash": "c412504138cfad6e",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "clawhub": "c412504138cfad6e"
+    }
   },
   "databricks": {
     "hash": "c83921234f8b7f6d",
