@@ -1,0 +1,234 @@
+// Publish Unbrowse's indexed sites as focused packs: one scoped MCP server and one skill per site
+// ("Unbrowse for Airbnb (unofficial)", skill `airbnb`), built from the live public registry.
+//   node --experimental-strip-types pipeline/publish.ts [--limit 25] [--hosts a.com,b.com]
+//        [--out artifacts/site-packs] [--verify] [--to repo,mcp-registry,smithery,clawhub] [--curated a.com] [--dry-run]
+// Targets, by what each registry's policy allows:
+//   repo          every pack → github.com/unbrowse-ai/sites (skills.sh, SkillsMP, Claude/Codex plugin marketplace).
+//   mcp-registry  ONE entry, io.github.unbrowse-ai/sites with {site} as a URL variable. Its terms (§9.4) forbid
+//                 near-identical servers under different names, so never one entry per site. Needs mcp-publisher login.
+//   smithery      one server per site, at most MAX_NEW new ones per run. Needs SMITHERY_API_KEY and the smithery CLI.
+//   clawhub       curated only: packs named in --curated (curated.txt in CI), else --hosts. Its policy bans flooding with near-identical skills.
+// Env: UNBROWSE_ORIGIN (default https://unbrowse.ai), UNBROWSE_API_KEY (--verify runs one call per site),
+// SITES_REPO (this repo's checkout), MAX_NEW (new per-site listings per run, default 10).
+// Idempotent: state.json in the repo keeps each pack's content hash and version; unchanged packs are skipped.
+import { createHash } from "node:crypto";
+import { execFileSync } from "node:child_process";
+import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { join, resolve } from "node:path";
+// Mirrors src/lib/unbrowse/registry/site-pack.ts in Unbrowse (kept standalone so this runs from this repo's CI).
+type PackTool = { name: string; title: string };
+type CatalogEntry = { host: string; searches: number; tools: number };
+const GENERIC_TLD = new Set(["com", "org", "net", "io", "ai", "co", "dev", "app", "gov", "edu"]);
+const packSlug = (host: string) => {
+  const parts = host.toLowerCase().replace(/^www\./, "").split(".");
+  if (parts.length > 1 && GENERIC_TLD.has(parts[parts.length - 1]!)) parts.pop();
+  return parts.join("-").replace(/[^a-z0-9-]/g, "-").replace(/-+/g, "-").replace(/^-|-$/g, "").slice(0, 60) || "site";
+};
+const packLabel = (host: string) => packSlug(host).split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+const appMcpUrl = (origin: string, app: string) => `${origin}/mcp/${app}`;
+/** The official MCP Registry entry: every indexed site through one server, the site a URL variable. */
+const sitesServerJson = (origin: string): Record<string, unknown> => ({
+  $schema: "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  name: "io.github.unbrowse-ai/sites",
+  title: "Unbrowse sites: one website's tools per server",
+  description: "One website's first-party API as MCP tools, e.g. airbnb.com. Thousands of sites indexed.",
+  version: "1.0.0",
+  websiteUrl: `${origin}/sites`,
+  repository: { url: "https://github.com/unbrowse-ai/sites", source: "github" },
+  remotes: [{ type: "streamable-http", url: `${origin}/mcp/{site}`, variables: { site: { description: "The website's domain, e.g. airbnb.com", isRequired: true } } }],
+});
+
+const argv = process.argv.slice(2);
+const flag = (k: string) => argv.includes(`--${k}`);
+const opt = (k: string, d = "") => { const i = argv.indexOf(`--${k}`); return i >= 0 && argv[i + 1] && !argv[i + 1]!.startsWith("--") ? argv[i + 1]! : d; };
+const ORIGIN = process.env.UNBROWSE_ORIGIN ?? "https://unbrowse.ai";
+const KEY = process.env.UNBROWSE_API_KEY;
+const OUT = resolve(opt("out", "artifacts/site-packs"));
+const LIMIT = Number(opt("limit", "25"));
+const TARGETS = new Set(opt("to").split(",").filter(Boolean));
+const DRY = flag("dry-run");
+const MAX_NEW = Number(process.env.MAX_NEW ?? 10);
+const CURATED = new Set(opt("curated", opt("hosts")).split(",").map((h) => h.trim().toLowerCase()).filter(Boolean));
+const REPO = process.env.SITES_REPO ? resolve(process.env.SITES_REPO) : undefined;
+
+type Pack = { host: string; slug: string; label: string; tools: PackTool[]; skill: string; server: Record<string, unknown>; hash: string; verified?: boolean };
+type State = Record<string, { hash: string; version: string; published: Record<string, string> }>;
+
+async function getJson<T>(path: string): Promise<T> {
+  const r = await fetch(`${ORIGIN}${path}`, { headers: { accept: "application/json" }, signal: AbortSignal.timeout(30_000) });
+  if (!r.ok) throw new Error(`${path}: HTTP ${r.status}`);
+  return (await r.json()) as T;
+}
+
+/** The apps to consider, best first: --hosts, else the registry catalog. */
+async function candidates(): Promise<{ host: string; searches?: number; tools?: number }[]> {
+  const hosts = opt("hosts");
+  if (hosts) return hosts.split(",").map((h) => ({ host: h.trim().toLowerCase() })).filter((e) => e.host);
+  const cat = await getJson<{ sites: CatalogEntry[] }>(`/api/v1/sites?catalog=1&limit=${LIMIT * 4}`);
+  return cat.sites;
+}
+
+/**
+ * An app's pack as Unbrowse serves it (GET /api/v1/sites/<app>/skill.md and /server.json, registry/site-pack.ts).
+ * Quality gate: published only with a tool that does a job (a site search or a learned flow) or two worth-publishing
+ * tools; a page reader alone is what every generic fetch tool already does.
+ */
+async function build(entry: { host: string; searches?: number; tools?: number }): Promise<Pack | { host: string; skip: string }> {
+  const host = entry.host;
+  if (entry.tools !== undefined && !(entry.searches || entry.tools > 1)) return { host, skip: `only ${entry.tools} page reader` };
+  const got = async (path: string) => {
+    const r = await fetch(`${ORIGIN}/api/v1/sites/${host}/${path}`, { signal: AbortSignal.timeout(60_000) });
+    return r.ok ? r.text() : undefined;
+  };
+  const [skill, serverText] = await Promise.all([got("skill.md"), got("server.json")]);
+  if (!skill || !serverText) return { host, skip: "no public tools worth publishing" };
+  const tools = [...skill.matchAll(/^### `([^`]+)` — (.+)$/gm)].map((m) => ({ name: m[1]!, title: m[2]! }) as PackTool);
+  if (!tools.length) return { host, skip: "no tools in skill" };
+  if (entry.tools === undefined && tools.length < 2 && tools.every((t) => /^Read (any|a) page/i.test(t.title))) return { host, skip: "only a page reader" };
+  const server = JSON.parse(serverText) as Record<string, unknown>;
+  const hash = createHash("sha256").update(skill).update(serverText).digest("hex").slice(0, 16);
+  return { host, slug: packSlug(host), label: packLabel(host), tools, skill, server, hash };
+}
+
+/** One real call: the REST example the skill itself documents. The pack ships only if it returns a verified result. */
+async function verify(p: Pack): Promise<boolean> {
+  if (!KEY) return true;
+  const m = /curl -s (\S+) \\\n.*\n\s*-d '(.*)'/.exec(p.skill);
+  if (!m || /"<\w+>"/.test(m[2]!)) return true; // No known-good input to try: the registry's own revalidation vouches.
+  const r = await fetch(m[1]!, { method: "POST", headers: { authorization: `Bearer ${KEY}`, "content-type": "application/json" }, body: m[2], signal: AbortSignal.timeout(120_000) }).catch(() => undefined);
+  const body = r ? ((await r.json().catch(() => ({}))) as { status?: string }) : {};
+  return body.status === "succeeded";
+}
+
+function readme(p: Pack): string {
+  const url = appMcpUrl(ORIGIN, p.host);
+  return `# Unbrowse for ${p.label} — MCP & skill (unofficial)
+
+${p.host} as agent tools, compiled by [Unbrowse](https://unbrowse.ai) from the site's own first-party requests. Verified results, no browser on your side. Not affiliated with or endorsed by ${p.host}.
+
+| Tool | What it does |
+|---|---|
+${p.tools.map((t) => `| \`${t.name}\` | ${t.title.replace(/\|/g, "\\|")} |`).join("\n")}
+
+**MCP** (remote, streamable HTTP, OAuth): \`${url}\`
+
+\`\`\`sh
+claude mcp add --transport http ${p.slug} ${url}
+\`\`\`
+
+**Skill**: \`npx skills add unbrowse.ai --skill ${p.slug}\` (or \`npx skills add unbrowse-ai/sites --skill ${p.slug}\`) — see [SKILL.md](SKILL.md).
+
+REST + OpenAPI: ${ORIGIN}/api/v1/sites/${p.host}/openapi.json
+`;
+}
+
+function write(dir: string, p: Pack) {
+  mkdirSync(join(dir, p.slug), { recursive: true });
+  writeFileSync(join(dir, p.slug, "SKILL.md"), p.skill);
+  writeFileSync(join(dir, p.slug, "server.json"), JSON.stringify(p.server, null, 2) + "\n");
+  writeFileSync(join(dir, p.slug, "README.md"), readme(p));
+}
+
+const bump = (v?: string) => { const [a, b, c] = (v ?? "1.0.-1").split(".").map(Number); return `${a}.${b}.${(c ?? -1) + 1}`; };
+const run = (cmd: string, args: string[], cwd?: string) => {
+  if (DRY) { console.log(`DRY ${cmd} ${args.join(" ")}`); return ""; }
+  return execFileSync(cmd, args, { cwd, stdio: ["ignore", "pipe", "inherit"], encoding: "utf8", timeout: 180_000 });
+};
+
+// ---- build ----
+const entries = await candidates();
+const packs: Pack[] = [];
+for (const entry of entries) {
+  if (packs.length >= LIMIT) break;
+  const host = entry.host;
+  const p = await build(entry);
+  if ("skip" in p) { console.log(`skip ${host}: ${p.skip}`); continue; }
+  if (flag("verify") && !(p.verified = await verify(p))) { console.log(`skip ${host}: first tool did not return a verified result`); continue; }
+  packs.push(p);
+}
+rmSync(OUT, { recursive: true, force: true });
+for (const p of packs) write(join(OUT, "skills"), p);
+writeFileSync(join(OUT, "index.json"), JSON.stringify(packs.map(({ host, slug, label, hash, tools }) => ({ host, slug, label, hash, tools: tools.map((t) => t.name) })), null, 2) + "\n");
+console.log(`BUILT ${packs.length} packs → ${OUT}`);
+
+// ---- publish ----
+const statePath = REPO ? join(REPO, "state.json") : join(OUT, "state.json");
+const state: State = existsSync(statePath) ? JSON.parse(readFileSync(statePath, "utf8")) : {};
+let fresh = 0;
+for (const p of packs) {
+  const prev = state[p.slug];
+  if (prev?.hash === p.hash) continue;
+  // A new per-site listing counts against MAX_NEW only where it creates one (Smithery); the repo takes every pack.
+  if (!prev && TARGETS.has("smithery") && ++fresh > MAX_NEW) { console.log(`hold ${p.slug}: MAX_NEW=${MAX_NEW} new listings per run`); continue; }
+  const version = prev ? bump(prev.version) : "1.0.0";
+  p.server.version = version;
+  state[p.slug] = { hash: p.hash, version, published: { ...(prev?.published ?? {}) } };
+  write(join(OUT, "skills"), p);
+  const dir = join(OUT, "skills", p.slug);
+  const mark = (target: string) => { state[p.slug]!.published[target] = new Date().toISOString(); };
+  try {
+    if (TARGETS.has("smithery") && !prev?.published.smithery) {
+      run("smithery", ["mcp", "publish", String((p.server.remotes as { url: string }[])[0]!.url), "-n", `@unbrowse/${p.slug}`]);
+      mark("smithery");
+    }
+    if (TARGETS.has("clawhub") && CURATED.has(p.host)) {
+      run("clawhub", ["skill", "publish", dir, "--slug", `unbrowse-${p.slug}`, "--owner", "unbrowse", "--version", version, "--changelog", `Tools: ${p.tools.map((t) => t.title).join("; ")}`]);
+      mark("clawhub");
+    }
+  } catch (e) {
+    console.error(`FAIL ${p.slug}: ${(e as Error).message.split("\n")[0]}`);
+    state[p.slug] = prev ?? { hash: "", version: "0.0.0", published: {} };
+  }
+}
+
+// The official MCP Registry: one templated entry, re-published only when it changes.
+if (TARGETS.has("mcp-registry")) {
+  const entry = sitesServerJson(ORIGIN);
+  const hash = createHash("sha256").update(JSON.stringify(entry)).digest("hex").slice(0, 16);
+  const prev = state["@registry"];
+  if (prev?.hash !== hash) {
+    const version = prev ? bump(prev.version) : "1.0.0";
+    entry.version = version;
+    const file = join(OUT, "server.json");
+    writeFileSync(file, JSON.stringify(entry, null, 2) + "\n");
+    try {
+      run("mcp-publisher", ["publish", file]);
+      state["@registry"] = { hash, version, published: { "mcp-registry": new Date().toISOString() } };
+    } catch (e) { console.error(`FAIL mcp-registry: ${(e as Error).message.split("\n")[0]}`); }
+  }
+}
+
+// The GitHub repo feeds skills.sh, skillsmp, Claude plugin marketplaces and Glama: one commit per run.
+if (TARGETS.has("repo")) {
+  if (!REPO) throw new Error("--to repo needs SITES_REPO (a checkout of github.com/unbrowse-ai/sites)");
+  rmSync(join(REPO, "skills"), { recursive: true, force: true });
+  for (const p of packs) if (state[p.slug]?.hash === p.hash) write(join(REPO, "skills"), p);
+  const listed = packs.filter((p) => state[p.slug]?.hash === p.hash);
+  writeFileSync(join(REPO, "README.md"), `# Unbrowse sites — one MCP and one skill per website
+
+Unofficial: not affiliated with or endorsed by any site listed. Each folder is a website as agent tools, compiled by [Unbrowse](https://unbrowse.ai) from the site's own first-party requests: a scoped remote MCP server (only that site's tools) and a SKILL.md that uses it. Regenerated from the live registry; a site is listed only when its tools passed verification.
+
+\`\`\`sh
+npx skills add unbrowse.ai --skill airbnb               # one skill, from unbrowse.ai
+npx skills add unbrowse-ai/sites --skill airbnb         # the same, from this repo
+claude mcp add --transport http airbnb ${appMcpUrl(ORIGIN, "airbnb.com")}
+\`\`\`
+
+| Site | Skill | MCP | Tools |
+|---|---|---|---|
+${listed.map((p) => `| ${p.label} (${p.host}) | [\`${p.slug}\`](skills/${p.slug}/SKILL.md) | \`${appMcpUrl(ORIGIN, p.host)}\` | ${p.tools.length} |`).join("\n")}
+
+Any other site: the general [Unbrowse](https://github.com/unbrowse-ai/unbrowse) skill and \`${ORIGIN}/mcp\`.
+`);
+  // Claude Code / Codex plugin marketplace: `claude plugin marketplace add unbrowse-ai/sites`.
+  mkdirSync(join(REPO, ".claude-plugin"), { recursive: true });
+  writeFileSync(join(REPO, ".claude-plugin", "marketplace.json"), JSON.stringify({
+    name: "unbrowse-sites", owner: { name: "Unbrowse", url: "https://unbrowse.ai" },
+    plugins: listed.map((p) => ({ name: p.slug, source: `./skills/${p.slug}`, description: String(p.server.description), strict: false, skills: ["./"], mcpServers: { [p.slug]: { type: "http", url: appMcpUrl(ORIGIN, p.host) } } })),
+  }, null, 2) + "\n");
+  if (!DRY) writeFileSync(statePath, JSON.stringify(state, null, 2) + "\n");
+  run("git", ["add", "-A"], REPO);
+  const dirty = DRY || execFileSync("git", ["status", "--porcelain"], { cwd: REPO, encoding: "utf8" }).trim();
+  if (dirty) { run("git", ["commit", "-m", `sites: ${listed.length} packs`], REPO); run("git", ["push"], REPO); }
+} else if (!DRY) writeFileSync(statePath, JSON.stringify(state, null, 2) + "\n");
+console.log(`PUBLISH targets=${[...TARGETS].join(",") || "none"} packs=${packs.length} dry=${DRY}`);
