@@ -2,27 +2,37 @@
   "google": {
     "hash": "8162f29fb5c9dbe6",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "8162f29fb5c9dbe6"
+    }
   },
   "radiofrance-fr": {
     "hash": "45082ce6ab6c8d8f",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "45082ce6ab6c8d8f"
+    }
   },
   "yahoo-co-jp": {
     "hash": "33325486ac320b0b",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "33325486ac320b0b"
+    }
   },
   "microsoft": {
     "hash": "6fdd6d01bfe175a1",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "6fdd6d01bfe175a1"
+    }
   },
   "milelion": {
     "hash": "05dcb11f6f8b7553",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "05dcb11f6f8b7553"
+    }
   },
   "siriusxm": {
     "hash": "c412504138cfad6e",
@@ -35,7 +45,9 @@
   "databricks": {
     "hash": "c83921234f8b7f6d",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "c83921234f8b7f6d"
+    }
   },
   "univie-ac-at": {
     "hash": "ac055342edb7548b",
@@ -60,7 +72,9 @@
   "mathworks": {
     "hash": "a0f521d15884461f",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "a0f521d15884461f"
+    }
   },
   "ntv-co-jp": {
     "hash": "dc5beb8355377d37",
@@ -135,7 +149,9 @@
   "gitlab": {
     "hash": "b13ac99e447e6f3e",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "clawhub": "b13ac99e447e6f3e"
+    }
   },
   "lokalise": {
     "hash": "3520de529405491d",
@@ -305,7 +321,9 @@
   "yahoo": {
     "hash": "2deae659878733b1",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "2deae659878733b1"
+    }
   },
   "bitwarden": {
     "hash": "c1252fb8d7560801",
@@ -322,12 +340,16 @@
   "gamer-com-tw": {
     "hash": "b4c3041a4632f48f",
     "version": "1.0.0",
-    "published": {}
+    "published": {
+      "smithery": "b4c3041a4632f48f"
+    }
   },
   "kompas": {
     "hash": "026d911bf6ce2192",
     "version": "1.0.0",
-    "published": {}
+    "published": {
+      "smithery": "026d911bf6ce2192"
+    }
   },
   "epfl-ch": {
     "hash": "15ccb10f66227e45",
@@ -366,6 +388,31 @@
   },
   "dropmms": {
     "hash": "f56f62b9eeccc659",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "respawn": {
+    "hash": "0b593a06e2643c36",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "spamcop": {
+    "hash": "10f3996e84f8da15",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "magnite": {
+    "hash": "348f7375f8a75ee4",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "gameinstaller-ru": {
+    "hash": "1da41b7d4986569b",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "barracuda": {
+    "hash": "9562c4554ae33a17",
     "version": "1.0.0",
     "published": {}
   }

@@ -18,14 +18,13 @@ claude mcp add --transport http airbnb https://unbrowse.ai/mcp/airbnb.com
 | Microsoft (microsoft.com) | [`microsoft`](skills/microsoft/SKILL.md) | `https://unbrowse.ai/mcp/microsoft.com` | 2 |
 | Milelion (milelion.com) | [`milelion`](skills/milelion/SKILL.md) | `https://unbrowse.ai/mcp/milelion.com` | 2 |
 | Kompas (kompas.com) | [`kompas`](skills/kompas/SKILL.md) | `https://unbrowse.ai/mcp/kompas.com` | 3 |
-| Siriusxm (siriusxm.com) | [`siriusxm`](skills/siriusxm/SKILL.md) | `https://unbrowse.ai/mcp/siriusxm.com` | 3 |
 | Databricks (databricks.com) | [`databricks`](skills/databricks/SKILL.md) | `https://unbrowse.ai/mcp/databricks.com` | 3 |
-| Buymeacoffee (buymeacoffee.com) | [`buymeacoffee`](skills/buymeacoffee/SKILL.md) | `https://unbrowse.ai/mcp/buymeacoffee.com` | 4 |
 | Mathworks (mathworks.com) | [`mathworks`](skills/mathworks/SKILL.md) | `https://unbrowse.ai/mcp/mathworks.com` | 3 |
 | Ntv (ntv.co.jp) | [`ntv-co-jp`](skills/ntv-co-jp/SKILL.md) | `https://unbrowse.ai/mcp/ntv.co.jp` | 2 |
 | Phonepe (phonepe.com) | [`phonepe`](skills/phonepe/SKILL.md) | `https://unbrowse.ai/mcp/phonepe.com` | 2 |
 | Epfl (epfl.ch) | [`epfl-ch`](skills/epfl-ch/SKILL.md) | `https://unbrowse.ai/mcp/epfl.ch` | 2 |
 | Gaijin (gaijin.net) | [`gaijin`](skills/gaijin/SKILL.md) | `https://unbrowse.ai/mcp/gaijin.net` | 4 |
+| Respawn (respawn.com) | [`respawn`](skills/respawn/SKILL.md) | `https://unbrowse.ai/mcp/respawn.com` | 3 |
 | Yummyani (yummyani.me) | [`yummyani-me`](skills/yummyani-me/SKILL.md) | `https://unbrowse.ai/mcp/yummyani.me` | 3 |
 | Malaysiakini (malaysiakini.com) | [`malaysiakini`](skills/malaysiakini/SKILL.md) | `https://unbrowse.ai/mcp/malaysiakini.com` | 2 |
 | Ezviz (ezviz.com) | [`ezviz`](skills/ezviz/SKILL.md) | `https://unbrowse.ai/mcp/ezviz.com` | 2 |
@@ -35,7 +34,6 @@ claude mcp add --transport http airbnb https://unbrowse.ai/mcp/airbnb.com
 | Supabase (supabase.com) | [`supabase`](skills/supabase/SKILL.md) | `https://unbrowse.ai/mcp/supabase.com` | 2 |
 | Playgama (playgama.com) | [`playgama`](skills/playgama/SKILL.md) | `https://unbrowse.ai/mcp/playgama.com` | 2 |
 | Gitlab (gitlab.com) | [`gitlab`](skills/gitlab/SKILL.md) | `https://unbrowse.ai/mcp/gitlab.com` | 3 |
-| Nih (nih.gov) | [`nih`](skills/nih/SKILL.md) | `https://unbrowse.ai/mcp/nih.gov` | 2 |
 | Lokalise (lokalise.com) | [`lokalise`](skills/lokalise/SKILL.md) | `https://unbrowse.ai/mcp/lokalise.com` | 4 |
 | Manhwaclub (manhwaclub.net) | [`manhwaclub`](skills/manhwaclub/SKILL.md) | `https://unbrowse.ai/mcp/manhwaclub.net` | 2 |
 | Arivumani (arivumani.net) | [`arivumani`](skills/arivumani/SKILL.md) | `https://unbrowse.ai/mcp/arivumani.net` | 2 |
@@ -57,18 +55,20 @@ claude mcp add --transport http airbnb https://unbrowse.ai/mcp/airbnb.com
 | Aruba (aruba.it) | [`aruba-it`](skills/aruba-it/SKILL.md) | `https://unbrowse.ai/mcp/aruba.it` | 2 |
 | Komoot (komoot.com) | [`komoot`](skills/komoot/SKILL.md) | `https://unbrowse.ai/mcp/komoot.com` | 2 |
 | Aepd (aepd.es) | [`aepd-es`](skills/aepd-es/SKILL.md) | `https://unbrowse.ai/mcp/aepd.es` | 3 |
-| Reolink (reolink.com) | [`reolink`](skills/reolink/SKILL.md) | `https://unbrowse.ai/mcp/reolink.com` | 2 |
 | Creativecommons (creativecommons.org) | [`creativecommons`](skills/creativecommons/SKILL.md) | `https://unbrowse.ai/mcp/creativecommons.org` | 2 |
 | Raspberrypi (raspberrypi.org) | [`raspberrypi`](skills/raspberrypi/SKILL.md) | `https://unbrowse.ai/mcp/raspberrypi.org` | 2 |
 | Swr (swr.de) | [`swr-de`](skills/swr-de/SKILL.md) | `https://unbrowse.ai/mcp/swr.de` | 2 |
 | Buffer (buffer.com) | [`buffer`](skills/buffer/SKILL.md) | `https://unbrowse.ai/mcp/buffer.com` | 2 |
 | Bitwarden (bitwarden.com) | [`bitwarden`](skills/bitwarden/SKILL.md) | `https://unbrowse.ai/mcp/bitwarden.com` | 3 |
-| Liftoff (liftoff.ai) | [`liftoff`](skills/liftoff/SKILL.md) | `https://unbrowse.ai/mcp/liftoff.ai` | 2 |
 | Flipsnack (flipsnack.com) | [`flipsnack`](skills/flipsnack/SKILL.md) | `https://unbrowse.ai/mcp/flipsnack.com` | 3 |
 | Detik (detik.com) | [`detik`](skills/detik/SKILL.md) | `https://unbrowse.ai/mcp/detik.com` | 3 |
 | Hoekee (hoekee.com.sg) | [`hoekee-com-sg`](skills/hoekee-com-sg/SKILL.md) | `https://unbrowse.ai/mcp/hoekee.com.sg` | 2 |
 | Virtualbox (virtualbox.org) | [`virtualbox`](skills/virtualbox/SKILL.md) | `https://unbrowse.ai/mcp/virtualbox.org` | 3 |
 | Hometeamns (hometeamns.sg) | [`hometeamns-sg`](skills/hometeamns-sg/SKILL.md) | `https://unbrowse.ai/mcp/hometeamns.sg` | 2 |
 | Dropmms (dropmms.com) | [`dropmms`](skills/dropmms/SKILL.md) | `https://unbrowse.ai/mcp/dropmms.com` | 2 |
+| Spamcop (spamcop.net) | [`spamcop`](skills/spamcop/SKILL.md) | `https://unbrowse.ai/mcp/spamcop.net` | 3 |
+| Magnite (magnite.com) | [`magnite`](skills/magnite/SKILL.md) | `https://unbrowse.ai/mcp/magnite.com` | 3 |
+| Gameinstaller (gameinstaller.ru) | [`gameinstaller-ru`](skills/gameinstaller-ru/SKILL.md) | `https://unbrowse.ai/mcp/gameinstaller.ru` | 3 |
+| Barracuda (barracuda.com) | [`barracuda`](skills/barracuda/SKILL.md) | `https://unbrowse.ai/mcp/barracuda.com` | 3 |
 
 Any other site: the general [Unbrowse](https://github.com/unbrowse-ai/unbrowse) skill and `https://unbrowse.ai/mcp`.

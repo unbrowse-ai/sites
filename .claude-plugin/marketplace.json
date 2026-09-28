@@ -127,21 +127,6 @@
       }
     },
     {
-      "name": "siriusxm",
-      "source": "./skills/siriusxm",
-      "description": "siriusxm.com as MCP tools: Search SiriusXM. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "siriusxm": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/siriusxm.com"
-        }
-      }
-    },
-    {
       "name": "databricks",
       "source": "./skills/databricks",
       "description": "databricks.com as MCP tools: Browse Databricks blog posts by category. Unofficial.",
@@ -153,21 +138,6 @@
         "databricks": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/databricks.com"
-        }
-      }
-    },
-    {
-      "name": "buymeacoffee",
-      "source": "./skills/buymeacoffee",
-      "description": "buymeacoffee.com as MCP tools: Browse featured creators on Buy Me a Coffee homepage. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "buymeacoffee": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/buymeacoffee.com"
         }
       }
     },
@@ -243,6 +213,21 @@
         "gaijin": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/gaijin.net"
+        }
+      }
+    },
+    {
+      "name": "respawn",
+      "source": "./skills/respawn",
+      "description": "respawn.com as MCP tools: List games. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "respawn": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/respawn.com"
         }
       }
     },
@@ -378,21 +363,6 @@
         "gitlab": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/gitlab.com"
-        }
-      }
-    },
-    {
-      "name": "nih",
-      "source": "./skills/nih",
-      "description": "nih.gov as MCP tools: Search pubmed.ncbi.nlm.nih.gov. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "nih": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/nih.gov"
         }
       }
     },
@@ -712,21 +682,6 @@
       }
     },
     {
-      "name": "reolink",
-      "source": "./skills/reolink",
-      "description": "reolink.com as MCP tools: Browse Reolink homepage. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "reolink": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/reolink.com"
-        }
-      }
-    },
-    {
       "name": "creativecommons",
       "source": "./skills/creativecommons",
       "description": "creativecommons.org as MCP tools: Search creativecommons.org. Unofficial.",
@@ -798,21 +753,6 @@
         "bitwarden": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/bitwarden.com"
-        }
-      }
-    },
-    {
-      "name": "liftoff",
-      "source": "./skills/liftoff",
-      "description": "liftoff.ai as MCP tools: Search liftoff.ai. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "liftoff": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/liftoff.ai"
         }
       }
     },
@@ -903,6 +843,66 @@
         "dropmms": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/dropmms.com"
+        }
+      }
+    },
+    {
+      "name": "spamcop",
+      "source": "./skills/spamcop",
+      "description": "spamcop.net as MCP tools: Check IP blocklist status. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "spamcop": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/spamcop.net"
+        }
+      }
+    },
+    {
+      "name": "magnite",
+      "source": "./skills/magnite",
+      "description": "magnite.com as MCP tools: Browse the Magnite blog listing. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "magnite": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/magnite.com"
+        }
+      }
+    },
+    {
+      "name": "gameinstaller-ru",
+      "source": "./skills/gameinstaller-ru",
+      "description": "gameinstaller.ru as MCP tools: Open a game detail page on gameinstaller.ru. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "gameinstaller-ru": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/gameinstaller.ru"
+        }
+      }
+    },
+    {
+      "name": "barracuda",
+      "source": "./skills/barracuda",
+      "description": "barracuda.com as MCP tools: Search the site. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "barracuda": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/barracuda.com"
         }
       }
     }

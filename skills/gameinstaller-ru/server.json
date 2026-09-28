@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.unbrowse-ai/gameinstaller-ru",
+  "title": "Unbrowse for Gameinstaller (unofficial)",
+  "description": "gameinstaller.ru as MCP tools: Open a game detail page on gameinstaller.ru. Unofficial.",
+  "version": "1.0.0",
+  "websiteUrl": "https://unbrowse.ai/sites/gameinstaller.ru",
+  "repository": {
+    "url": "https://github.com/unbrowse-ai/unbrowse",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://unbrowse.ai/mcp/gameinstaller.ru"
+    }
+  ]
+}
