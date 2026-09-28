@@ -55,8 +55,20 @@ type Pack = { host: string; slug: string; label: string; tools: PackTool[]; skil
 /** Per pack: its content hash and version, and per target the hash that target last published. */
 type State = Record<string, { hash: string; version: string; published: Record<string, string> }>;
 
+/** fetch with three tries: a deploy rollout on Unbrowse's side resets connections for a moment. */
+async function fetchRetry(url: string, init: RequestInit = {}, timeoutMs = 60_000): Promise<Response> {
+  for (let i = 0; ; i++) {
+    try {
+      return await fetch(url, { ...init, signal: AbortSignal.timeout(timeoutMs) });
+    } catch (e) {
+      if (i >= 2) throw e;
+      await new Promise((r) => setTimeout(r, 5_000 * (i + 1)));
+    }
+  }
+}
+
 async function getJson<T>(path: string): Promise<T> {
-  const r = await fetch(`${ORIGIN}${path}`, { headers: { accept: "application/json" }, signal: AbortSignal.timeout(30_000) });
+  const r = await fetchRetry(`${ORIGIN}${path}`, { headers: { accept: "application/json" } }, 30_000);
   if (!r.ok) throw new Error(`${path}: HTTP ${r.status}`);
   return (await r.json()) as T;
 }
@@ -78,8 +90,8 @@ async function build(entry: { host: string; searches?: number; tools?: number })
   const host = entry.host;
   if (entry.tools !== undefined && !(entry.searches || entry.tools > 1)) return { host, skip: `only ${entry.tools} page reader` };
   const got = async (path: string) => {
-    const r = await fetch(`${ORIGIN}/api/v1/sites/${host}/${path}`, { signal: AbortSignal.timeout(60_000) });
-    return r.ok ? r.text() : undefined;
+    const r = await fetchRetry(`${ORIGIN}/api/v1/sites/${host}/${path}`).catch(() => undefined);
+    return r?.ok ? r.text() : undefined;
   };
   const [skill, serverText] = await Promise.all([got("skill.md"), got("server.json")]);
   if (!skill || !serverText) return { host, skip: "no public tools worth publishing" };
