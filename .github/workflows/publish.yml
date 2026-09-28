@@ -25,11 +25,13 @@ jobs:
           sudo mv mcp-publisher /usr/local/bin/
           mcp-publisher login github-oidc
       - name: Optional publishers
-        env: { SMITHERY_API_KEY: "${{ secrets.SMITHERY_API_KEY }}", CLAWHUB_TOKEN: "${{ secrets.CLAWHUB_TOKEN }}" }
+        # Smithery also needs repo variable SMITHERY_ON=1: its scan of an OAuth server waits for a person to authorize
+        # it unless it can read the server card, so it stays off until a listing is confirmed to show its tools.
+        env: { SMITHERY_API_KEY: "${{ secrets.SMITHERY_API_KEY }}", SMITHERY_ON: "${{ vars.SMITHERY_ON }}", CLAWHUB_TOKEN: "${{ secrets.CLAWHUB_TOKEN }}" }
         run: |
           TO=repo,mcp-registry
-          if [ -n "$SMITHERY_API_KEY" ]; then npm i -g @smithery/cli >/dev/null && TO="$TO,smithery"; fi
-          if [ -n "$CLAWHUB_TOKEN" ]; then npm i -g clawhub >/dev/null && clawhub login --token "$CLAWHUB_TOKEN" && TO="$TO,clawhub"; fi
+          if [ -n "$SMITHERY_API_KEY" ] && [ "$SMITHERY_ON" = "1" ]; then npm i -g @smithery/cli >/dev/null && TO="$TO,smithery"; fi
+          if [ -n "$CLAWHUB_TOKEN" ]; then npm i -g clawhub >/dev/null && clawhub login --token "$CLAWHUB_TOKEN" --no-browser && TO="$TO,clawhub"; fi
           echo "TO=$TO" >> "$GITHUB_ENV"
       - name: Build and publish
         env:
