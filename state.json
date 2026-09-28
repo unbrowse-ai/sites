@@ -1,0 +1,302 @@
+{
+  "google": {
+    "hash": "719b95706f350133",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "radiofrance-fr": {
+    "hash": "8cce98d05453a8ff",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "yahoo-co-jp": {
+    "hash": "abc2c238d629c958",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "microsoft": {
+    "hash": "28aace5c3f1d6b7a",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "milelion": {
+    "hash": "a9fde098df5754ba",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "siriusxm": {
+    "hash": "f065b6969458f310",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "databricks": {
+    "hash": "0ad2bbcafa55d8a8",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "univie-ac-at": {
+    "hash": "ac055342edb7548b",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "tmz": {
+    "hash": "b48769a8193d02ac",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "buymeacoffee": {
+    "hash": "4796d691809523c2",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "detik": {
+    "hash": "00b25d601df60cd4",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "mathworks": {
+    "hash": "ae6526cb69f8246a",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "ntv-co-jp": {
+    "hash": "5e1fc51e63fb657a",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "phonepe": {
+    "hash": "c921cf264a3fe7d8",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "tenor": {
+    "hash": "fb3e60eb8795effc",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "gaijin": {
+    "hash": "bdb31b628feea694",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "yummyani-me": {
+    "hash": "d5789d95e4730723",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "malaysiakini": {
+    "hash": "f515ac83f9a82432",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "changiairport": {
+    "hash": "829dd004fdd3c3da",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "ezviz": {
+    "hash": "8bce48a211af077c",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "fastly": {
+    "hash": "984ab02616174137",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "in": {
+    "hash": "b62948d350858a33",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "brobokep": {
+    "hash": "39cce1956fce5418",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "supabase": {
+    "hash": "e5af6d2cea9dda9a",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "playgama": {
+    "hash": "e17c94a43cc5a2aa",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "rottentomatoes": {
+    "hash": "e58f3f7c0c432b84",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "gitlab": {
+    "hash": "2b2b50f3253f7d48",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "lokalise": {
+    "hash": "c51141dbbc2295a8",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "manhwaclub": {
+    "hash": "f200fea981a775a0",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "arivumani": {
+    "hash": "328e9eff8b7bff25",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "matomo": {
+    "hash": "1f70ecfcc3475f23",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "almasryalyoum": {
+    "hash": "cf13563da51abcf1",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "primevideo": {
+    "hash": "bfc64e7a82420040",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "clickup": {
+    "hash": "17acbbfa1e9807bd",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "archlinux": {
+    "hash": "201fa4e4e46ce595",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "namasha": {
+    "hash": "d6672102b7619be7",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "faz": {
+    "hash": "f62f4ff614178c44",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "kaspersky": {
+    "hash": "3617ad4ad01157f4",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "brevo": {
+    "hash": "3f9749aa49c8c1d4",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "domaindetails": {
+    "hash": "9c0bd56fded9308b",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "fortinet": {
+    "hash": "21bdbb330e9f3bf4",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "afrinic": {
+    "hash": "b7d3c07499010cfc",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "mobilefuse": {
+    "hash": "31a4ab61ebfdc6af",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "ndr-de": {
+    "hash": "55dcb67895cf869a",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "oray": {
+    "hash": "c9c7eafcf67c1b27",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "abebooks": {
+    "hash": "570fb6ad0570aa18",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "mariadb": {
+    "hash": "e35fe6babb5135ea",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "hotmart": {
+    "hash": "3f8c0865a48d977d",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "nydailynews": {
+    "hash": "5cf477a9f5e3409d",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "telekom": {
+    "hash": "a0cd2cf2ebba1a61",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "apnic": {
+    "hash": "ecebc4d9782fec27",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "permutive": {
+    "hash": "87caa381b7d4d033",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "aruba-it": {
+    "hash": "fe3a6417ce9377d6",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "komoot": {
+    "hash": "dc47d12f202247da",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "aepd-es": {
+    "hash": "322c88436959331d",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "reolink": {
+    "hash": "d2b395489bc1382a",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "creativecommons": {
+    "hash": "88ea5a554b260eee",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "raspberrypi": {
+    "hash": "eb7da9325e3eaa93",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "swr-de": {
+    "hash": "2d0fcdf930ad6148",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "buffer": {
+    "hash": "074256cdfe37563d",
+    "version": "1.0.0",
+    "published": {}
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.unbrowse-ai/buymeacoffee",
+  "title": "Unbrowse for Buymeacoffee (unofficial)",
+  "description": "buymeacoffee.com as MCP tools: Browse featured creators on Buy Me a Coffee homepage. Unofficial.",
+  "version": "1.0.0",
+  "websiteUrl": "https://unbrowse.ai/sites/buymeacoffee.com",
+  "repository": {
+    "url": "https://github.com/unbrowse-ai/unbrowse",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://unbrowse.ai/mcp/buymeacoffee.com"
+    }
+  ]
+}
