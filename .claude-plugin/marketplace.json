@@ -7,6 +7,36 @@
   "description": "Websites as agent tools (unofficial): each plugin is one site's remote MCP server and skill, compiled by Unbrowse from the site's own requests.",
   "plugins": [
     {
+      "name": "yahoo",
+      "source": "./skills/yahoo",
+      "description": "yahoo.com as MCP tools: Search att.net. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "yahoo": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/yahoo.com"
+        }
+      }
+    },
+    {
+      "name": "google",
+      "source": "./skills/google",
+      "description": "google.com as MCP tools: Google Flights SIN-BKK fare compare. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "google": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/google.com"
+        }
+      }
+    },
+    {
       "name": "gamer-com-tw",
       "source": "./skills/gamer-com-tw",
       "description": "gamer.com.tw as MCP tools: Browse a forum board. Unofficial.",
@@ -108,21 +138,6 @@
         "mydlink": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/mydlink.com"
-        }
-      }
-    },
-    {
-      "name": "databricks",
-      "source": "./skills/databricks",
-      "description": "databricks.com as MCP tools: Browse Databricks blog posts by category. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "databricks": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/databricks.com"
         }
       }
     },
@@ -262,6 +277,36 @@
       }
     },
     {
+      "name": "fastly",
+      "source": "./skills/fastly",
+      "description": "fastly.com as MCP tools: Search fastly.net. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "fastly": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/fastly.com"
+        }
+      }
+    },
+    {
+      "name": "playgama",
+      "source": "./skills/playgama",
+      "description": "playgama.com as MCP tools: Search playgama.com. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "playgama": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/playgama.com"
+        }
+      }
+    },
+    {
       "name": "lokalise",
       "source": "./skills/lokalise",
       "description": "lokalise.com as MCP tools: Open a Lokalise product feature page. Unofficial.",
@@ -273,6 +318,21 @@
         "lokalise": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/lokalise.com"
+        }
+      }
+    },
+    {
+      "name": "ntv-co-jp",
+      "source": "./skills/ntv-co-jp",
+      "description": "ntv.co.jp as MCP tools: Browse drama programs on NTV. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "ntv-co-jp": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/ntv.co.jp"
         }
       }
     },
@@ -292,17 +352,17 @@
       }
     },
     {
-      "name": "namasha",
-      "source": "./skills/namasha",
-      "description": "namasha.com as MCP tools: Search namasha.com. Unofficial.",
+      "name": "kaspersky",
+      "source": "./skills/kaspersky",
+      "description": "kaspersky.com as MCP tools: Search kaspersky.com. Unofficial.",
       "strict": false,
       "skills": [
         "./"
       ],
       "mcpServers": {
-        "namasha": {
+        "kaspersky": {
           "type": "http",
-          "url": "https://unbrowse.ai/mcp/namasha.com"
+          "url": "https://unbrowse.ai/mcp/kaspersky.com"
         }
       }
     },
@@ -757,21 +817,6 @@
       }
     },
     {
-      "name": "sinarharian-com-my",
-      "source": "./skills/sinarharian-com-my",
-      "description": "sinarharian.com.my as MCP tools: Search sinarharian.com.my. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "sinarharian-com-my": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/sinarharian.com.my"
-        }
-      }
-    },
-    {
       "name": "kijiji-ca",
       "source": "./skills/kijiji-ca",
       "description": "kijiji.ca as MCP tools: Search listings. Unofficial.",
@@ -819,7 +864,7 @@
     {
       "name": "overdrive",
       "source": "./skills/overdrive",
-      "description": "overdrive.com as MCP tools: Search titles. Unofficial.",
+      "description": "overdrive.com as MCP tools: Find a library. Unofficial.",
       "strict": false,
       "skills": [
         "./"
@@ -858,51 +903,6 @@
         "wordunscrambler-me": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/wordunscrambler.me"
-        }
-      }
-    },
-    {
-      "name": "manhuaplus",
-      "source": "./skills/manhuaplus",
-      "description": "manhuaplus.org as MCP tools: Search manhuaplus.org. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "manhuaplus": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/manhuaplus.org"
-        }
-      }
-    },
-    {
-      "name": "debian",
-      "source": "./skills/debian",
-      "description": "debian.org as MCP tools: Search search.debian.org. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "debian": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/debian.org"
-        }
-      }
-    },
-    {
-      "name": "52acgyxj",
-      "source": "./skills/52acgyxj",
-      "description": "52acgyxj.com as MCP tools: Search 52acgyxj.com. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "52acgyxj": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/52acgyxj.com"
         }
       }
     }

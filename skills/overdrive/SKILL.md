@@ -1,6 +1,6 @@
 ---
 name: overdrive
-description: "Overdrive (overdrive.com) for agents: Search titles; Read a page on overdrive.com — through Unbrowse's scoped MCP for overdrive.com (unofficial), which replays overdrive.com's own first-party API (no browser, verified results). Use when the user wants anything from overdrive.com, e.g. search titles."
+description: "Overdrive (overdrive.com) for agents: Find a library; Search titles; Read a page on overdrive.com — through Unbrowse's scoped MCP for overdrive.com (unofficial), which replays overdrive.com's own first-party API (no browser, verified results). Use when the user wants anything from overdrive.com, e.g. find a library."
 ---
 
 # Unbrowse for Overdrive (overdrive.com)
@@ -25,6 +25,19 @@ The first connect signs in to Unbrowse with OAuth (free tier, only verified resu
 If none of the tools below are in this session's tool list, the server is not connected or not signed in: say so and stop. Do not fetch overdrive.com some other way and present it as this skill's result.
 
 ## Tools
+
+### `overdrive_com__get_mapbox_find_libraries_by_query` — Find a library
+
+Find a library. Inputs: location. Returns data. Read-only on overdrive.com.
+
+- `location` (string, required) — location (typed during “fill Enter library name, location, or postal code:”)
+- `includePublicLibraries` (string) — optional, e.g. "true"
+- `includeSchoolLibraries` (string) — optional, e.g. "true"
+- `sort` (string) — optional, e.g. "distance"
+
+```json
+{"location":"<location>"}
+```
 
 ### `overdrive_com__get_search` — Search titles
 
@@ -61,9 +74,9 @@ Always there too: `unbrowse.run` (a task on overdrive.com in plain words), `unbr
 Every tool is also a REST call:
 
 ```sh
-curl -s https://unbrowse.ai/api/v1/sites/overdrive.com/call/overdrive_com__get_search \
+curl -s https://unbrowse.ai/api/v1/sites/overdrive.com/call/overdrive_com__get_mapbox_find_libraries_by_query \
   -H "authorization: Bearer $UNBROWSE_API_KEY" -H "content-type: application/json" \
-  -d '{"query":"<query>"}'
+  -d '{"location":"<location>"}'
 ```
 
 OpenAPI: https://unbrowse.ai/api/v1/sites/overdrive.com/openapi.json. Every other site: the general Unbrowse skill (https://github.com/unbrowse-ai/unbrowse) and https://unbrowse.ai/mcp.

@@ -10,6 +10,8 @@ claude mcp add --transport http airbnb https://unbrowse.ai/mcp/airbnb.com
 
 | Site | Skill | MCP | Tools |
 |---|---|---|---|
+| Yahoo (yahoo.com) | [`yahoo`](skills/yahoo/SKILL.md) | `https://unbrowse.ai/mcp/yahoo.com` | 4 |
+| Google (google.com) | [`google`](skills/google/SKILL.md) | `https://unbrowse.ai/mcp/google.com` | 8 |
 | Gamer (gamer.com.tw) | [`gamer-com-tw`](skills/gamer-com-tw/SKILL.md) | `https://unbrowse.ai/mcp/gamer.com.tw` | 3 |
 | Radiofrance (radiofrance.fr) | [`radiofrance-fr`](skills/radiofrance-fr/SKILL.md) | `https://unbrowse.ai/mcp/radiofrance.fr` | 4 |
 | Yahoo (yahoo.co.jp) | [`yahoo-co-jp`](skills/yahoo-co-jp/SKILL.md) | `https://unbrowse.ai/mcp/yahoo.co.jp` | 3 |
@@ -17,7 +19,6 @@ claude mcp add --transport http airbnb https://unbrowse.ai/mcp/airbnb.com
 | Milelion (milelion.com) | [`milelion`](skills/milelion/SKILL.md) | `https://unbrowse.ai/mcp/milelion.com` | 2 |
 | Kompas (kompas.com) | [`kompas`](skills/kompas/SKILL.md) | `https://unbrowse.ai/mcp/kompas.com` | 3 |
 | Mydlink (mydlink.com) | [`mydlink`](skills/mydlink/SKILL.md) | `https://unbrowse.ai/mcp/mydlink.com` | 4 |
-| Databricks (databricks.com) | [`databricks`](skills/databricks/SKILL.md) | `https://unbrowse.ai/mcp/databricks.com` | 3 |
 | Mathworks (mathworks.com) | [`mathworks`](skills/mathworks/SKILL.md) | `https://unbrowse.ai/mcp/mathworks.com` | 3 |
 | Phonepe (phonepe.com) | [`phonepe`](skills/phonepe/SKILL.md) | `https://unbrowse.ai/mcp/phonepe.com` | 2 |
 | Epfl (epfl.ch) | [`epfl-ch`](skills/epfl-ch/SKILL.md) | `https://unbrowse.ai/mcp/epfl.ch` | 2 |
@@ -27,9 +28,12 @@ claude mcp add --transport http airbnb https://unbrowse.ai/mcp/airbnb.com
 | Malaysiakini (malaysiakini.com) | [`malaysiakini`](skills/malaysiakini/SKILL.md) | `https://unbrowse.ai/mcp/malaysiakini.com` | 2 |
 | Ezviz (ezviz.com) | [`ezviz`](skills/ezviz/SKILL.md) | `https://unbrowse.ai/mcp/ezviz.com` | 2 |
 | Orf (orf.at) | [`orf-at`](skills/orf-at/SKILL.md) | `https://unbrowse.ai/mcp/orf.at` | 3 |
+| Fastly (fastly.com) | [`fastly`](skills/fastly/SKILL.md) | `https://unbrowse.ai/mcp/fastly.com` | 2 |
+| Playgama (playgama.com) | [`playgama`](skills/playgama/SKILL.md) | `https://unbrowse.ai/mcp/playgama.com` | 2 |
 | Lokalise (lokalise.com) | [`lokalise`](skills/lokalise/SKILL.md) | `https://unbrowse.ai/mcp/lokalise.com` | 4 |
+| Ntv (ntv.co.jp) | [`ntv-co-jp`](skills/ntv-co-jp/SKILL.md) | `https://unbrowse.ai/mcp/ntv.co.jp` | 2 |
 | Primevideo (primevideo.com) | [`primevideo`](skills/primevideo/SKILL.md) | `https://unbrowse.ai/mcp/primevideo.com` | 2 |
-| Namasha (namasha.com) | [`namasha`](skills/namasha/SKILL.md) | `https://unbrowse.ai/mcp/namasha.com` | 3 |
+| Kaspersky (kaspersky.com) | [`kaspersky`](skills/kaspersky/SKILL.md) | `https://unbrowse.ai/mcp/kaspersky.com` | 2 |
 | Brevo (brevo.com) | [`brevo`](skills/brevo/SKILL.md) | `https://unbrowse.ai/mcp/brevo.com` | 3 |
 | Domaindetails (domaindetails.com) | [`domaindetails`](skills/domaindetails/SKILL.md) | `https://unbrowse.ai/mcp/domaindetails.com` | 2 |
 | Apple (apple.com) | [`apple`](skills/apple/SKILL.md) | `https://unbrowse.ai/mcp/apple.com` | 3 |
@@ -60,15 +64,11 @@ claude mcp add --transport http airbnb https://unbrowse.ai/mcp/airbnb.com
 | Magnite (magnite.com) | [`magnite`](skills/magnite/SKILL.md) | `https://unbrowse.ai/mcp/magnite.com` | 3 |
 | Gameinstaller (gameinstaller.ru) | [`gameinstaller-ru`](skills/gameinstaller-ru/SKILL.md) | `https://unbrowse.ai/mcp/gameinstaller.ru` | 3 |
 | Barracuda (barracuda.com) | [`barracuda`](skills/barracuda/SKILL.md) | `https://unbrowse.ai/mcp/barracuda.com` | 3 |
-| Sinarharian (sinarharian.com.my) | [`sinarharian-com-my`](skills/sinarharian-com-my/SKILL.md) | `https://unbrowse.ai/mcp/sinarharian.com.my` | 2 |
 | Kijiji (kijiji.ca) | [`kijiji-ca`](skills/kijiji-ca/SKILL.md) | `https://unbrowse.ai/mcp/kijiji.ca` | 3 |
 | Aramco (aramco.com) | [`aramco`](skills/aramco/SKILL.md) | `https://unbrowse.ai/mcp/aramco.com` | 3 |
 | Docs (docs.rs) | [`docs-rs`](skills/docs-rs/SKILL.md) | `https://unbrowse.ai/mcp/docs.rs` | 3 |
-| Overdrive (overdrive.com) | [`overdrive`](skills/overdrive/SKILL.md) | `https://unbrowse.ai/mcp/overdrive.com` | 2 |
+| Overdrive (overdrive.com) | [`overdrive`](skills/overdrive/SKILL.md) | `https://unbrowse.ai/mcp/overdrive.com` | 3 |
 | Ibbs (ibbs.pro) | [`ibbs-pro`](skills/ibbs-pro/SKILL.md) | `https://unbrowse.ai/mcp/ibbs.pro` | 2 |
 | Wordunscrambler (wordunscrambler.me) | [`wordunscrambler-me`](skills/wordunscrambler-me/SKILL.md) | `https://unbrowse.ai/mcp/wordunscrambler.me` | 2 |
-| Manhuaplus (manhuaplus.org) | [`manhuaplus`](skills/manhuaplus/SKILL.md) | `https://unbrowse.ai/mcp/manhuaplus.org` | 2 |
-| Debian (debian.org) | [`debian`](skills/debian/SKILL.md) | `https://unbrowse.ai/mcp/debian.org` | 2 |
-| 52acgyxj (52acgyxj.com) | [`52acgyxj`](skills/52acgyxj/SKILL.md) | `https://unbrowse.ai/mcp/52acgyxj.com` | 1 |
 
 Any other site: the general [Unbrowse](https://github.com/unbrowse-ai/unbrowse) skill and `https://unbrowse.ai/mcp`.

@@ -3,7 +3,9 @@
     "hash": "8162f29fb5c9dbe6",
     "version": "1.0.1",
     "published": {
-      "smithery": "8162f29fb5c9dbe6"
+      "smithery": "8162f29fb5c9dbe6",
+      "smithery-mcp": "8162f29fb5c9dbe6",
+      "smithery-meta": "8162f29fb5c9dbe6"
     }
   },
   "radiofrance-fr": {
@@ -97,7 +99,11 @@
   "ntv-co-jp": {
     "hash": "dc5beb8355377d37",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "dc5beb8355377d37",
+      "smithery-mcp": "dc5beb8355377d37",
+      "smithery-meta": "dc5beb8355377d37"
+    }
   },
   "phonepe": {
     "hash": "108f049f6e9166af",
@@ -148,7 +154,11 @@
   "fastly": {
     "hash": "164641ba6467fd9c",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "164641ba6467fd9c",
+      "smithery-mcp": "164641ba6467fd9c",
+      "smithery-meta": "164641ba6467fd9c"
+    }
   },
   "in": {
     "hash": "b6a8517add7bb98b",
@@ -163,7 +173,11 @@
   "playgama": {
     "hash": "fb8bb9f1414184f4",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "fb8bb9f1414184f4",
+      "smithery-mcp": "fb8bb9f1414184f4",
+      "smithery-meta": "fb8bb9f1414184f4"
+    }
   },
   "rottentomatoes": {
     "hash": "e58f3f7c0c432b84",
@@ -232,7 +246,11 @@
   "kaspersky": {
     "hash": "20d9994c73dad0a3",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "20d9994c73dad0a3",
+      "smithery-mcp": "20d9994c73dad0a3",
+      "smithery-meta": "20d9994c73dad0a3"
+    }
   },
   "brevo": {
     "hash": "e03c0c9facead891",
@@ -420,7 +438,9 @@
     "hash": "2deae659878733b1",
     "version": "1.0.1",
     "published": {
-      "smithery": "2deae659878733b1"
+      "smithery": "2deae659878733b1",
+      "smithery-mcp": "2deae659878733b1",
+      "smithery-meta": "2deae659878733b1"
     }
   },
   "bitwarden": {
@@ -559,7 +579,9 @@
     "hash": "0a2a6054435a0648",
     "version": "1.0.0",
     "published": {
-      "smithery": "0a2a6054435a0648"
+      "smithery": "0a2a6054435a0648",
+      "smithery-mcp": "0a2a6054435a0648",
+      "smithery-meta": "0a2a6054435a0648"
     }
   },
   "expressen-se": {
@@ -573,14 +595,18 @@
     "hash": "ce340d669e9641bc",
     "version": "1.0.0",
     "published": {
-      "smithery": "ce340d669e9641bc"
+      "smithery": "ce340d669e9641bc",
+      "smithery-mcp": "ce340d669e9641bc",
+      "smithery-meta": "ce340d669e9641bc"
     }
   },
   "orf-at": {
     "hash": "ddb026617736d06b",
     "version": "1.0.0",
     "published": {
-      "smithery": "ddb026617736d06b"
+      "smithery": "ddb026617736d06b",
+      "smithery-mcp": "ddb026617736d06b",
+      "smithery-meta": "ddb026617736d06b"
     }
   },
   "apple": {
@@ -619,10 +645,12 @@
     }
   },
   "overdrive": {
-    "hash": "b59ef84eb60b38ea",
-    "version": "1.0.0",
+    "hash": "eb3dc71d5aafde30",
+    "version": "1.0.1",
     "published": {
-      "smithery": "b59ef84eb60b38ea"
+      "smithery": "eb3dc71d5aafde30",
+      "smithery-mcp": "eb3dc71d5aafde30",
+      "smithery-meta": "eb3dc71d5aafde30"
     }
   },
   "ibbs-pro": {

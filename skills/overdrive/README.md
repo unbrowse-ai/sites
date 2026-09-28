@@ -4,6 +4,7 @@ overdrive.com as agent tools, compiled by [Unbrowse](https://unbrowse.ai) from t
 
 | Tool | What it does |
 |---|---|
+| `overdrive_com__get_mapbox_find_libraries_by_query` | Find a library |
 | `overdrive_com__get_search` | Search titles |
 | `overdrive_com__read_page` | Read a page on overdrive.com |
 
