@@ -6,7 +6,7 @@
 //   repo          every pack → github.com/unbrowse-ai/sites (skills.sh, SkillsMP, Claude/Codex plugin marketplace).
 //   mcp-registry  ONE entry, io.github.unbrowse-ai/sites with {site} as a URL variable. Its terms (§9.4) forbid
 //                 near-identical servers under different names, so never one entry per site. Needs mcp-publisher login.
-//   smithery      one server per site, at most MAX_NEW new ones per run. Needs SMITHERY_API_KEY and the smithery CLI.
+//   smithery      one skill per site (unbrowse/<slug>), at most MAX_NEW new per run. Needs SMITHERY_API_KEY + smithery CLI.
 //   clawhub       curated only: packs named in --curated (curated.txt in CI), else --hosts. Its policy bans flooding with near-identical skills.
 // Env: UNBROWSE_ORIGIN (default https://unbrowse.ai), UNBROWSE_API_KEY (--verify runs one call per site),
 // SITES_REPO (this repo's checkout), MAX_NEW (new per-site listings per run, default 10).
@@ -180,10 +180,12 @@ for (const p of packs) {
   const attempt = (target: string, fn: () => void) => {
     try { fn(); entry.published[target] = p.hash; } catch (e) { console.error(`FAIL ${target} ${p.slug}: ${(e as Error).message.split("\n")[0]}`); }
   };
-  // Smithery lists the server URL, which never changes: once per app, at most MAX_NEW new ones per run.
-  if (TARGETS.has("smithery") && !entry.published.smithery) {
-    if (fresh++ < MAX_NEW) attempt("smithery", () => run("smithery", ["mcp", "publish", String((p.server.remotes as { url: string }[])[0]!.url), "-n", `unbrowse/${p.slug}`]));
-    else console.log(`hold ${p.slug} on smithery: MAX_NEW=${MAX_NEW} per run`);
+  // Smithery: the pack as a skill (unbrowse/<slug>). Its MCP scanner reads a server card only from the origin root,
+  // which is the main server's, so per-site MCP listings would show the wrong tools: the main server is listed once
+  // by hand (unbrowse/unbrowse). At most MAX_NEW new skills per run; a changed pack is republished.
+  if (TARGETS.has("smithery") && entry.published.smithery !== p.hash) {
+    if (entry.published.smithery || fresh++ < MAX_NEW) attempt("smithery", () => run("smithery", ["skill", "publish", dir, "--namespace", "unbrowse", "-n", p.slug]));
+    else console.log(`hold ${p.slug} on smithery: MAX_NEW=${MAX_NEW} new per run`);
   }
   if (TARGETS.has("clawhub") && CURATED.has(p.host) && entry.published.clawhub !== p.hash) {
     attempt("clawhub", () => run("clawhub", ["--no-input", "skill", "publish", dir, "--slug", `unbrowse-${p.slug}`, "--name", `Unbrowse for ${p.label} (unofficial)`, "--owner", "unbrowse", "--version", version,

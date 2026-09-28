@@ -28,7 +28,8 @@
     "hash": "c412504138cfad6e",
     "version": "1.0.1",
     "published": {
-      "clawhub": "c412504138cfad6e"
+      "clawhub": "c412504138cfad6e",
+      "smithery": "c412504138cfad6e"
     }
   },
   "databricks": {

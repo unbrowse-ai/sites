@@ -1,6 +1,6 @@
 # Daily: rebuild every site pack from Unbrowse's live registry, commit them here, and publish where policy allows.
 # The official MCP Registry gets one templated entry (io.github.unbrowse-ai/sites) through GitHub OIDC.
-# Smithery (per site, capped by MAX_NEW) and ClawHub (curated.txt only) run only when their secret is set.
+# Smithery skills (per site, capped by MAX_NEW) and ClawHub (curated.txt only) run only when their secret is set.
 name: publish
 on:
   schedule: [{ cron: "17 3 * * *" }]
@@ -25,12 +25,10 @@ jobs:
           sudo mv mcp-publisher /usr/local/bin/
           mcp-publisher login github-oidc
       - name: Optional publishers
-        # Smithery also needs repo variable SMITHERY_ON=1: its scan of an OAuth server waits for a person to authorize
-        # it unless it can read the server card, so it stays off until a listing is confirmed to show its tools.
-        env: { SMITHERY_API_KEY: "${{ secrets.SMITHERY_API_KEY }}", SMITHERY_ON: "${{ vars.SMITHERY_ON }}", CLAWHUB_TOKEN: "${{ secrets.CLAWHUB_TOKEN }}" }
+        env: { SMITHERY_API_KEY: "${{ secrets.SMITHERY_API_KEY }}", CLAWHUB_TOKEN: "${{ secrets.CLAWHUB_TOKEN }}" }
         run: |
           TO=repo,mcp-registry
-          if [ -n "$SMITHERY_API_KEY" ] && [ "$SMITHERY_ON" = "1" ]; then npm i -g @smithery/cli >/dev/null && TO="$TO,smithery"; fi
+          if [ -n "$SMITHERY_API_KEY" ]; then npm i -g @smithery/cli >/dev/null && TO="$TO,smithery"; fi
           if [ -n "$CLAWHUB_TOKEN" ]; then npm i -g clawhub >/dev/null && clawhub login --token "$CLAWHUB_TOKEN" --no-browser && TO="$TO,clawhub"; fi
           echo "TO=$TO" >> "$GITHUB_ENV"
       - name: Build and publish
