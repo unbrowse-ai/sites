@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.unbrowse-ai/google",
   "title": "Unbrowse for Google (unofficial)",
-  "description": "google.com as MCP tools: Google Flights SIN-BKK fare compare. Unofficial.",
-  "version": "1.0.1",
+  "description": "google.com as MCP tools: Google News search (RSS). Unofficial.",
+  "version": "1.0.2",
   "websiteUrl": "https://unbrowse.ai/sites/google.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

@@ -1,11 +1,11 @@
 {
   "google": {
-    "hash": "8162f29fb5c9dbe6",
-    "version": "1.0.1",
+    "hash": "1acd32fdca224bab",
+    "version": "1.0.2",
     "published": {
-      "smithery": "8162f29fb5c9dbe6",
+      "smithery": "1acd32fdca224bab",
       "smithery-mcp": "8162f29fb5c9dbe6",
-      "smithery-meta": "8162f29fb5c9dbe6"
+      "smithery-meta": "1acd32fdca224bab"
     }
   },
   "radiofrance-fr": {
@@ -487,8 +487,8 @@
     }
   },
   "nih": {
-    "hash": "611d8f420712d285",
-    "version": "1.0.0",
+    "hash": "889ab2bff98f3172",
+    "version": "1.0.1",
     "published": {}
   },
   "liftoff": {
@@ -687,5 +687,290 @@
     "published": {
       "smithery": "5fe703de6a05f6d5"
     }
+  },
+  "alternativeto": {
+    "hash": "84f7b1226ade8a95",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "84f7b1226ade8a95"
+    }
+  },
+  "caniuse": {
+    "hash": "87a51afd5ad4c42d",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "87a51afd5ad4c42d"
+    }
+  },
+  "futurepedia": {
+    "hash": "f92f7b9bf029f8fb",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "f92f7b9bf029f8fb"
+    }
+  },
+  "propertyguru-com-sg": {
+    "hash": "bd83af53b6337d65",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "bd83af53b6337d65"
+    }
+  },
+  "trustradius": {
+    "hash": "e0b36b8f035e1373",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "e0b36b8f035e1373"
+    }
+  },
+  "nuget": {
+    "hash": "542eda2d38c96074",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "542eda2d38c96074"
+    }
+  },
+  "alibaba": {
+    "hash": "022c1896c12590ad",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "022c1896c12590ad"
+    }
+  },
+  "capterra": {
+    "hash": "6cc8005497615890",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "6cc8005497615890"
+    }
+  },
+  "huggingface": {
+    "hash": "560c7b3b39a366aa",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "560c7b3b39a366aa"
+    }
+  },
+  "ikea": {
+    "hash": "4ffcb0b6e9183a62",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "4ffcb0b6e9183a62"
+    }
+  },
+  "singtel": {
+    "hash": "090db18728d39f18",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "myworkdayjobs": {
+    "hash": "e7d2466810530785",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "reddit": {
+    "hash": "d8096b99b56cbd4c",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "wikipedia": {
+    "hash": "433ff19978da9743",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "archive": {
+    "hash": "d4accce665e769d4",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "bbcgoodfood": {
+    "hash": "76a7d4f87aec1b62",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "crates": {
+    "hash": "c9da9706f7219121",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "crossref": {
+    "hash": "f8d1ae5f225abaed",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "data": {
+    "hash": "c303ba34ce2036c0",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "dev-to": {
+    "hash": "ca647e01027d2e26",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "discogs": {
+    "hash": "019e1ee1294b2a62",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "djangoproject": {
+    "hash": "a01329836f4bfe35",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "food": {
+    "hash": "7cccf9b60aa0308d",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "genius": {
+    "hash": "cf43077f715fb112",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "gov-uk": {
+    "hash": "02238dbf4f8220d6",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "gutenberg": {
+    "hash": "930d52979e44561a",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "hex-pm": {
+    "hash": "56c28097a9ec6c73",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "imdb": {
+    "hash": "b44ed24168c850c4",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "instructables": {
+    "hash": "9c5d1ad0a58ce073",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "jsr": {
+    "hash": "816afd6496e878a1",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "metacpan": {
+    "hash": "c38ec6e8947698da",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "openlibrary": {
+    "hash": "b075eb7d000878a1",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "rubygems": {
+    "hash": "5f6f3a070eb1fe46",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "sec": {
+    "hash": "51332d3021d14dee",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "timeanddate": {
+    "hash": "eb53ff6fdafb3566",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "tvmaze": {
+    "hash": "1d385228a5b15fed",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "usitc": {
+    "hash": "9c36621b2ec104de",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "vuejs": {
+    "hash": "0eb4c920e222b483",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "wikidata": {
+    "hash": "29a82adf66064e6c",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "ashbyhq": {
+    "hash": "e6296bdbf4c31aa5",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "craigslist": {
+    "hash": "9eb4634f29aca208",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "greenhouse": {
+    "hash": "1add4efc208593ec",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "lever": {
+    "hash": "0b81ade6e94a502e",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "onemap-gov-sg": {
+    "hash": "c9acee7cb45d2e5d",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "packagist": {
+    "hash": "03f3f8b7175f15eb",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "python": {
+    "hash": "107e47e647ce45b6",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "redfin": {
+    "hash": "6d332eacd105499a",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "remoteok": {
+    "hash": "03c473d52813c13b",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "udemy": {
+    "hash": "34930f594963e923",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "wikimedia": {
+    "hash": "e109801f070cefa1",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "wikivoyage": {
+    "hash": "ce91162ebf81c81b",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "airbnb": {
+    "hash": "7fa3906e3f000a1b",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "airbnb-com-sg": {
+    "hash": "ef4f233ad2c69bb0",
+    "version": "1.0.0",
+    "published": {}
   }
 }

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.unbrowse-ai/myworkdayjobs",
+  "title": "Unbrowse for Myworkdayjobs (unofficial)",
+  "description": "myworkdayjobs.com as MCP tools: Search jobs by keyword, location and category on the DBS Careers job",
+  "version": "1.0.0",
+  "websiteUrl": "https://unbrowse.ai/sites/myworkdayjobs.com",
+  "repository": {
+    "url": "https://github.com/unbrowse-ai/unbrowse",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://unbrowse.ai/mcp/myworkdayjobs.com"
+    }
+  ]
+}

@@ -4,14 +4,8 @@ google.com as agent tools, compiled by [Unbrowse](https://unbrowse.ai) from the 
 
 | Tool | What it does |
 |---|---|
-| `google_com__get_travel_flights` | Google Flights SIN-BKK fare compare |
-| `google_com__get_complete_s` | Search Google results |
-| `google_com__get_preview_place` | Open a place page on Google Maps |
-| `google_com__render_page` | Get directions on Google Maps |
-| `google_com__get_s` | Search places on Google Maps |
 | `news_google_com__get_rss_search` | Google News search (RSS) |
-| `business_google_com__get_resources_search` | Search thinkwithgoogle.com |
-| `google_com__read_page` | Read a page on google.com |
+| `google_com__read_page` | Read google.com/travel/flights |
 
 **MCP** (remote, streamable HTTP, OAuth): `https://unbrowse.ai/mcp/google.com`
 
