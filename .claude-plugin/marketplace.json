@@ -52,6 +52,21 @@
       }
     },
     {
+      "name": "carousell-sg",
+      "source": "./skills/carousell-sg",
+      "description": "carousell.sg as MCP tools: Search listings by query with max price and sort order. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "carousell-sg": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/carousell.sg"
+        }
+      }
+    },
+    {
       "name": "propertyguru-com-sg",
       "source": "./skills/propertyguru-com-sg",
       "description": "propertyguru.com.sg as MCP tools: PropertyGuru property listings for sale. Unofficial.",
@@ -723,6 +738,21 @@
         "python": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/python.org"
+        }
+      }
+    },
+    {
+      "name": "rakuten-co-jp",
+      "source": "./skills/rakuten-co-jp",
+      "description": "rakuten.co.jp as MCP tools: Search Rakuten for PlayStation 5 Pro listings. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "rakuten-co-jp": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/rakuten.co.jp"
         }
       }
     },

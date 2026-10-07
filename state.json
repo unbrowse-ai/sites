@@ -692,91 +692,119 @@
     "hash": "84f7b1226ade8a95",
     "version": "1.0.0",
     "published": {
-      "smithery": "84f7b1226ade8a95"
+      "smithery": "84f7b1226ade8a95",
+      "smithery-mcp": "84f7b1226ade8a95",
+      "smithery-meta": "84f7b1226ade8a95"
     }
   },
   "caniuse": {
     "hash": "87a51afd5ad4c42d",
     "version": "1.0.0",
     "published": {
-      "smithery": "87a51afd5ad4c42d"
+      "smithery": "87a51afd5ad4c42d",
+      "smithery-mcp": "87a51afd5ad4c42d",
+      "smithery-meta": "87a51afd5ad4c42d"
     }
   },
   "futurepedia": {
     "hash": "f92f7b9bf029f8fb",
     "version": "1.0.0",
     "published": {
-      "smithery": "f92f7b9bf029f8fb"
+      "smithery": "f92f7b9bf029f8fb",
+      "smithery-mcp": "f92f7b9bf029f8fb",
+      "smithery-meta": "f92f7b9bf029f8fb"
     }
   },
   "propertyguru-com-sg": {
     "hash": "bd83af53b6337d65",
     "version": "1.0.0",
     "published": {
-      "smithery": "bd83af53b6337d65"
+      "smithery": "bd83af53b6337d65",
+      "smithery-mcp": "bd83af53b6337d65",
+      "smithery-meta": "bd83af53b6337d65"
     }
   },
   "trustradius": {
     "hash": "e0b36b8f035e1373",
     "version": "1.0.0",
     "published": {
-      "smithery": "e0b36b8f035e1373"
+      "smithery": "e0b36b8f035e1373",
+      "smithery-mcp": "e0b36b8f035e1373",
+      "smithery-meta": "e0b36b8f035e1373"
     }
   },
   "nuget": {
     "hash": "542eda2d38c96074",
     "version": "1.0.0",
     "published": {
-      "smithery": "542eda2d38c96074"
+      "smithery": "542eda2d38c96074",
+      "smithery-mcp": "542eda2d38c96074",
+      "smithery-meta": "542eda2d38c96074"
     }
   },
   "alibaba": {
     "hash": "022c1896c12590ad",
     "version": "1.0.0",
     "published": {
-      "smithery": "022c1896c12590ad"
+      "smithery": "022c1896c12590ad",
+      "smithery-mcp": "022c1896c12590ad",
+      "smithery-meta": "022c1896c12590ad"
     }
   },
   "capterra": {
     "hash": "6cc8005497615890",
     "version": "1.0.0",
     "published": {
-      "smithery": "6cc8005497615890"
+      "smithery": "6cc8005497615890",
+      "smithery-mcp": "6cc8005497615890",
+      "smithery-meta": "6cc8005497615890"
     }
   },
   "huggingface": {
     "hash": "560c7b3b39a366aa",
     "version": "1.0.0",
     "published": {
-      "smithery": "560c7b3b39a366aa"
+      "smithery": "560c7b3b39a366aa",
+      "smithery-mcp": "560c7b3b39a366aa",
+      "smithery-meta": "560c7b3b39a366aa"
     }
   },
   "ikea": {
     "hash": "4ffcb0b6e9183a62",
     "version": "1.0.0",
     "published": {
-      "smithery": "4ffcb0b6e9183a62"
+      "smithery": "4ffcb0b6e9183a62",
+      "smithery-mcp": "4ffcb0b6e9183a62",
+      "smithery-meta": "4ffcb0b6e9183a62"
     }
   },
   "singtel": {
     "hash": "090db18728d39f18",
     "version": "1.0.0",
-    "published": {}
+    "published": {
+      "smithery": "090db18728d39f18"
+    }
   },
   "myworkdayjobs": {
     "hash": "e7d2466810530785",
     "version": "1.0.0",
-    "published": {}
+    "published": {
+      "smithery": "e7d2466810530785"
+    }
   },
   "reddit": {
     "hash": "d8096b99b56cbd4c",
     "version": "1.0.0",
-    "published": {}
+    "published": {
+      "smithery": "d8096b99b56cbd4c"
+    }
   },
   "wikipedia": {
     "hash": "433ff19978da9743",
     "version": "1.0.0",
-    "published": {}
+    "published": {
+      "smithery": "433ff19978da9743"
+    }
   },
   "archive": {
     "hash": "d4accce665e769d4",
@@ -970,6 +998,18 @@
   },
   "airbnb-com-sg": {
     "hash": "ef4f233ad2c69bb0",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "carousell-sg": {
+    "hash": "c36469d263cfa752",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "c36469d263cfa752"
+    }
+  },
+  "rakuten-co-jp": {
+    "hash": "2c26d62707a6200d",
     "version": "1.0.0",
     "published": {}
   }

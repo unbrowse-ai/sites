@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.unbrowse-ai/carousell-sg",
+  "title": "Unbrowse for Carousell (unofficial)",
+  "description": "carousell.sg as MCP tools: Search listings by query with max price and sort order. Unofficial.",
+  "version": "1.0.0",
+  "websiteUrl": "https://unbrowse.ai/sites/carousell.sg",
+  "repository": {
+    "url": "https://github.com/unbrowse-ai/unbrowse",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://unbrowse.ai/mcp/carousell.sg"
+    }
+  ]
+}

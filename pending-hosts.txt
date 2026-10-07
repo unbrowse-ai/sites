@@ -1,11 +1,6 @@
 # Site hosts a Smithery listing is waiting for; lekt9/unbrowse6 .github/workflows/site-hosts.yml attaches them.
-alibaba-com-mcp.unbrowse.ai
-alternativeto-net-mcp.unbrowse.ai
-caniuse-com-mcp.unbrowse.ai
-capterra-com-mcp.unbrowse.ai
-futurepedia-io-mcp.unbrowse.ai
-huggingface-co-mcp.unbrowse.ai
-ikea-com-mcp.unbrowse.ai
-nuget-org-mcp.unbrowse.ai
-propertyguru-com-sg-mcp.unbrowse.ai
-trustradius-com-mcp.unbrowse.ai
+carousell-sg-mcp.unbrowse.ai
+myworkdayjobs-com-mcp.unbrowse.ai
+reddit-com-mcp.unbrowse.ai
+singtel-com-mcp.unbrowse.ai
+wikipedia-org-mcp.unbrowse.ai

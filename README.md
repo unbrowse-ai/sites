@@ -13,6 +13,7 @@ claude mcp add --transport http airbnb https://unbrowse.ai/mcp/airbnb.com
 | Alternativeto (alternativeto.net) | [`alternativeto`](skills/alternativeto/SKILL.md) | `https://unbrowse.ai/mcp/alternativeto.net` | 5 |
 | Caniuse (caniuse.com) | [`caniuse`](skills/caniuse/SKILL.md) | `https://unbrowse.ai/mcp/caniuse.com` | 2 |
 | Futurepedia (futurepedia.io) | [`futurepedia`](skills/futurepedia/SKILL.md) | `https://unbrowse.ai/mcp/futurepedia.io` | 4 |
+| Carousell (carousell.sg) | [`carousell-sg`](skills/carousell-sg/SKILL.md) | `https://unbrowse.ai/mcp/carousell.sg` | 2 |
 | Propertyguru (propertyguru.com.sg) | [`propertyguru-com-sg`](skills/propertyguru-com-sg/SKILL.md) | `https://unbrowse.ai/mcp/propertyguru.com.sg` | 3 |
 | Trustradius (trustradius.com) | [`trustradius`](skills/trustradius/SKILL.md) | `https://unbrowse.ai/mcp/trustradius.com` | 2 |
 | Nuget (nuget.org) | [`nuget`](skills/nuget/SKILL.md) | `https://unbrowse.ai/mcp/nuget.org` | 2 |
@@ -58,6 +59,7 @@ claude mcp add --transport http airbnb https://unbrowse.ai/mcp/airbnb.com
 | Onemap (onemap.gov.sg) | [`onemap-gov-sg`](skills/onemap-gov-sg/SKILL.md) | `https://unbrowse.ai/mcp/onemap.gov.sg` | 1 |
 | Packagist (packagist.org) | [`packagist`](skills/packagist/SKILL.md) | `https://unbrowse.ai/mcp/packagist.org` | 1 |
 | Python (python.org) | [`python`](skills/python/SKILL.md) | `https://unbrowse.ai/mcp/python.org` | 1 |
+| Rakuten (rakuten.co.jp) | [`rakuten-co-jp`](skills/rakuten-co-jp/SKILL.md) | `https://unbrowse.ai/mcp/rakuten.co.jp` | 1 |
 | Redfin (redfin.com) | [`redfin`](skills/redfin/SKILL.md) | `https://unbrowse.ai/mcp/redfin.com` | 1 |
 | Remoteok (remoteok.com) | [`remoteok`](skills/remoteok/SKILL.md) | `https://unbrowse.ai/mcp/remoteok.com` | 1 |
 | Udemy (udemy.com) | [`udemy`](skills/udemy/SKILL.md) | `https://unbrowse.ai/mcp/udemy.com` | 1 |
