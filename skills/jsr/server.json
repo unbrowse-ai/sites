@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/jsr",
   "title": "Unbrowse for Jsr (unofficial)",
   "description": "jsr.io as MCP tools: Search jsr. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/jsr.io",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

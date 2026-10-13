@@ -1,10 +1,10 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.unbrowse-ai/udemy",
-  "title": "Unbrowse for Udemy (unofficial)",
-  "description": "udemy.com as MCP tools: Read a udemy.com page by name. Unofficial.",
+  "name": "io.github.unbrowse-ai/bing",
+  "title": "Unbrowse for Bing (unofficial)",
+  "description": "bing.com as MCP tools: Search bing. Unofficial.",
   "version": "1.0.0",
-  "websiteUrl": "https://unbrowse.ai/sites/udemy.com",
+  "websiteUrl": "https://unbrowse.ai/sites/bing.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",
     "source": "github"
@@ -12,7 +12,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://unbrowse.ai/mcp/udemy.com"
+      "url": "https://unbrowse.ai/mcp/bing.com"
     }
   ]
 }

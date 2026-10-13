@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/rakuten-co-jp",
   "title": "Unbrowse for Rakuten (unofficial)",
   "description": "rakuten.co.jp as MCP tools: Search Rakuten for PlayStation 5 Pro listings. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/rakuten.co.jp",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

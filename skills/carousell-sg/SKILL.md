@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `carousell_sg__get_search_macbook_air` — Search listings by query with max price and sort order
 
-Search listings by query with max price and sort order. Inputs: name. Returns the page's title, readable text and links. Read-only on carousell.sg.
+Search listings by query with max price and sort order. Inputs: name. Also takes the site's own parameters, each optional (left out, the recorded value is sent): price_max (recorded: "800"); sort_by (recorded: "2"). Returns the page's title, readable text and links. Read-only on carousell.sg.
 
 - `name` (string, required)
 - `price_max` (integer) — optional, e.g. "800"
@@ -41,7 +41,7 @@ Search listings by query with max price and sort order. Inputs: name. Returns th
 
 ### `carousell_sg__read_page` — Search Carousell listings
 
-Search Carousell listings. Inputs: search_query. Returns the page's title, readable text and links. A large answer comes back as its records at links (as results); pass select for other parts. Read-only on carousell.sg.
+Search Carousell listings. Inputs: search_query. Also takes the site's own parameters, each optional (left out, the recorded value is sent): addRecent (recorded: "true"); canChangeKeyword (recorded: "true"); includeSuggestions (recorded: "true"); t_search_query_source (recorded: "direct_search"). Returns the page's title, readable text and links. A large answer comes back as its records at links (as results); pass select for other parts. Read-only on carousell.sg.
 
 - `search_query` (string, required)
 - `addRecent` (string) — optional, e.g. "true"
@@ -54,14 +54,14 @@ Search Carousell listings. Inputs: search_query. Returns the page's title, reada
 {"search_query":"<search_query>"}
 ```
 
-Always there too: `unbrowse.run` (a task on carousell.sg in plain words), `unbrowse.inspect`, `unbrowse.resume`, `unbrowse.scrape` and `unbrowse.map` (any page on carousell.sg), and the recorded cloud browser `unbrowse.browse.open` → `unbrowse.browse.act` → `unbrowse.browse.finish`. Hosts that reject dotted names show them with `_` (`unbrowse_run`).
+Always there too: `unbrowse_run` (a task on carousell.sg in plain words), `unbrowse_inspect`, `unbrowse_resume`, `unbrowse_scrape` and `unbrowse_map` (any page on carousell.sg), and the recorded cloud browser `unbrowse_browse_open` → `unbrowse_browse_act` → `unbrowse_browse_finish`. Hosts that reject dotted names show them with `_` (`unbrowse_run`).
 
 ## How to call
 
 1. Pick the tool whose title matches the job and pass its inputs. Leave the site's recorded parameters out unless the user asked for something they control.
-2. Read `status`. `succeeded` carries the verified `result`. `input_required` is not a failure: answer the open fields with `unbrowse.resume {runId, answers}` on the same run.
-3. No tool fits: `unbrowse.run {task}`. It fails with `no_capability` when nothing is compiled for that yet: do it once with `unbrowse.browse.open` on carousell.sg → `unbrowse.browse.act` → `unbrowse.browse.finish`, which compiles a new tool this server lists next time. Anything off carousell.sg is refused here (`not_in_scope`): use the general Unbrowse server for that.
-4. Signing in: never ask the user for a password. `unbrowse.browse.act` with `action: "autofill"` fills carousell.sg's login from their Unbrowse password manager.
+2. Read `status`. `succeeded` carries the verified `result`. `input_required` is not a failure: answer the open fields with `unbrowse_resume {runId, answers}` on the same run.
+3. No tool fits: `unbrowse_run {task}`. It fails with `no_capability` when nothing is compiled for that yet: do it once with `unbrowse_browse_open` on carousell.sg → `unbrowse_browse_act` → `unbrowse_browse_finish`, which compiles a new tool this server lists next time. Anything off carousell.sg is refused here (`not_in_scope`): use the general Unbrowse server for that.
+4. Signing in: never ask the user for a password. `unbrowse_browse_act` with `action: "autofill"` fills carousell.sg's login from their Unbrowse password manager.
 5. Report only what a `succeeded` result says. `outcome_unknown` means a change may have happened: check before retrying. Posting, buying, sending or deleting needs the user's go-ahead.
 
 ## Without MCP

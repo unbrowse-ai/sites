@@ -39,7 +39,7 @@ Search jobs by keyword, location and category on the DBS Careers job search page
 
 ### `dbs_wd3_myworkdayjobs_com__read_page` — Read dbs.wd3.myworkdayjobs.com/en-US/DBS_Careers
 
-Read dbs.wd3.myworkdayjobs.com/en-US/DBS_Careers. No inputs. Returns the page's title, readable text and links. Read-only on dbs.wd3.myworkdayjobs.com.
+Read dbs.wd3.myworkdayjobs.com/en-US/DBS_Careers. Takes the site's own parameters, each optional (left out, the recorded value is sent): jobFamily (recorded: "7c4ba0705e5d017ad85cd065f22cd410"); locationCountry (recorded: "80938777cac5440fab50d729f9634969"). Returns the page's title, readable text and links. Read-only on dbs.wd3.myworkdayjobs.com.
 
 - `jobFamily` (string) — optional, e.g. "7c4ba0705e5d017ad85cd065f22cd410"
 - `locationCountry` (string) — optional, e.g. "80938777cac5440fab50d729f9634969"
@@ -49,14 +49,14 @@ Read dbs.wd3.myworkdayjobs.com/en-US/DBS_Careers. No inputs. Returns the page's 
 {"jobFamily":"7c4ba0705e5d017ad85cd065f22cd410","locationCountry":"80938777cac5440fab50d729f9634969"}
 ```
 
-Always there too: `unbrowse.run` (a task on myworkdayjobs.com in plain words), `unbrowse.inspect`, `unbrowse.resume`, `unbrowse.scrape` and `unbrowse.map` (any page on myworkdayjobs.com), and the recorded cloud browser `unbrowse.browse.open` → `unbrowse.browse.act` → `unbrowse.browse.finish`. Hosts that reject dotted names show them with `_` (`unbrowse_run`).
+Always there too: `unbrowse_run` (a task on myworkdayjobs.com in plain words), `unbrowse_inspect`, `unbrowse_resume`, `unbrowse_scrape` and `unbrowse_map` (any page on myworkdayjobs.com), and the recorded cloud browser `unbrowse_browse_open` → `unbrowse_browse_act` → `unbrowse_browse_finish`. Hosts that reject dotted names show them with `_` (`unbrowse_run`).
 
 ## How to call
 
 1. Pick the tool whose title matches the job and pass its inputs. Leave the site's recorded parameters out unless the user asked for something they control.
-2. Read `status`. `succeeded` carries the verified `result`. `input_required` is not a failure: answer the open fields with `unbrowse.resume {runId, answers}` on the same run.
-3. No tool fits: `unbrowse.run {task}`. It fails with `no_capability` when nothing is compiled for that yet: do it once with `unbrowse.browse.open` on myworkdayjobs.com → `unbrowse.browse.act` → `unbrowse.browse.finish`, which compiles a new tool this server lists next time. Anything off myworkdayjobs.com is refused here (`not_in_scope`): use the general Unbrowse server for that.
-4. Signing in: never ask the user for a password. `unbrowse.browse.act` with `action: "autofill"` fills myworkdayjobs.com's login from their Unbrowse password manager.
+2. Read `status`. `succeeded` carries the verified `result`. `input_required` is not a failure: answer the open fields with `unbrowse_resume {runId, answers}` on the same run.
+3. No tool fits: `unbrowse_run {task}`. It fails with `no_capability` when nothing is compiled for that yet: do it once with `unbrowse_browse_open` on myworkdayjobs.com → `unbrowse_browse_act` → `unbrowse_browse_finish`, which compiles a new tool this server lists next time. Anything off myworkdayjobs.com is refused here (`not_in_scope`): use the general Unbrowse server for that.
+4. Signing in: never ask the user for a password. `unbrowse_browse_act` with `action: "autofill"` fills myworkdayjobs.com's login from their Unbrowse password manager.
 5. Report only what a `succeeded` result says. `outcome_unknown` means a change may have happened: check before retrying. Posting, buying, sending or deleting needs the user's go-ahead.
 
 ## Without MCP

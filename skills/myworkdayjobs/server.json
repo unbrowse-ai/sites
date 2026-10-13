@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/myworkdayjobs",
   "title": "Unbrowse for Myworkdayjobs (unofficial)",
   "description": "myworkdayjobs.com as MCP tools: Search jobs by keyword, location and category on the DBS Careers job",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/myworkdayjobs.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

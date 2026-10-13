@@ -5,6 +5,7 @@ sec.gov as agent tools, compiled by [Unbrowse](https://unbrowse.ai) from the sit
 | Tool | What it does |
 |---|---|
 | `sec_gov__get_latest_search_index` | Search SEC EDGAR full-text filings |
+| `data_sec_gov__get_submissions_by_id` | Read submissions on data.sec.gov |
 
 **MCP** (remote, streamable HTTP, OAuth): `https://unbrowse.ai/mcp/sec.gov`
 

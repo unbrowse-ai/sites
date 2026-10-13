@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/usitc",
   "title": "Unbrowse for Usitc (unofficial)",
   "description": "usitc.gov as MCP tools: Search HTS codes by keyword. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/usitc.gov",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

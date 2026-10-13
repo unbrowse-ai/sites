@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/metacpan",
   "title": "Unbrowse for Metacpan (unofficial)",
   "description": "metacpan.org as MCP tools: Search metacpan. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/metacpan.org",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

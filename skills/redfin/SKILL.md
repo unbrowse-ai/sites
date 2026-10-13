@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `redfin_com__get_stingray_gis` — Redfin search: homes for sale in a region
 
-Redfin search: homes for sale in a region. Inputs: market; region_id; region_type. Returns text. Read-only on redfin.com.
+Redfin search: homes for sale in a region. Inputs: market; region_id; region_type. Also takes the site's own parameters, each optional (left out, the recorded value is sent): al (recorded: "1"); include_nearby_homes (recorded: "false"); num_homes (recorded: "50"); ord (recorded: "redfin-recommended-asc"); page_number (recorded: "1"); sf (recorded: "1,2,3,5,6,7"). Returns text. Read-only on redfin.com.
 
 - `market` (string, required) — market (typed during “search”)
 - `region_id` (integer, required) — region id (typed during “search”)
@@ -48,14 +48,14 @@ Redfin search: homes for sale in a region. Inputs: market; region_id; region_typ
 {"market":"<market>","region_id":"<region_id>","region_type":"<region_type>"}
 ```
 
-Always there too: `unbrowse.run` (a task on redfin.com in plain words), `unbrowse.inspect`, `unbrowse.resume`, `unbrowse.scrape` and `unbrowse.map` (any page on redfin.com), and the recorded cloud browser `unbrowse.browse.open` → `unbrowse.browse.act` → `unbrowse.browse.finish`. Hosts that reject dotted names show them with `_` (`unbrowse_run`).
+Always there too: `unbrowse_run` (a task on redfin.com in plain words), `unbrowse_inspect`, `unbrowse_resume`, `unbrowse_scrape` and `unbrowse_map` (any page on redfin.com), and the recorded cloud browser `unbrowse_browse_open` → `unbrowse_browse_act` → `unbrowse_browse_finish`. Hosts that reject dotted names show them with `_` (`unbrowse_run`).
 
 ## How to call
 
 1. Pick the tool whose title matches the job and pass its inputs. Leave the site's recorded parameters out unless the user asked for something they control.
-2. Read `status`. `succeeded` carries the verified `result`. `input_required` is not a failure: answer the open fields with `unbrowse.resume {runId, answers}` on the same run.
-3. No tool fits: `unbrowse.run {task}`. It fails with `no_capability` when nothing is compiled for that yet: do it once with `unbrowse.browse.open` on redfin.com → `unbrowse.browse.act` → `unbrowse.browse.finish`, which compiles a new tool this server lists next time. Anything off redfin.com is refused here (`not_in_scope`): use the general Unbrowse server for that.
-4. Signing in: never ask the user for a password. `unbrowse.browse.act` with `action: "autofill"` fills redfin.com's login from their Unbrowse password manager.
+2. Read `status`. `succeeded` carries the verified `result`. `input_required` is not a failure: answer the open fields with `unbrowse_resume {runId, answers}` on the same run.
+3. No tool fits: `unbrowse_run {task}`. It fails with `no_capability` when nothing is compiled for that yet: do it once with `unbrowse_browse_open` on redfin.com → `unbrowse_browse_act` → `unbrowse_browse_finish`, which compiles a new tool this server lists next time. Anything off redfin.com is refused here (`not_in_scope`): use the general Unbrowse server for that.
+4. Signing in: never ask the user for a password. `unbrowse_browse_act` with `action: "autofill"` fills redfin.com's login from their Unbrowse password manager.
 5. Report only what a `succeeded` result says. `outcome_unknown` means a change may have happened: check before retrying. Posting, buying, sending or deleting needs the user's go-ahead.
 
 ## Without MCP

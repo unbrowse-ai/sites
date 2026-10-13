@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/genius",
   "title": "Unbrowse for Genius (unofficial)",
   "description": "genius.com as MCP tools: Search genius. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/genius.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

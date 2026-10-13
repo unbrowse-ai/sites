@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/timeanddate",
   "title": "Unbrowse for Timeanddate (unofficial)",
   "description": "timeanddate.com as MCP tools: Search timeanddate. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/timeanddate.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

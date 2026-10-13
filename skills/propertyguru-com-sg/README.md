@@ -6,6 +6,7 @@ propertyguru.com.sg as agent tools, compiled by [Unbrowse](https://unbrowse.ai) 
 |---|---|
 | `propertyguru_com_sg__get_property_for_sale` | PropertyGuru property listings for sale |
 | `propertyguru_com_sg__get_agent_profile_active_listings` | PropertyGuru agent's active listings |
+| `propertyguru_com_sg__render_page` | Search propertyguru.com.sg |
 | `propertyguru_com_sg__read_page` | Read a propertyguru.com.sg slug page |
 
 **MCP** (remote, streamable HTTP, OAuth): `https://unbrowse.ai/mcp/propertyguru.com.sg`

@@ -1,11 +1,11 @@
 {
   "google": {
-    "hash": "1acd32fdca224bab",
-    "version": "1.0.2",
+    "hash": "3fc29c7e6a0ab3ea",
+    "version": "1.0.3",
     "published": {
-      "smithery": "1acd32fdca224bab",
+      "smithery": "3fc29c7e6a0ab3ea",
       "smithery-mcp": "8162f29fb5c9dbe6",
-      "smithery-meta": "1acd32fdca224bab"
+      "smithery-meta": "3fc29c7e6a0ab3ea"
     }
   },
   "radiofrance-fr": {
@@ -689,291 +689,309 @@
     }
   },
   "alternativeto": {
-    "hash": "84f7b1226ade8a95",
-    "version": "1.0.0",
+    "hash": "322d9e4df5d4f2e6",
+    "version": "1.0.1",
     "published": {
-      "smithery": "84f7b1226ade8a95",
+      "smithery": "322d9e4df5d4f2e6",
       "smithery-mcp": "84f7b1226ade8a95",
-      "smithery-meta": "84f7b1226ade8a95"
+      "smithery-meta": "322d9e4df5d4f2e6"
     }
   },
   "caniuse": {
-    "hash": "87a51afd5ad4c42d",
-    "version": "1.0.0",
+    "hash": "bddb16ee68006b51",
+    "version": "1.0.1",
     "published": {
-      "smithery": "87a51afd5ad4c42d",
+      "smithery": "bddb16ee68006b51",
       "smithery-mcp": "87a51afd5ad4c42d",
-      "smithery-meta": "87a51afd5ad4c42d"
+      "smithery-meta": "bddb16ee68006b51"
     }
   },
   "futurepedia": {
-    "hash": "f92f7b9bf029f8fb",
-    "version": "1.0.0",
+    "hash": "872c6cd56a726bd4",
+    "version": "1.0.1",
     "published": {
-      "smithery": "f92f7b9bf029f8fb",
+      "smithery": "872c6cd56a726bd4",
       "smithery-mcp": "f92f7b9bf029f8fb",
-      "smithery-meta": "f92f7b9bf029f8fb"
+      "smithery-meta": "872c6cd56a726bd4"
     }
   },
   "propertyguru-com-sg": {
-    "hash": "bd83af53b6337d65",
-    "version": "1.0.0",
+    "hash": "65683131b188c9c3",
+    "version": "1.0.1",
     "published": {
-      "smithery": "bd83af53b6337d65",
+      "smithery": "65683131b188c9c3",
       "smithery-mcp": "bd83af53b6337d65",
-      "smithery-meta": "bd83af53b6337d65"
+      "smithery-meta": "65683131b188c9c3"
     }
   },
   "trustradius": {
-    "hash": "e0b36b8f035e1373",
-    "version": "1.0.0",
+    "hash": "f0ae52f390e8c18d",
+    "version": "1.0.1",
     "published": {
-      "smithery": "e0b36b8f035e1373",
+      "smithery": "f0ae52f390e8c18d",
       "smithery-mcp": "e0b36b8f035e1373",
-      "smithery-meta": "e0b36b8f035e1373"
+      "smithery-meta": "f0ae52f390e8c18d"
     }
   },
   "nuget": {
-    "hash": "542eda2d38c96074",
-    "version": "1.0.0",
+    "hash": "ecdaac63c8e02857",
+    "version": "1.0.1",
     "published": {
-      "smithery": "542eda2d38c96074",
+      "smithery": "ecdaac63c8e02857",
       "smithery-mcp": "542eda2d38c96074",
-      "smithery-meta": "542eda2d38c96074"
+      "smithery-meta": "ecdaac63c8e02857"
     }
   },
   "alibaba": {
-    "hash": "022c1896c12590ad",
-    "version": "1.0.0",
+    "hash": "07681f8f21776cab",
+    "version": "1.0.1",
     "published": {
-      "smithery": "022c1896c12590ad",
+      "smithery": "07681f8f21776cab",
       "smithery-mcp": "022c1896c12590ad",
-      "smithery-meta": "022c1896c12590ad"
+      "smithery-meta": "07681f8f21776cab"
     }
   },
   "capterra": {
-    "hash": "6cc8005497615890",
-    "version": "1.0.0",
+    "hash": "5f5f8ce68e53effa",
+    "version": "1.0.1",
     "published": {
-      "smithery": "6cc8005497615890",
+      "smithery": "5f5f8ce68e53effa",
       "smithery-mcp": "6cc8005497615890",
-      "smithery-meta": "6cc8005497615890"
+      "smithery-meta": "5f5f8ce68e53effa"
     }
   },
   "huggingface": {
-    "hash": "560c7b3b39a366aa",
-    "version": "1.0.0",
+    "hash": "e03b3b18062fbe32",
+    "version": "1.0.1",
     "published": {
-      "smithery": "560c7b3b39a366aa",
+      "smithery": "e03b3b18062fbe32",
       "smithery-mcp": "560c7b3b39a366aa",
-      "smithery-meta": "560c7b3b39a366aa"
+      "smithery-meta": "e03b3b18062fbe32"
     }
   },
   "ikea": {
-    "hash": "4ffcb0b6e9183a62",
-    "version": "1.0.0",
+    "hash": "4659f3368f32b0b4",
+    "version": "1.0.1",
     "published": {
-      "smithery": "4ffcb0b6e9183a62",
+      "smithery": "4659f3368f32b0b4",
       "smithery-mcp": "4ffcb0b6e9183a62",
-      "smithery-meta": "4ffcb0b6e9183a62"
+      "smithery-meta": "4659f3368f32b0b4"
     }
   },
   "singtel": {
-    "hash": "090db18728d39f18",
-    "version": "1.0.0",
+    "hash": "619a4851e73db2a0",
+    "version": "1.0.1",
     "published": {
-      "smithery": "090db18728d39f18"
+      "smithery": "619a4851e73db2a0",
+      "smithery-mcp": "619a4851e73db2a0",
+      "smithery-meta": "619a4851e73db2a0"
     }
   },
   "myworkdayjobs": {
-    "hash": "e7d2466810530785",
-    "version": "1.0.0",
+    "hash": "19dea99a591a104d",
+    "version": "1.0.1",
     "published": {
-      "smithery": "e7d2466810530785"
+      "smithery": "19dea99a591a104d",
+      "smithery-mcp": "19dea99a591a104d",
+      "smithery-meta": "19dea99a591a104d"
     }
   },
   "reddit": {
-    "hash": "d8096b99b56cbd4c",
-    "version": "1.0.0",
+    "hash": "b7cd2f5458d0f8bd",
+    "version": "1.0.1",
     "published": {
-      "smithery": "d8096b99b56cbd4c"
+      "smithery": "b7cd2f5458d0f8bd",
+      "smithery-mcp": "b7cd2f5458d0f8bd",
+      "smithery-meta": "b7cd2f5458d0f8bd"
     }
   },
   "wikipedia": {
-    "hash": "433ff19978da9743",
-    "version": "1.0.0",
+    "hash": "401be62a7d953558",
+    "version": "1.0.1",
     "published": {
-      "smithery": "433ff19978da9743"
+      "smithery": "401be62a7d953558",
+      "smithery-mcp": "401be62a7d953558",
+      "smithery-meta": "401be62a7d953558"
     }
   },
   "archive": {
-    "hash": "d4accce665e769d4",
-    "version": "1.0.0",
-    "published": {}
+    "hash": "1d623e2e29dff2d5",
+    "version": "1.0.1",
+    "published": {
+      "smithery": "1d623e2e29dff2d5"
+    }
   },
   "bbcgoodfood": {
-    "hash": "76a7d4f87aec1b62",
-    "version": "1.0.0",
-    "published": {}
+    "hash": "4a039d9001ae6db5",
+    "version": "1.0.1",
+    "published": {
+      "smithery": "4a039d9001ae6db5"
+    }
   },
   "crates": {
-    "hash": "c9da9706f7219121",
-    "version": "1.0.0",
-    "published": {}
+    "hash": "08d254ab7a167437",
+    "version": "1.0.1",
+    "published": {
+      "smithery": "08d254ab7a167437"
+    }
   },
   "crossref": {
-    "hash": "f8d1ae5f225abaed",
-    "version": "1.0.0",
+    "hash": "14ecff319e37dcac",
+    "version": "1.0.1",
     "published": {}
   },
   "data": {
-    "hash": "c303ba34ce2036c0",
-    "version": "1.0.0",
+    "hash": "eecda29ef4debb4c",
+    "version": "1.0.1",
     "published": {}
   },
   "dev-to": {
-    "hash": "ca647e01027d2e26",
-    "version": "1.0.0",
+    "hash": "4ae5806ba3c2731b",
+    "version": "1.0.1",
     "published": {}
   },
   "discogs": {
-    "hash": "019e1ee1294b2a62",
-    "version": "1.0.0",
+    "hash": "f8e05a2fd7d60549",
+    "version": "1.0.1",
     "published": {}
   },
   "djangoproject": {
-    "hash": "a01329836f4bfe35",
-    "version": "1.0.0",
+    "hash": "38f154598825ae4c",
+    "version": "1.0.1",
     "published": {}
   },
   "food": {
-    "hash": "7cccf9b60aa0308d",
-    "version": "1.0.0",
+    "hash": "c25cedcddcb5db26",
+    "version": "1.0.1",
     "published": {}
   },
   "genius": {
-    "hash": "cf43077f715fb112",
-    "version": "1.0.0",
+    "hash": "c55eb05846fbe976",
+    "version": "1.0.1",
     "published": {}
   },
   "gov-uk": {
-    "hash": "02238dbf4f8220d6",
-    "version": "1.0.0",
+    "hash": "ca79975137518455",
+    "version": "1.0.1",
     "published": {}
   },
   "gutenberg": {
-    "hash": "930d52979e44561a",
-    "version": "1.0.0",
+    "hash": "729c69bd5a45c58d",
+    "version": "1.0.1",
     "published": {}
   },
   "hex-pm": {
-    "hash": "56c28097a9ec6c73",
-    "version": "1.0.0",
+    "hash": "a6d5ab359b75337b",
+    "version": "1.0.1",
     "published": {}
   },
   "imdb": {
-    "hash": "b44ed24168c850c4",
-    "version": "1.0.0",
+    "hash": "1e9d572ccef9de7c",
+    "version": "1.0.1",
     "published": {}
   },
   "instructables": {
-    "hash": "9c5d1ad0a58ce073",
-    "version": "1.0.0",
+    "hash": "3e4fe48699793ff7",
+    "version": "1.0.1",
     "published": {}
   },
   "jsr": {
-    "hash": "816afd6496e878a1",
-    "version": "1.0.0",
+    "hash": "cf0d641097f297ba",
+    "version": "1.0.1",
     "published": {}
   },
   "metacpan": {
-    "hash": "c38ec6e8947698da",
-    "version": "1.0.0",
+    "hash": "3419bc1e83a3e27d",
+    "version": "1.0.1",
     "published": {}
   },
   "openlibrary": {
-    "hash": "b075eb7d000878a1",
-    "version": "1.0.0",
+    "hash": "26cbf0ada0ba0edd",
+    "version": "1.0.1",
     "published": {}
   },
   "rubygems": {
-    "hash": "5f6f3a070eb1fe46",
-    "version": "1.0.0",
+    "hash": "ee4255a53153db67",
+    "version": "1.0.1",
     "published": {}
   },
   "sec": {
-    "hash": "51332d3021d14dee",
-    "version": "1.0.0",
-    "published": {}
+    "hash": "ed3982b245f105d9",
+    "version": "1.0.1",
+    "published": {
+      "smithery": "ed3982b245f105d9"
+    }
   },
   "timeanddate": {
-    "hash": "eb53ff6fdafb3566",
-    "version": "1.0.0",
+    "hash": "22ff364150b44521",
+    "version": "1.0.1",
     "published": {}
   },
   "tvmaze": {
-    "hash": "1d385228a5b15fed",
-    "version": "1.0.0",
+    "hash": "ffd0953007a8d29d",
+    "version": "1.0.1",
     "published": {}
   },
   "usitc": {
-    "hash": "9c36621b2ec104de",
-    "version": "1.0.0",
+    "hash": "ad5f7b7f28a46a82",
+    "version": "1.0.1",
     "published": {}
   },
   "vuejs": {
-    "hash": "0eb4c920e222b483",
-    "version": "1.0.0",
+    "hash": "fc517220b44c821e",
+    "version": "1.0.1",
     "published": {}
   },
   "wikidata": {
-    "hash": "29a82adf66064e6c",
-    "version": "1.0.0",
+    "hash": "60499d7a839f55dc",
+    "version": "1.0.1",
     "published": {}
   },
   "ashbyhq": {
-    "hash": "e6296bdbf4c31aa5",
-    "version": "1.0.0",
+    "hash": "307d0c0f5559f70c",
+    "version": "1.0.1",
     "published": {}
   },
   "craigslist": {
-    "hash": "9eb4634f29aca208",
-    "version": "1.0.0",
-    "published": {}
+    "hash": "30a82edc62af713b",
+    "version": "1.0.1",
+    "published": {
+      "smithery": "30a82edc62af713b"
+    }
   },
   "greenhouse": {
-    "hash": "1add4efc208593ec",
-    "version": "1.0.0",
+    "hash": "ba6486e709a8d093",
+    "version": "1.0.1",
     "published": {}
   },
   "lever": {
-    "hash": "0b81ade6e94a502e",
-    "version": "1.0.0",
+    "hash": "2f4eeca1d7bc70c1",
+    "version": "1.0.1",
     "published": {}
   },
   "onemap-gov-sg": {
-    "hash": "c9acee7cb45d2e5d",
-    "version": "1.0.0",
+    "hash": "2c7c41e0c24d44a8",
+    "version": "1.0.1",
     "published": {}
   },
   "packagist": {
-    "hash": "03f3f8b7175f15eb",
-    "version": "1.0.0",
+    "hash": "5b95307bc743b871",
+    "version": "1.0.1",
     "published": {}
   },
   "python": {
-    "hash": "107e47e647ce45b6",
-    "version": "1.0.0",
+    "hash": "23538b585ee1c5a7",
+    "version": "1.0.1",
     "published": {}
   },
   "redfin": {
-    "hash": "6d332eacd105499a",
-    "version": "1.0.0",
+    "hash": "f627484c9348e95a",
+    "version": "1.0.1",
     "published": {}
   },
   "remoteok": {
-    "hash": "03c473d52813c13b",
-    "version": "1.0.0",
+    "hash": "1769bdb74692feb9",
+    "version": "1.0.1",
     "published": {}
   },
   "udemy": {
@@ -982,34 +1000,72 @@
     "published": {}
   },
   "wikimedia": {
-    "hash": "e109801f070cefa1",
-    "version": "1.0.0",
+    "hash": "617c0cdf246a8a1b",
+    "version": "1.0.1",
     "published": {}
   },
   "wikivoyage": {
-    "hash": "ce91162ebf81c81b",
-    "version": "1.0.0",
+    "hash": "ce1cf9ffa15f0873",
+    "version": "1.0.1",
     "published": {}
   },
   "airbnb": {
-    "hash": "7fa3906e3f000a1b",
-    "version": "1.0.0",
+    "hash": "f0856e0f05c7249f",
+    "version": "1.0.1",
     "published": {}
   },
   "airbnb-com-sg": {
-    "hash": "ef4f233ad2c69bb0",
-    "version": "1.0.0",
+    "hash": "5cb7881e0345a58f",
+    "version": "1.0.1",
     "published": {}
   },
   "carousell-sg": {
-    "hash": "c36469d263cfa752",
-    "version": "1.0.0",
+    "hash": "46aed6db96465f28",
+    "version": "1.0.1",
     "published": {
-      "smithery": "c36469d263cfa752"
+      "smithery": "46aed6db96465f28",
+      "smithery-mcp": "46aed6db96465f28",
+      "smithery-meta": "46aed6db96465f28"
     }
   },
   "rakuten-co-jp": {
-    "hash": "2c26d62707a6200d",
+    "hash": "45ba2bfe709c8864",
+    "version": "1.0.1",
+    "published": {}
+  },
+  "arxiv": {
+    "hash": "6707a1b86b5d445e",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "6707a1b86b5d445e"
+    }
+  },
+  "semanticscholar": {
+    "hash": "45cc5142765f58b9",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "45cc5142765f58b9"
+    }
+  },
+  "bing": {
+    "hash": "2d69f8c438ac5c99",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "2d69f8c438ac5c99"
+    }
+  },
+  "npmjs": {
+    "hash": "ba6618c50ed4ea07",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "pypi": {
+    "hash": "4505de0e3b348c66",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "skyscanner": {
+    "hash": "bbe8dd4efc321bd7",
     "version": "1.0.0",
     "published": {}
   }

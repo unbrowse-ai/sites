@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/discogs",
   "title": "Unbrowse for Discogs (unofficial)",
   "description": "discogs.com as MCP tools: Search discogs. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/discogs.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

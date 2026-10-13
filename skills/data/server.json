@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/data",
   "title": "Unbrowse for Data (unofficial)",
   "description": "data.gov as MCP tools: Search datagov. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/data.gov",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

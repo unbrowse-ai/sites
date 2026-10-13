@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `instructables_com__get_documents_search` — Search instructables
 
-Search instructables. Inputs: query. Returns facet_counts, found, hits, page, request_params, search_cutoff. Read-only on instructables.com.
+Search instructables. Inputs: query. Also takes the site's own parameters, each optional (left out, the recorded value is sent): query_by (recorded: "title,stepBody,screenName"); page (recorded: "1"); sort_by (recorded: "_text_match:desc"); include_fields (recorded: "title,urlString,coverImageUrl,screenName,favorites,views,primaryClassification,featureFlag,prizeLevel,IMadeItCount"); filter_by (recorded: "status:=PUBLISHED && featureFlag:=true && indexTags:!=external"); per_page (recorded: "50"). Returns facet_counts, found, hits, page, request_params, search_cutoff. Read-only on instructables.com.
 
 - `query` (string, required) — query (typed during “fill Search”)
 - `query_by` (string) — optional, e.g. "title,stepBody,screenName"
@@ -43,14 +43,14 @@ Search instructables. Inputs: query. Returns facet_counts, found, hits, page, re
 {"query":"<query>"}
 ```
 
-Always there too: `unbrowse.run` (a task on instructables.com in plain words), `unbrowse.inspect`, `unbrowse.resume`, `unbrowse.scrape` and `unbrowse.map` (any page on instructables.com), and the recorded cloud browser `unbrowse.browse.open` → `unbrowse.browse.act` → `unbrowse.browse.finish`. Hosts that reject dotted names show them with `_` (`unbrowse_run`).
+Always there too: `unbrowse_run` (a task on instructables.com in plain words), `unbrowse_inspect`, `unbrowse_resume`, `unbrowse_scrape` and `unbrowse_map` (any page on instructables.com), and the recorded cloud browser `unbrowse_browse_open` → `unbrowse_browse_act` → `unbrowse_browse_finish`. Hosts that reject dotted names show them with `_` (`unbrowse_run`).
 
 ## How to call
 
 1. Pick the tool whose title matches the job and pass its inputs. Leave the site's recorded parameters out unless the user asked for something they control.
-2. Read `status`. `succeeded` carries the verified `result`. `input_required` is not a failure: answer the open fields with `unbrowse.resume {runId, answers}` on the same run.
-3. No tool fits: `unbrowse.run {task}`. It fails with `no_capability` when nothing is compiled for that yet: do it once with `unbrowse.browse.open` on instructables.com → `unbrowse.browse.act` → `unbrowse.browse.finish`, which compiles a new tool this server lists next time. Anything off instructables.com is refused here (`not_in_scope`): use the general Unbrowse server for that.
-4. Signing in: never ask the user for a password. `unbrowse.browse.act` with `action: "autofill"` fills instructables.com's login from their Unbrowse password manager.
+2. Read `status`. `succeeded` carries the verified `result`. `input_required` is not a failure: answer the open fields with `unbrowse_resume {runId, answers}` on the same run.
+3. No tool fits: `unbrowse_run {task}`. It fails with `no_capability` when nothing is compiled for that yet: do it once with `unbrowse_browse_open` on instructables.com → `unbrowse_browse_act` → `unbrowse_browse_finish`, which compiles a new tool this server lists next time. Anything off instructables.com is refused here (`not_in_scope`): use the general Unbrowse server for that.
+4. Signing in: never ask the user for a password. `unbrowse_browse_act` with `action: "autofill"` fills instructables.com's login from their Unbrowse password manager.
 5. Report only what a `succeeded` result says. `outcome_unknown` means a change may have happened: check before retrying. Posting, buying, sending or deleting needs the user's go-ahead.
 
 ## Without MCP

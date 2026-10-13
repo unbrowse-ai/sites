@@ -5,6 +5,8 @@ huggingface.co as agent tools, compiled by [Unbrowse](https://unbrowse.ai) from 
 | Tool | What it does |
 |---|---|
 | `huggingface_co__get_models_json` | Search huggingface |
+| `huggingface_co__mcp_hub_repo_search` | Repo Search |
+| `huggingface_co__mcp_hf_whoami` | Hugging Face User Info |
 
 **MCP** (remote, streamable HTTP, OAuth): `https://unbrowse.ai/mcp/huggingface.co`
 

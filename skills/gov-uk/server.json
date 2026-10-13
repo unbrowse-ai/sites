@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/gov-uk",
   "title": "Unbrowse for Gov (unofficial)",
   "description": "gov.uk as MCP tools: Search govuk. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/gov.uk",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

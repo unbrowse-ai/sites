@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/carousell-sg",
   "title": "Unbrowse for Carousell (unofficial)",
   "description": "carousell.sg as MCP tools: Search listings by query with max price and sort order. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/carousell.sg",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

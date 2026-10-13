@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/trustradius",
   "title": "Unbrowse for Trustradius (unofficial)",
   "description": "trustradius.com as MCP tools: Search TrustRadius for software by keyword. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/trustradius.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/greenhouse",
   "title": "Unbrowse for Greenhouse (unofficial)",
   "description": "greenhouse.io as MCP tools: Greenhouse job board: open jobs. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/greenhouse.io",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

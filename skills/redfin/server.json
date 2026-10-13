@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/redfin",
   "title": "Unbrowse for Redfin (unofficial)",
   "description": "redfin.com as MCP tools: Redfin search: homes for sale in a region. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/redfin.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

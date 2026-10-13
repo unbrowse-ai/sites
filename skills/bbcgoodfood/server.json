@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/bbcgoodfood",
   "title": "Unbrowse for Bbcgoodfood (unofficial)",
   "description": "bbcgoodfood.com as MCP tools: Search bbcgoodfood. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/bbcgoodfood.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

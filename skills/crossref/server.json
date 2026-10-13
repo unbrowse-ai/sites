@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/crossref",
   "title": "Unbrowse for Crossref (unofficial)",
   "description": "crossref.org as MCP tools: Search crossref. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/crossref.org",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

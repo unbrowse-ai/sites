@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/futurepedia",
   "title": "Unbrowse for Futurepedia (unofficial)",
   "description": "futurepedia.io as MCP tools: Search AI tools on Futurepedia. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/futurepedia.io",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

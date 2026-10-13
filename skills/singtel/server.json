@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/singtel",
   "title": "Unbrowse for Singtel (unofficial)",
   "description": "singtel.com as MCP tools: Read plans on shop.singtel.com. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/singtel.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

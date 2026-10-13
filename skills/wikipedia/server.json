@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/wikipedia",
   "title": "Unbrowse for Wikipedia (unofficial)",
   "description": "wikipedia.org as MCP tools: Search wikipedia. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/wikipedia.org",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

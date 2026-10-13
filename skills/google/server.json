@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/google",
   "title": "Unbrowse for Google (unofficial)",
   "description": "google.com as MCP tools: Google News search (RSS). Unofficial.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "websiteUrl": "https://unbrowse.ai/sites/google.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

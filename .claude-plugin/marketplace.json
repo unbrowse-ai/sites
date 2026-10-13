@@ -52,17 +52,17 @@
       }
     },
     {
-      "name": "carousell-sg",
-      "source": "./skills/carousell-sg",
-      "description": "carousell.sg as MCP tools: Search listings by query with max price and sort order. Unofficial.",
+      "name": "huggingface",
+      "source": "./skills/huggingface",
+      "description": "huggingface.co as MCP tools: Search huggingface. Unofficial.",
       "strict": false,
       "skills": [
         "./"
       ],
       "mcpServers": {
-        "carousell-sg": {
+        "huggingface": {
           "type": "http",
-          "url": "https://unbrowse.ai/mcp/carousell.sg"
+          "url": "https://unbrowse.ai/mcp/huggingface.co"
         }
       }
     },
@@ -82,6 +82,36 @@
       }
     },
     {
+      "name": "arxiv",
+      "source": "./skills/arxiv",
+      "description": "arxiv.org as MCP tools: Search arXiv with advanced field filters such as author, title, subject cate",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "arxiv": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/arxiv.org"
+        }
+      }
+    },
+    {
+      "name": "carousell-sg",
+      "source": "./skills/carousell-sg",
+      "description": "carousell.sg as MCP tools: Search listings by query with max price and sort order. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "carousell-sg": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/carousell.sg"
+        }
+      }
+    },
+    {
       "name": "trustradius",
       "source": "./skills/trustradius",
       "description": "trustradius.com as MCP tools: Search TrustRadius for software by keyword. Unofficial.",
@@ -93,6 +123,21 @@
         "trustradius": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/trustradius.com"
+        }
+      }
+    },
+    {
+      "name": "craigslist",
+      "source": "./skills/craigslist",
+      "description": "craigslist.org as MCP tools: Search craigslist.org. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "craigslist": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/craigslist.org"
         }
       }
     },
@@ -142,21 +187,6 @@
       }
     },
     {
-      "name": "huggingface",
-      "source": "./skills/huggingface",
-      "description": "huggingface.co as MCP tools: Search huggingface. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "huggingface": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/huggingface.co"
-        }
-      }
-    },
-    {
       "name": "ikea",
       "source": "./skills/ikea",
       "description": "ikea.com as MCP tools: Search ikea. Unofficial.",
@@ -168,6 +198,36 @@
         "ikea": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/ikea.com"
+        }
+      }
+    },
+    {
+      "name": "sec",
+      "source": "./skills/sec",
+      "description": "sec.gov as MCP tools: Search SEC EDGAR full-text filings. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "sec": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/sec.gov"
+        }
+      }
+    },
+    {
+      "name": "semanticscholar",
+      "source": "./skills/semanticscholar",
+      "description": "semanticscholar.org as MCP tools: Paper detail with citations and references. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "semanticscholar": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/semanticscholar.org"
         }
       }
     },
@@ -273,6 +333,21 @@
         "bbcgoodfood": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/bbcgoodfood.com"
+        }
+      }
+    },
+    {
+      "name": "bing",
+      "source": "./skills/bing",
+      "description": "bing.com as MCP tools: Search bing. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "bing": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/bing.com"
         }
       }
     },
@@ -502,17 +577,17 @@
       }
     },
     {
-      "name": "nih",
-      "source": "./skills/nih",
-      "description": "nih.gov as MCP tools: Search pubmed. Unofficial.",
+      "name": "npmjs",
+      "source": "./skills/npmjs",
+      "description": "npmjs.com as MCP tools: Search npm. Unofficial.",
       "strict": false,
       "skills": [
         "./"
       ],
       "mcpServers": {
-        "nih": {
+        "npmjs": {
           "type": "http",
-          "url": "https://unbrowse.ai/mcp/nih.gov"
+          "url": "https://unbrowse.ai/mcp/npmjs.com"
         }
       }
     },
@@ -532,6 +607,21 @@
       }
     },
     {
+      "name": "pypi",
+      "source": "./skills/pypi",
+      "description": "pypi.org as MCP tools: Search pypi. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "pypi": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/pypi.org"
+        }
+      }
+    },
+    {
       "name": "rubygems",
       "source": "./skills/rubygems",
       "description": "rubygems.org as MCP tools: Search rubygems. Unofficial.",
@@ -547,17 +637,17 @@
       }
     },
     {
-      "name": "sec",
-      "source": "./skills/sec",
-      "description": "sec.gov as MCP tools: Search SEC EDGAR full-text filings. Unofficial.",
+      "name": "skyscanner",
+      "source": "./skills/skyscanner",
+      "description": "skyscanner.net as MCP tools: Search flights: enter origin, destination, dates and travellers, then s",
       "strict": false,
       "skills": [
         "./"
       ],
       "mcpServers": {
-        "sec": {
+        "skyscanner": {
           "type": "http",
-          "url": "https://unbrowse.ai/mcp/sec.gov"
+          "url": "https://unbrowse.ai/mcp/skyscanner.net"
         }
       }
     },
@@ -648,21 +738,6 @@
         "ashbyhq": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/ashbyhq.com"
-        }
-      }
-    },
-    {
-      "name": "craigslist",
-      "source": "./skills/craigslist",
-      "description": "craigslist.org as MCP tools: Craigslist search: posts in a city and category. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "craigslist": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/craigslist.org"
         }
       }
     },
@@ -783,21 +858,6 @@
         "remoteok": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/remoteok.com"
-        }
-      }
-    },
-    {
-      "name": "udemy",
-      "source": "./skills/udemy",
-      "description": "udemy.com as MCP tools: Read a udemy.com page by name. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "udemy": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/udemy.com"
         }
       }
     },

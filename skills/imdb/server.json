@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/imdb",
   "title": "Unbrowse for Imdb (unofficial)",
   "description": "imdb.com as MCP tools: Search imdb. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/imdb.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

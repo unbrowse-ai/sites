@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/rubygems",
   "title": "Unbrowse for Rubygems (unofficial)",
   "description": "rubygems.org as MCP tools: Search rubygems. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/rubygems.org",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

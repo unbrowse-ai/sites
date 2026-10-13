@@ -28,7 +28,7 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ### `airbnb_com__get_s_homes` — Airbnb search: stays in a location
 
-Airbnb search: stays in a location. Inputs: location. Returns the page's title, readable text and links. Read-only on airbnb.com.
+Airbnb search: stays in a location. Inputs: location. Also takes the site's own parameters, each optional (left out, the recorded value is sent): checkin (recorded: "2026-11-10"); checkout (recorded: "2026-11-14"); adults (recorded: "2"); cursor (recorded: "eyJzZWN0aW9uX29mZnNldCI6MCwiaXRlbXNfb2Zmc2V0IjowLCJ2ZXJzaW9uIjoxfQ=="); currency (recorded: "USD"); locale (recorded: "en"). Returns the page's title, readable text and links. Read-only on airbnb.com.
 
 - `location` (string, required) — location (typed during “search”)
 - `checkin` (string) — optional, e.g. "2026-11-10"
@@ -43,7 +43,7 @@ Airbnb search: stays in a location. Inputs: location. Returns the page's title, 
 
 ### `airbnb_com__read_page` — Search stays
 
-Search stays. Inputs: query. Returns the page's title, readable text and links. Read-only on airbnb.com.
+Search stays. Inputs: query. Also takes the site's own parameters, each optional (left out, the recorded value is sent): adults (recorded: 2); tab_id (recorded: "home_tab"). Returns the page's title, readable text and links. Read-only on airbnb.com.
 
 - `query` (string, required)
 - `adults` (integer) — optional, e.g. 2
@@ -54,14 +54,14 @@ Search stays. Inputs: query. Returns the page's title, readable text and links. 
 {"query":"<query>"}
 ```
 
-Always there too: `unbrowse.run` (a task on airbnb.com in plain words), `unbrowse.inspect`, `unbrowse.resume`, `unbrowse.scrape` and `unbrowse.map` (any page on airbnb.com), and the recorded cloud browser `unbrowse.browse.open` → `unbrowse.browse.act` → `unbrowse.browse.finish`. Hosts that reject dotted names show them with `_` (`unbrowse_run`).
+Always there too: `unbrowse_run` (a task on airbnb.com in plain words), `unbrowse_inspect`, `unbrowse_resume`, `unbrowse_scrape` and `unbrowse_map` (any page on airbnb.com), and the recorded cloud browser `unbrowse_browse_open` → `unbrowse_browse_act` → `unbrowse_browse_finish`. Hosts that reject dotted names show them with `_` (`unbrowse_run`).
 
 ## How to call
 
 1. Pick the tool whose title matches the job and pass its inputs. Leave the site's recorded parameters out unless the user asked for something they control.
-2. Read `status`. `succeeded` carries the verified `result`. `input_required` is not a failure: answer the open fields with `unbrowse.resume {runId, answers}` on the same run.
-3. No tool fits: `unbrowse.run {task}`. It fails with `no_capability` when nothing is compiled for that yet: do it once with `unbrowse.browse.open` on airbnb.com → `unbrowse.browse.act` → `unbrowse.browse.finish`, which compiles a new tool this server lists next time. Anything off airbnb.com is refused here (`not_in_scope`): use the general Unbrowse server for that.
-4. Signing in: never ask the user for a password. `unbrowse.browse.act` with `action: "autofill"` fills airbnb.com's login from their Unbrowse password manager.
+2. Read `status`. `succeeded` carries the verified `result`. `input_required` is not a failure: answer the open fields with `unbrowse_resume {runId, answers}` on the same run.
+3. No tool fits: `unbrowse_run {task}`. It fails with `no_capability` when nothing is compiled for that yet: do it once with `unbrowse_browse_open` on airbnb.com → `unbrowse_browse_act` → `unbrowse_browse_finish`, which compiles a new tool this server lists next time. Anything off airbnb.com is refused here (`not_in_scope`): use the general Unbrowse server for that.
+4. Signing in: never ask the user for a password. `unbrowse_browse_act` with `action: "autofill"` fills airbnb.com's login from their Unbrowse password manager.
 5. Report only what a `succeeded` result says. `outcome_unknown` means a change may have happened: check before retrying. Posting, buying, sending or deleting needs the user's go-ahead.
 
 ## Without MCP

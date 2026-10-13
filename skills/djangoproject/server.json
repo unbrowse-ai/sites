@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/djangoproject",
   "title": "Unbrowse for Djangoproject (unofficial)",
   "description": "djangoproject.com as MCP tools: Search django. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/djangoproject.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

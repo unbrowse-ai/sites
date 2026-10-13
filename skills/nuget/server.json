@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/nuget",
   "title": "Unbrowse for Nuget (unofficial)",
   "description": "nuget.org as MCP tools: Search nuget. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/nuget.org",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

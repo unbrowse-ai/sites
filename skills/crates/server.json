@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/crates",
   "title": "Unbrowse for Crates (unofficial)",
   "description": "crates.io as MCP tools: Search crates. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/crates.io",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

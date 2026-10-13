@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.unbrowse-ai/arxiv",
+  "title": "Unbrowse for Arxiv (unofficial)",
+  "description": "arxiv.org as MCP tools: Search arXiv with advanced field filters such as author, title, subject cate",
+  "version": "1.0.0",
+  "websiteUrl": "https://unbrowse.ai/sites/arxiv.org",
+  "repository": {
+    "url": "https://github.com/unbrowse-ai/unbrowse",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://unbrowse.ai/mcp/arxiv.org"
+    }
+  ]
+}

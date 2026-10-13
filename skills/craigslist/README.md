@@ -4,7 +4,9 @@ craigslist.org as agent tools, compiled by [Unbrowse](https://unbrowse.ai) from 
 
 | Tool | What it does |
 |---|---|
+| `sfbay_craigslist_org__render_page` | Search craigslist.org |
 | `sapi_craigslist_org__get_search_full` | Craigslist search: posts in a city and category |
+| `sfbay_craigslist_org__read_page` | Read a craigslist.org page by max_price |
 
 **MCP** (remote, streamable HTTP, OAuth): `https://unbrowse.ai/mcp/craigslist.org`
 

@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/sec",
   "title": "Unbrowse for Sec (unofficial)",
   "description": "sec.gov as MCP tools: Search SEC EDGAR full-text filings. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/sec.gov",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

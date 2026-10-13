@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/dev-to",
   "title": "Unbrowse for Dev (unofficial)",
   "description": "dev.to as MCP tools: Search devto. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/dev.to",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",

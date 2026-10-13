@@ -3,7 +3,7 @@
   "name": "io.github.unbrowse-ai/food",
   "title": "Unbrowse for Food (unofficial)",
   "description": "food.com as MCP tools: Search foodcom. Unofficial.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://unbrowse.ai/sites/food.com",
   "repository": {
     "url": "https://github.com/unbrowse-ai/unbrowse",
