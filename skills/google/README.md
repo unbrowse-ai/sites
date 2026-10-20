@@ -5,7 +5,6 @@ google.com as agent tools, compiled by [Unbrowse](https://unbrowse.ai) from the 
 | Tool | What it does |
 |---|---|
 | `news_google_com__get_rss_search` | Google News search (RSS) |
-| `google_com__read_page` | Read google.com/travel/flights |
 
 **MCP** (remote, streamable HTTP, OAuth): `https://unbrowse.ai/mcp/google.com`
 

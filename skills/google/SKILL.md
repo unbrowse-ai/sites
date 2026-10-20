@@ -1,6 +1,6 @@
 ---
 name: google
-description: "Google (google.com) for agents: Google News search (RSS); Read google.com/travel/flights — through Unbrowse's scoped MCP for google.com (unofficial), which replays google.com's own first-party API (no browser, verified results). Use when the user wants anything from google.com, e.g. google news search (rss)."
+description: "Google (google.com) for agents: Google News search (RSS) — through Unbrowse's scoped MCP for google.com (unofficial), which replays google.com's own first-party API (no browser, verified results). Use when the user wants anything from google.com, e.g. google news search (rss)."
 ---
 
 # Unbrowse for Google (google.com)
@@ -36,20 +36,6 @@ Google News search (RSS). Inputs: query. Also takes the site's own parameters, e
 
 ```json
 {"query":"<query>"}
-```
-
-### `google_com__read_page` — Read google.com/travel/flights
-
-Read google.com/travel/flights. Takes the site's own parameters, each optional (left out, the recorded value is sent): tfs (recorded: "CBwQARojEgoyMDI2LTExLTEwagwIAhIIL20vMDZ0MnRyBwgBEgNOUlQaIxIKMjAyNi0xMS0xN2oHCAESA05SVHIMCAISCC9tLzA2dDJ0QAFIAXABggELCP___________wGYAQE"); tfu (recorded: "KgIIAw"); hl (recorded: "en"); curr (recorded: "SGD"). Returns the page's title, readable text and links. Read-only on google.com.
-
-- `tfs` (string) — optional, e.g. "CBwQARojEgoyMDI2LTExLTEwagwIAhIIL20vMDZ0MnRyBwgBEgNOUlQaIxIKMjAyNi0xMS0xN2oHCAESA05SVHIMCAISCC9tLzA2dDJ0QAFIAXABggELCP___________wGYAQE"
-- `tfu` (string) — optional, e.g. "KgIIAw"
-- `hl` (string) — optional, e.g. "en"
-- `curr` (string) — optional, e.g. "SGD"
-- `select` (array) — Keep only these parts of the result: dots walk keys, [] maps over a list, a final {a,b} keeps several keys (e.g. "results[].{title,url}"). Unmatched paths come back in selectMissing.
-
-```json
-{"tfs":"CBwQARojEgoyMDI2LTExLTEwagwIAhIIL20vMDZ0MnRyBwgBEgNOUlQaIxIKMjAyNi0xMS0xN2oHCAESA05SVHIMCAISCC9tLzA2dDJ0QAFIAXABggELCP___________wGYAQE","tfu":"KgIIAw","hl":"en","curr":"SGD"}
 ```
 
 Always there too: `unbrowse_run` (a task on google.com in plain words), `unbrowse_inspect`, `unbrowse_resume`, `unbrowse_scrape` and `unbrowse_map` (any page on google.com), and the recorded cloud browser `unbrowse_browse_open` → `unbrowse_browse_act` → `unbrowse_browse_finish`. Hosts that reject dotted names show them with `_` (`unbrowse_run`).

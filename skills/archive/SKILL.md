@@ -1,6 +1,6 @@
 ---
 name: archive
-description: "Archive (archive.org) for agents: Search archive — through Unbrowse's scoped MCP for archive.org (unofficial), which replays archive.org's own first-party API (no browser, verified results). Use when the user wants anything from archive.org, e.g. search archive."
+description: "Archive (archive.org) for agents: Search archive; Read wayback available on archive.org — through Unbrowse's scoped MCP for archive.org (unofficial), which replays archive.org's own first-party API (no browser, verified results). Use when the user wants anything from archive.org, e.g. search archive."
 ---
 
 # Unbrowse for Archive (archive.org)
@@ -35,6 +35,17 @@ Search archive. Inputs: query. Returns data. Read-only on archive.org.
 
 ```json
 {"query":"<query>"}
+```
+
+### `archive_org__get_wayback_available` — Read wayback available on archive.org
+
+Read wayback available on archive.org. Takes the site's own parameters, each optional (left out, the recorded value is sent): url (recorded: "facebook.com/KatzsDelicatessen"). Returns url, archived_snapshots. Read-only on archive.org.
+
+- `url` (string) — optional, e.g. "facebook.com/KatzsDelicatessen"
+- `select` (array) — Keep only these parts of the result: dots walk keys, [] maps over a list, a final {a,b} keeps several keys (e.g. "results[].{title,url}"). Unmatched paths come back in selectMissing.
+
+```json
+{"url":"facebook.com/KatzsDelicatessen"}
 ```
 
 Always there too: `unbrowse_run` (a task on archive.org in plain words), `unbrowse_inspect`, `unbrowse_resume`, `unbrowse_scrape` and `unbrowse_map` (any page on archive.org), and the recorded cloud browser `unbrowse_browse_open` → `unbrowse_browse_act` → `unbrowse_browse_finish`. Hosts that reject dotted names show them with `_` (`unbrowse_run`).

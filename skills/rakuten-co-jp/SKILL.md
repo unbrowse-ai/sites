@@ -1,6 +1,6 @@
 ---
 name: rakuten-co-jp
-description: "Rakuten (rakuten.co.jp) for agents: Search Rakuten for PlayStation 5 Pro listings — through Unbrowse's scoped MCP for rakuten.co.jp (unofficial), which replays rakuten.co.jp's own first-party API (no browser, verified results). Use when the user wants anything from rakuten.co.jp, e.g. search rakuten for playstation 5 pro listings."
+description: "Rakuten (rakuten.co.jp) for agents: Search Rakuten for PlayStation 5 Pro listings; Read a search.rakuten.co.jp page by s — through Unbrowse's scoped MCP for rakuten.co.jp (unofficial), which replays rakuten.co.jp's own first-party API (no browser, verified results). Use when the user wants anything from rakuten.co.jp, e.g. search rakuten for playstation 5 pro listings."
 ---
 
 # Unbrowse for Rakuten (rakuten.co.jp)
@@ -35,6 +35,17 @@ Search Rakuten for PlayStation 5 Pro listings. Inputs: keyword. Returns the page
 
 ```json
 {"keyword":"<keyword>"}
+```
+
+### `search_rakuten_co_jp__read_page` — Read a search.rakuten.co.jp page by s
+
+Read a search.rakuten.co.jp page by s. Inputs: s (optional). Returns the page's title, readable text and links. A large answer comes back as its records at data (as results); pass select for other parts. Read-only on search.rakuten.co.jp.
+
+- `s` (string)
+- `select` (array) — Keep only these parts of the result: dots walk keys, [] maps over a list, a final {a,b} keeps several keys (e.g. "results[].{title,url}"). Unmatched paths come back in selectMissing. Left out on a large answer, its records at data come back as results (the rest is named in projection).
+
+```json
+{"s":"2"}
 ```
 
 Always there too: `unbrowse_run` (a task on rakuten.co.jp in plain words), `unbrowse_inspect`, `unbrowse_resume`, `unbrowse_scrape` and `unbrowse_map` (any page on rakuten.co.jp), and the recorded cloud browser `unbrowse_browse_open` → `unbrowse_browse_act` → `unbrowse_browse_finish`. Hosts that reject dotted names show them with `_` (`unbrowse_run`).

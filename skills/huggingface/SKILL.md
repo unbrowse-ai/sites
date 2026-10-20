@@ -1,6 +1,6 @@
 ---
 name: huggingface
-description: "Huggingface (huggingface.co) for agents: Search huggingface; Repo Search; Hugging Face User Info — through Unbrowse's scoped MCP for huggingface.co (unofficial), which replays huggingface.co's own first-party API (no browser, verified results). Use when the user wants anything from huggingface.co, e.g. search huggingface."
+description: "Huggingface (huggingface.co) for agents: Search huggingface — through Unbrowse's scoped MCP for huggingface.co (unofficial), which replays huggingface.co's own first-party API (no browser, verified results). Use when the user wants anything from huggingface.co, e.g. search huggingface."
 ---
 
 # Unbrowse for Huggingface (huggingface.co)
@@ -39,29 +39,6 @@ Search huggingface. Inputs: query. Also takes the site's own parameters, each op
 
 ```json
 {"query":"<query>"}
-```
-
-### `huggingface_co__mcp_hub_repo_search` — Repo Search
-
-Search Hugging Face repositories with a shared query interface. You can target models, datasets, spaces, or aggregate across multiple repo types in one call. Include links to repositories in your response. The site's own MCP tool hub_repo_search (https://huggingface.co/mcp). Inputs: author (optional) e.g. "google"; sort (optional) e.g. "trendingScore"; limit (optional) e.g. 20. Returns text. Read-only on huggingface.co.
-
-- `author` (string) — Organization or user namespace to filter by (e.g. 'google', 'meta-llama', 'huggingface').
-- `sort` (string) — Sort order (descending): trendingScore, downloads, likes, createdAt, lastModified
-- `limit` (number) — Maximum number of results to return per selected repo type
-- `select` (array) — Keep only these parts of the result: dots walk keys, [] maps over a list, a final {a,b} keeps several keys (e.g. "results[].{title,url}"). Unmatched paths come back in selectMissing.
-
-```json
-{"author":"{\"author\":\"google\",\"sort\":\"trendingScore\",\"limit\":20}","sort":"trendingScore","limit":20}
-```
-
-### `huggingface_co__mcp_hf_whoami` — Hugging Face User Info
-
-Inspect the current Hugging Face authentication context, including the account, visible organization memberships, and credential access details. Read-only and never returns credential values. The site's own MCP tool hf_whoami (https://huggingface.co/mcp). No inputs. Returns status, account, organizations, credential, guidance. Read-only on huggingface.co.
-
-- `select` (array) — Keep only these parts of the result: dots walk keys, [] maps over a list, a final {a,b} keeps several keys (e.g. "results[].{title,url}"). Unmatched paths come back in selectMissing.
-
-```json
-{}
 ```
 
 Always there too: `unbrowse_run` (a task on huggingface.co in plain words), `unbrowse_inspect`, `unbrowse_resume`, `unbrowse_scrape` and `unbrowse_map` (any page on huggingface.co), and the recorded cloud browser `unbrowse_browse_open` → `unbrowse_browse_act` → `unbrowse_browse_finish`. Hosts that reject dotted names show them with `_` (`unbrowse_run`).

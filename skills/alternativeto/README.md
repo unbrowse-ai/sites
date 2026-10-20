@@ -6,7 +6,6 @@ alternativeto.net as agent tools, compiled by [Unbrowse](https://unbrowse.ai) fr
 |---|---|
 | `alternativeto_net__get_browse_search` | Search software on AlternativeTo |
 | `alternativeto_net__post_indexes_queries_2` | Search alternativeto |
-| `alternativeto_net__get_items_available_filters` | Browse apps by category |
 | `alternativeto_net__render_page` | Search apps and software |
 | `alternativeto_net__read_page` | Read a alternativeto.net software page |
 

@@ -1,6 +1,6 @@
 ---
 name: myworkdayjobs
-description: "Myworkdayjobs (myworkdayjobs.com) for agents: Search jobs by keyword, location and category on the DBS Careers job search page; Read dbs.wd3.myworkdayjobs.com/en-US/DBS_Careers — through Unbrowse's scoped MCP for myworkdayjobs.com (unofficial), which replays myworkdayjobs.com's own first-party API (no browser, verified results). Use when the user wants anything from myworkdayjobs.com, e.g. search jobs by keyword, location and category on the dbs careers job search page."
+description: "Myworkdayjobs (myworkdayjobs.com) for agents: Search jobs by keyword, location and category on the DBS Careers job search page — through Unbrowse's scoped MCP for myworkdayjobs.com (unofficial), which replays myworkdayjobs.com's own first-party API (no browser, verified results). Use when the user wants anything from myworkdayjobs.com, e.g. search jobs by keyword, location and category on the dbs careers job search page."
 ---
 
 # Unbrowse for Myworkdayjobs (myworkdayjobs.com)
@@ -35,18 +35,6 @@ Search jobs by keyword, location and category on the DBS Careers job search page
 
 ```json
 {"keyword":"<keyword>"}
-```
-
-### `dbs_wd3_myworkdayjobs_com__read_page` — Read dbs.wd3.myworkdayjobs.com/en-US/DBS_Careers
-
-Read dbs.wd3.myworkdayjobs.com/en-US/DBS_Careers. Takes the site's own parameters, each optional (left out, the recorded value is sent): jobFamily (recorded: "7c4ba0705e5d017ad85cd065f22cd410"); locationCountry (recorded: "80938777cac5440fab50d729f9634969"). Returns the page's title, readable text and links. Read-only on dbs.wd3.myworkdayjobs.com.
-
-- `jobFamily` (string) — optional, e.g. "7c4ba0705e5d017ad85cd065f22cd410"
-- `locationCountry` (string) — optional, e.g. "80938777cac5440fab50d729f9634969"
-- `select` (array) — Keep only these parts of the result: dots walk keys, [] maps over a list, a final {a,b} keeps several keys (e.g. "results[].{title,url}"). Unmatched paths come back in selectMissing.
-
-```json
-{"jobFamily":"7c4ba0705e5d017ad85cd065f22cd410","locationCountry":"80938777cac5440fab50d729f9634969"}
 ```
 
 Always there too: `unbrowse_run` (a task on myworkdayjobs.com in plain words), `unbrowse_inspect`, `unbrowse_resume`, `unbrowse_scrape` and `unbrowse_map` (any page on myworkdayjobs.com), and the recorded cloud browser `unbrowse_browse_open` → `unbrowse_browse_act` → `unbrowse_browse_finish`. Hosts that reject dotted names show them with `_` (`unbrowse_run`).

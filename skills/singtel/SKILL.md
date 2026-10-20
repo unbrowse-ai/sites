@@ -1,6 +1,6 @@
 ---
 name: singtel
-description: "Singtel (singtel.com) for agents: Read plans on shop.singtel.com; Read shop.singtel.com/plans — through Unbrowse's scoped MCP for singtel.com (unofficial), which replays singtel.com's own first-party API (no browser, verified results). Use when the user wants anything from singtel.com, e.g. read plans on shop.singtel.com."
+description: "Singtel (singtel.com) for agents: Read plans on shop.singtel.com — through Unbrowse's scoped MCP for singtel.com (unofficial), which replays singtel.com's own first-party API (no browser, verified results). Use when the user wants anything from singtel.com, e.g. read plans on shop.singtel.com."
 ---
 
 # Unbrowse for Singtel (singtel.com)
@@ -35,17 +35,6 @@ Read plans on shop.singtel.com. Inputs: group. Returns the page's title, readabl
 
 ```json
 {"group":"<group>"}
-```
-
-### `shop_singtel_com__read_page` — Read shop.singtel.com/plans
-
-Read shop.singtel.com/plans. Takes the site's own parameters, each optional (left out, the recorded value is sent): group (recorded: "sim-only"). Returns the page's title, readable text and links. Read-only on shop.singtel.com.
-
-- `group` (string) — optional, e.g. "sim-only"
-- `select` (array) — Keep only these parts of the result: dots walk keys, [] maps over a list, a final {a,b} keeps several keys (e.g. "results[].{title,url}"). Unmatched paths come back in selectMissing.
-
-```json
-{"group":"sim-only"}
 ```
 
 Always there too: `unbrowse_run` (a task on singtel.com in plain words), `unbrowse_inspect`, `unbrowse_resume`, `unbrowse_scrape` and `unbrowse_map` (any page on singtel.com), and the recorded cloud browser `unbrowse_browse_open` → `unbrowse_browse_act` → `unbrowse_browse_finish`. Hosts that reject dotted names show them with `_` (`unbrowse_run`).

@@ -5,7 +5,6 @@ singtel.com as agent tools, compiled by [Unbrowse](https://unbrowse.ai) from the
 | Tool | What it does |
 |---|---|
 | `shop_singtel_com__get_plans` | Read plans on shop.singtel.com |
-| `shop_singtel_com__read_page` | Read shop.singtel.com/plans |
 
 **MCP** (remote, streamable HTTP, OAuth): `https://unbrowse.ai/mcp/singtel.com`
 

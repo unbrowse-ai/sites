@@ -7,21 +7,6 @@
   "description": "Websites as agent tools (unofficial): each plugin is one site's remote MCP server and skill, compiled by Unbrowse from the site's own requests.",
   "plugins": [
     {
-      "name": "alternativeto",
-      "source": "./skills/alternativeto",
-      "description": "alternativeto.net as MCP tools: Search software on AlternativeTo. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "alternativeto": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/alternativeto.net"
-        }
-      }
-    },
-    {
       "name": "caniuse",
       "source": "./skills/caniuse",
       "description": "caniuse.com as MCP tools: Search caniuse. Unofficial.",
@@ -37,6 +22,21 @@
       }
     },
     {
+      "name": "alternativeto",
+      "source": "./skills/alternativeto",
+      "description": "alternativeto.net as MCP tools: Search software on AlternativeTo. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "alternativeto": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/alternativeto.net"
+        }
+      }
+    },
+    {
       "name": "futurepedia",
       "source": "./skills/futurepedia",
       "description": "futurepedia.io as MCP tools: Search AI tools on Futurepedia. Unofficial.",
@@ -48,21 +48,6 @@
         "futurepedia": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/futurepedia.io"
-        }
-      }
-    },
-    {
-      "name": "huggingface",
-      "source": "./skills/huggingface",
-      "description": "huggingface.co as MCP tools: Search huggingface. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "huggingface": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/huggingface.co"
         }
       }
     },
@@ -108,6 +93,21 @@
         "carousell-sg": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/carousell.sg"
+        }
+      }
+    },
+    {
+      "name": "konnectbot",
+      "source": "./skills/konnectbot",
+      "description": "konnectbot.com as MCP tools: Search the documentation. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "konnectbot": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/konnectbot.com"
         }
       }
     },
@@ -172,6 +172,21 @@
       }
     },
     {
+      "name": "archive",
+      "source": "./skills/archive",
+      "description": "archive.org as MCP tools: Search archive. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "archive": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/archive.org"
+        }
+      }
+    },
+    {
       "name": "capterra",
       "source": "./skills/capterra",
       "description": "capterra.com as MCP tools: Search software on Capterra. Unofficial.",
@@ -183,6 +198,21 @@
         "capterra": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/capterra.com"
+        }
+      }
+    },
+    {
+      "name": "huggingface",
+      "source": "./skills/huggingface",
+      "description": "huggingface.co as MCP tools: Search huggingface. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "huggingface": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/huggingface.co"
         }
       }
     },
@@ -232,47 +262,17 @@
       }
     },
     {
-      "name": "singtel",
-      "source": "./skills/singtel",
-      "description": "singtel.com as MCP tools: Read plans on shop.singtel.com. Unofficial.",
+      "name": "rakuten-co-jp",
+      "source": "./skills/rakuten-co-jp",
+      "description": "rakuten.co.jp as MCP tools: Search Rakuten for PlayStation 5 Pro listings. Unofficial.",
       "strict": false,
       "skills": [
         "./"
       ],
       "mcpServers": {
-        "singtel": {
+        "rakuten-co-jp": {
           "type": "http",
-          "url": "https://unbrowse.ai/mcp/singtel.com"
-        }
-      }
-    },
-    {
-      "name": "google",
-      "source": "./skills/google",
-      "description": "google.com as MCP tools: Google News search (RSS). Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "google": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/google.com"
-        }
-      }
-    },
-    {
-      "name": "myworkdayjobs",
-      "source": "./skills/myworkdayjobs",
-      "description": "myworkdayjobs.com as MCP tools: Search jobs by keyword, location and category on the DBS Careers job",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "myworkdayjobs": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/myworkdayjobs.com"
+          "url": "https://unbrowse.ai/mcp/rakuten.co.jp"
         }
       }
     },
@@ -307,17 +307,17 @@
       }
     },
     {
-      "name": "archive",
-      "source": "./skills/archive",
-      "description": "archive.org as MCP tools: Search archive. Unofficial.",
+      "name": "uneed-best",
+      "source": "./skills/uneed-best",
+      "description": "uneed.best as MCP tools: Search products. Unofficial.",
       "strict": false,
       "skills": [
         "./"
       ],
       "mcpServers": {
-        "archive": {
+        "uneed-best": {
           "type": "http",
-          "url": "https://unbrowse.ai/mcp/archive.org"
+          "url": "https://unbrowse.ai/mcp/uneed.best"
         }
       }
     },
@@ -607,6 +607,21 @@
       }
     },
     {
+      "name": "poshmark",
+      "source": "./skills/poshmark",
+      "description": "poshmark.com as MCP tools: Search marketplace listings by keyword. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "poshmark": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/poshmark.com"
+        }
+      }
+    },
+    {
       "name": "pypi",
       "source": "./skills/pypi",
       "description": "pypi.org as MCP tools: Search pypi. Unofficial.",
@@ -633,6 +648,21 @@
         "rubygems": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/rubygems.org"
+        }
+      }
+    },
+    {
+      "name": "singtel",
+      "source": "./skills/singtel",
+      "description": "singtel.com as MCP tools: Read plans on shop.singtel.com. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "singtel": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/singtel.com"
         }
       }
     },
@@ -742,6 +772,21 @@
       }
     },
     {
+      "name": "google",
+      "source": "./skills/google",
+      "description": "google.com as MCP tools: Google News search (RSS). Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "google": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/google.com"
+        }
+      }
+    },
+    {
       "name": "greenhouse",
       "source": "./skills/greenhouse",
       "description": "greenhouse.io as MCP tools: Greenhouse job board: open jobs. Unofficial.",
@@ -768,6 +813,21 @@
         "lever": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/lever.co"
+        }
+      }
+    },
+    {
+      "name": "myworkdayjobs",
+      "source": "./skills/myworkdayjobs",
+      "description": "myworkdayjobs.com as MCP tools: Search jobs by keyword, location and category on the DBS Careers job",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "myworkdayjobs": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/myworkdayjobs.com"
         }
       }
     },
@@ -813,21 +873,6 @@
         "python": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/python.org"
-        }
-      }
-    },
-    {
-      "name": "rakuten-co-jp",
-      "source": "./skills/rakuten-co-jp",
-      "description": "rakuten.co.jp as MCP tools: Search Rakuten for PlayStation 5 Pro listings. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "rakuten-co-jp": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/rakuten.co.jp"
         }
       }
     },
@@ -918,6 +963,21 @@
         "airbnb-com-sg": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/airbnb.com.sg"
+        }
+      }
+    },
+    {
+      "name": "theresanaiforthat",
+      "source": "./skills/theresanaiforthat",
+      "description": "theresanaiforthat.com as MCP tools: Search AI tools by keyword. Unofficial.",
+      "strict": false,
+      "skills": [
+        "./"
+      ],
+      "mcpServers": {
+        "theresanaiforthat": {
+          "type": "http",
+          "url": "https://unbrowse.ai/mcp/theresanaiforthat.com"
         }
       }
     }

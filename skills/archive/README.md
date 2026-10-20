@@ -5,6 +5,7 @@ archive.org as agent tools, compiled by [Unbrowse](https://unbrowse.ai) from the
 | Tool | What it does |
 |---|---|
 | `archive_org__get_search_anchor` | Search archive |
+| `archive_org__get_wayback_available` | Read wayback available on archive.org |
 
 **MCP** (remote, streamable HTTP, OAuth): `https://unbrowse.ai/mcp/archive.org`
 

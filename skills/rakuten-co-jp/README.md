@@ -5,6 +5,7 @@ rakuten.co.jp as agent tools, compiled by [Unbrowse](https://unbrowse.ai) from t
 | Tool | What it does |
 |---|---|
 | `search_rakuten_co_jp__render_page` | Search Rakuten for PlayStation 5 Pro listings |
+| `search_rakuten_co_jp__read_page` | Read a search.rakuten.co.jp page by s |
 
 **MCP** (remote, streamable HTTP, OAuth): `https://unbrowse.ai/mcp/rakuten.co.jp`
 

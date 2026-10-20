@@ -1,6 +1,6 @@
 ---
 name: alternativeto
-description: "Alternativeto (alternativeto.net) for agents: Search software on AlternativeTo; Search alternativeto; Browse apps by category; Search apps and software — through Unbrowse's scoped MCP for alternativeto.net (unofficial), which replays alternativeto.net's own first-party API (no browser, verified results). Use when the user wants anything from alternativeto.net, e.g. search software on alternativeto."
+description: "Alternativeto (alternativeto.net) for agents: Search software on AlternativeTo; Search alternativeto; Search apps and software; Read a alternativeto.net software page — through Unbrowse's scoped MCP for alternativeto.net (unofficial), which replays alternativeto.net's own first-party API (no browser, verified results). Use when the user wants anything from alternativeto.net, e.g. search software on alternativeto."
 ---
 
 # Unbrowse for Alternativeto (alternativeto.net)
@@ -48,19 +48,6 @@ Search alternativeto. Inputs: query. Also takes the site's own parameters, each 
 
 ```json
 {"query":"<query>"}
-```
-
-### `alternativeto_net__get_items_available_filters` — Browse apps by category
-
-Browse apps by category. Takes the site's own parameters, each optional (left out, the recorded value is sent): category (recorded: "security"); excludeMetatags (recorded: "nsfw-warning,legal-warning,block-as-alternative"); uriAsBase64 (recorded: "aHR0cHM6Ly9hbHRlcm5hdGl2ZXRvLm5ldC9icm93c2UvYWxsLz9jYXRlZ29yeT1zZWN1cml0eQ=="). Returns platformsFilters, featureFilters, licenseFilters, originFilters. Read-only on alternativeto.net.
-
-- `category` (string) — optional, e.g. "security"
-- `excludeMetatags` (string) — optional, e.g. "nsfw-warning,legal-warning,block-as-alternative"
-- `uriAsBase64` (string) — optional, e.g. "aHR0cHM6Ly9hbHRlcm5hdGl2ZXRvLm5ldC9icm93c2UvYWxsLz9jYXRlZ29yeT1zZWN1cml0eQ=="
-- `select` (array) — Keep only these parts of the result: dots walk keys, [] maps over a list, a final {a,b} keeps several keys (e.g. "results[].{title,url}"). Unmatched paths come back in selectMissing.
-
-```json
-{"category":"security","excludeMetatags":"nsfw-warning,legal-warning,block-as-alternative","uriAsBase64":"aHR0cHM6Ly9hbHRlcm5hdGl2ZXRvLm5ldC9icm93c2UvYWxsLz9jYXRlZ29yeT1zZWN1cml0eQ=="}
 ```
 
 ### `alternativeto_net__render_page` — Search apps and software

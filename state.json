@@ -1,11 +1,11 @@
 {
   "google": {
-    "hash": "3fc29c7e6a0ab3ea",
-    "version": "1.0.3",
+    "hash": "5babc495ea8a874c",
+    "version": "1.0.4",
     "published": {
-      "smithery": "3fc29c7e6a0ab3ea",
+      "smithery": "5babc495ea8a874c",
       "smithery-mcp": "8162f29fb5c9dbe6",
-      "smithery-meta": "3fc29c7e6a0ab3ea"
+      "smithery-meta": "5babc495ea8a874c"
     }
   },
   "radiofrance-fr": {
@@ -689,12 +689,12 @@
     }
   },
   "alternativeto": {
-    "hash": "322d9e4df5d4f2e6",
-    "version": "1.0.1",
+    "hash": "a755e00988598e9f",
+    "version": "1.0.2",
     "published": {
-      "smithery": "322d9e4df5d4f2e6",
+      "smithery": "a755e00988598e9f",
       "smithery-mcp": "84f7b1226ade8a95",
-      "smithery-meta": "322d9e4df5d4f2e6"
+      "smithery-meta": "a755e00988598e9f"
     }
   },
   "caniuse": {
@@ -761,12 +761,12 @@
     }
   },
   "huggingface": {
-    "hash": "e03b3b18062fbe32",
-    "version": "1.0.1",
+    "hash": "d216cd4e7e625f23",
+    "version": "1.0.2",
     "published": {
-      "smithery": "e03b3b18062fbe32",
+      "smithery": "d216cd4e7e625f23",
       "smithery-mcp": "560c7b3b39a366aa",
-      "smithery-meta": "e03b3b18062fbe32"
+      "smithery-meta": "d216cd4e7e625f23"
     }
   },
   "ikea": {
@@ -779,21 +779,21 @@
     }
   },
   "singtel": {
-    "hash": "619a4851e73db2a0",
-    "version": "1.0.1",
+    "hash": "bbd8abaed2d718d6",
+    "version": "1.0.2",
     "published": {
-      "smithery": "619a4851e73db2a0",
+      "smithery": "bbd8abaed2d718d6",
       "smithery-mcp": "619a4851e73db2a0",
-      "smithery-meta": "619a4851e73db2a0"
+      "smithery-meta": "bbd8abaed2d718d6"
     }
   },
   "myworkdayjobs": {
-    "hash": "19dea99a591a104d",
-    "version": "1.0.1",
+    "hash": "3ea6567b8961b462",
+    "version": "1.0.2",
     "published": {
-      "smithery": "19dea99a591a104d",
+      "smithery": "3ea6567b8961b462",
       "smithery-mcp": "19dea99a591a104d",
-      "smithery-meta": "19dea99a591a104d"
+      "smithery-meta": "3ea6567b8961b462"
     }
   },
   "reddit": {
@@ -815,10 +815,10 @@
     }
   },
   "archive": {
-    "hash": "1d623e2e29dff2d5",
-    "version": "1.0.1",
+    "hash": "16cc09d4b15a3b11",
+    "version": "1.0.2",
     "published": {
-      "smithery": "1d623e2e29dff2d5"
+      "smithery": "16cc09d4b15a3b11"
     }
   },
   "bbcgoodfood": {
@@ -838,17 +838,23 @@
   "crossref": {
     "hash": "14ecff319e37dcac",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "14ecff319e37dcac"
+    }
   },
   "data": {
     "hash": "eecda29ef4debb4c",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "eecda29ef4debb4c"
+    }
   },
   "dev-to": {
     "hash": "4ae5806ba3c2731b",
     "version": "1.0.1",
-    "published": {}
+    "published": {
+      "smithery": "4ae5806ba3c2731b"
+    }
   },
   "discogs": {
     "hash": "f8e05a2fd7d60549",
@@ -1029,9 +1035,11 @@
     }
   },
   "rakuten-co-jp": {
-    "hash": "45ba2bfe709c8864",
-    "version": "1.0.1",
-    "published": {}
+    "hash": "13db00830cfee323",
+    "version": "1.0.2",
+    "published": {
+      "smithery": "13db00830cfee323"
+    }
   },
   "arxiv": {
     "hash": "6707a1b86b5d445e",
@@ -1066,6 +1074,30 @@
   },
   "skyscanner": {
     "hash": "bbe8dd4efc321bd7",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "konnectbot": {
+    "hash": "99d5f0bd19c855ad",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "99d5f0bd19c855ad"
+    }
+  },
+  "uneed-best": {
+    "hash": "908285452d6b17ae",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "908285452d6b17ae"
+    }
+  },
+  "poshmark": {
+    "hash": "cefc0175f570b4d0",
+    "version": "1.0.0",
+    "published": {}
+  },
+  "theresanaiforthat": {
+    "hash": "d93856261da55328",
     "version": "1.0.0",
     "published": {}
   }
