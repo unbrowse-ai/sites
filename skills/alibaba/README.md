@@ -4,7 +4,6 @@ alibaba.com as agent tools, compiled by [Unbrowse](https://unbrowse.ai) from the
 
 | Tool | What it does |
 |---|---|
-| `alibaba_com__get_trade_search` | Search products by keyword |
 | `alibaba_com__render_page` | Search alibaba.com |
 
 **MCP** (remote, streamable HTTP, OAuth): `https://unbrowse.ai/mcp/alibaba.com`

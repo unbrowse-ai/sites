@@ -7,62 +7,17 @@
   "description": "Websites as agent tools (unofficial): each plugin is one site's remote MCP server and skill, compiled by Unbrowse from the site's own requests.",
   "plugins": [
     {
-      "name": "caniuse",
-      "source": "./skills/caniuse",
-      "description": "caniuse.com as MCP tools: Search caniuse. Unofficial.",
+      "name": "usedesk-ru",
+      "source": "./skills/usedesk-ru",
+      "description": "usedesk.ru as MCP tools: marsique — Юздеск 161951: основной отчёт, теги. Unofficial.",
       "strict": false,
       "skills": [
         "./"
       ],
       "mcpServers": {
-        "caniuse": {
+        "usedesk-ru": {
           "type": "http",
-          "url": "https://unbrowse.ai/mcp/caniuse.com"
-        }
-      }
-    },
-    {
-      "name": "alternativeto",
-      "source": "./skills/alternativeto",
-      "description": "alternativeto.net as MCP tools: Search software on AlternativeTo. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "alternativeto": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/alternativeto.net"
-        }
-      }
-    },
-    {
-      "name": "futurepedia",
-      "source": "./skills/futurepedia",
-      "description": "futurepedia.io as MCP tools: Search AI tools on Futurepedia. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "futurepedia": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/futurepedia.io"
-        }
-      }
-    },
-    {
-      "name": "propertyguru-com-sg",
-      "source": "./skills/propertyguru-com-sg",
-      "description": "propertyguru.com.sg as MCP tools: PropertyGuru property listings for sale. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "propertyguru-com-sg": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/propertyguru.com.sg"
+          "url": "https://unbrowse.ai/mcp/usedesk.ru"
         }
       }
     },
@@ -112,17 +67,17 @@
       }
     },
     {
-      "name": "trustradius",
-      "source": "./skills/trustradius",
-      "description": "trustradius.com as MCP tools: Search TrustRadius for software by keyword. Unofficial.",
+      "name": "datos-gob-ar",
+      "source": "./skills/datos-gob-ar",
+      "description": "datos.gob.ar as MCP tools: Datos Argentina dataset search. Unofficial.",
       "strict": false,
       "skills": [
         "./"
       ],
       "mcpServers": {
-        "trustradius": {
+        "datos-gob-ar": {
           "type": "http",
-          "url": "https://unbrowse.ai/mcp/trustradius.com"
+          "url": "https://unbrowse.ai/mcp/datos.gob.ar"
         }
       }
     },
@@ -142,126 +97,6 @@
       }
     },
     {
-      "name": "nuget",
-      "source": "./skills/nuget",
-      "description": "nuget.org as MCP tools: Search nuget. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "nuget": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/nuget.org"
-        }
-      }
-    },
-    {
-      "name": "alibaba",
-      "source": "./skills/alibaba",
-      "description": "alibaba.com as MCP tools: Search products by keyword. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "alibaba": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/alibaba.com"
-        }
-      }
-    },
-    {
-      "name": "archive",
-      "source": "./skills/archive",
-      "description": "archive.org as MCP tools: Search archive. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "archive": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/archive.org"
-        }
-      }
-    },
-    {
-      "name": "capterra",
-      "source": "./skills/capterra",
-      "description": "capterra.com as MCP tools: Search software on Capterra. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "capterra": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/capterra.com"
-        }
-      }
-    },
-    {
-      "name": "huggingface",
-      "source": "./skills/huggingface",
-      "description": "huggingface.co as MCP tools: Search huggingface. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "huggingface": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/huggingface.co"
-        }
-      }
-    },
-    {
-      "name": "ikea",
-      "source": "./skills/ikea",
-      "description": "ikea.com as MCP tools: Search ikea. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "ikea": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/ikea.com"
-        }
-      }
-    },
-    {
-      "name": "sec",
-      "source": "./skills/sec",
-      "description": "sec.gov as MCP tools: Search SEC EDGAR full-text filings. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "sec": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/sec.gov"
-        }
-      }
-    },
-    {
-      "name": "semanticscholar",
-      "source": "./skills/semanticscholar",
-      "description": "semanticscholar.org as MCP tools: Paper detail with citations and references. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "semanticscholar": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/semanticscholar.org"
-        }
-      }
-    },
-    {
       "name": "rakuten-co-jp",
       "source": "./skills/rakuten-co-jp",
       "description": "rakuten.co.jp as MCP tools: Search Rakuten for PlayStation 5 Pro listings. Unofficial.",
@@ -273,336 +108,6 @@
         "rakuten-co-jp": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/rakuten.co.jp"
-        }
-      }
-    },
-    {
-      "name": "reddit",
-      "source": "./skills/reddit",
-      "description": "reddit.com as MCP tools: Search Reddit posts by query. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "reddit": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/reddit.com"
-        }
-      }
-    },
-    {
-      "name": "wikipedia",
-      "source": "./skills/wikipedia",
-      "description": "wikipedia.org as MCP tools: Search wikipedia. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "wikipedia": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/wikipedia.org"
-        }
-      }
-    },
-    {
-      "name": "uneed-best",
-      "source": "./skills/uneed-best",
-      "description": "uneed.best as MCP tools: Search products. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "uneed-best": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/uneed.best"
-        }
-      }
-    },
-    {
-      "name": "bbcgoodfood",
-      "source": "./skills/bbcgoodfood",
-      "description": "bbcgoodfood.com as MCP tools: Search bbcgoodfood. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "bbcgoodfood": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/bbcgoodfood.com"
-        }
-      }
-    },
-    {
-      "name": "bing",
-      "source": "./skills/bing",
-      "description": "bing.com as MCP tools: Search bing. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "bing": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/bing.com"
-        }
-      }
-    },
-    {
-      "name": "crates",
-      "source": "./skills/crates",
-      "description": "crates.io as MCP tools: Search crates. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "crates": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/crates.io"
-        }
-      }
-    },
-    {
-      "name": "crossref",
-      "source": "./skills/crossref",
-      "description": "crossref.org as MCP tools: Search crossref. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "crossref": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/crossref.org"
-        }
-      }
-    },
-    {
-      "name": "data",
-      "source": "./skills/data",
-      "description": "data.gov as MCP tools: Search datagov. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "data": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/data.gov"
-        }
-      }
-    },
-    {
-      "name": "dev-to",
-      "source": "./skills/dev-to",
-      "description": "dev.to as MCP tools: Search devto. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "dev-to": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/dev.to"
-        }
-      }
-    },
-    {
-      "name": "discogs",
-      "source": "./skills/discogs",
-      "description": "discogs.com as MCP tools: Search discogs. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "discogs": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/discogs.com"
-        }
-      }
-    },
-    {
-      "name": "djangoproject",
-      "source": "./skills/djangoproject",
-      "description": "djangoproject.com as MCP tools: Search django. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "djangoproject": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/djangoproject.com"
-        }
-      }
-    },
-    {
-      "name": "food",
-      "source": "./skills/food",
-      "description": "food.com as MCP tools: Search foodcom. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "food": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/food.com"
-        }
-      }
-    },
-    {
-      "name": "genius",
-      "source": "./skills/genius",
-      "description": "genius.com as MCP tools: Search genius. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "genius": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/genius.com"
-        }
-      }
-    },
-    {
-      "name": "gov-uk",
-      "source": "./skills/gov-uk",
-      "description": "gov.uk as MCP tools: Search govuk. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "gov-uk": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/gov.uk"
-        }
-      }
-    },
-    {
-      "name": "gutenberg",
-      "source": "./skills/gutenberg",
-      "description": "gutenberg.org as MCP tools: Search gutenberg. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "gutenberg": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/gutenberg.org"
-        }
-      }
-    },
-    {
-      "name": "hex-pm",
-      "source": "./skills/hex-pm",
-      "description": "hex.pm as MCP tools: Search hex. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "hex-pm": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/hex.pm"
-        }
-      }
-    },
-    {
-      "name": "imdb",
-      "source": "./skills/imdb",
-      "description": "imdb.com as MCP tools: Search imdb. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "imdb": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/imdb.com"
-        }
-      }
-    },
-    {
-      "name": "instructables",
-      "source": "./skills/instructables",
-      "description": "instructables.com as MCP tools: Search instructables. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "instructables": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/instructables.com"
-        }
-      }
-    },
-    {
-      "name": "jsr",
-      "source": "./skills/jsr",
-      "description": "jsr.io as MCP tools: Search jsr. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "jsr": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/jsr.io"
-        }
-      }
-    },
-    {
-      "name": "metacpan",
-      "source": "./skills/metacpan",
-      "description": "metacpan.org as MCP tools: Search metacpan. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "metacpan": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/metacpan.org"
-        }
-      }
-    },
-    {
-      "name": "npmjs",
-      "source": "./skills/npmjs",
-      "description": "npmjs.com as MCP tools: Search npm. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "npmjs": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/npmjs.com"
-        }
-      }
-    },
-    {
-      "name": "openlibrary",
-      "source": "./skills/openlibrary",
-      "description": "openlibrary.org as MCP tools: Search openlibrary. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "openlibrary": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/openlibrary.org"
         }
       }
     },
@@ -622,47 +127,32 @@
       }
     },
     {
-      "name": "pypi",
-      "source": "./skills/pypi",
-      "description": "pypi.org as MCP tools: Search pypi. Unofficial.",
+      "name": "qq",
+      "source": "./skills/qq",
+      "description": "qq.com as MCP tools: Search QQ.com - second run. Unofficial.",
       "strict": false,
       "skills": [
         "./"
       ],
       "mcpServers": {
-        "pypi": {
+        "qq": {
           "type": "http",
-          "url": "https://unbrowse.ai/mcp/pypi.org"
+          "url": "https://unbrowse.ai/mcp/qq.com"
         }
       }
     },
     {
-      "name": "rubygems",
-      "source": "./skills/rubygems",
-      "description": "rubygems.org as MCP tools: Search rubygems. Unofficial.",
+      "name": "semanticscholar",
+      "source": "./skills/semanticscholar",
+      "description": "semanticscholar.org as MCP tools: Paper detail with citations and references. Unofficial.",
       "strict": false,
       "skills": [
         "./"
       ],
       "mcpServers": {
-        "rubygems": {
+        "semanticscholar": {
           "type": "http",
-          "url": "https://unbrowse.ai/mcp/rubygems.org"
-        }
-      }
-    },
-    {
-      "name": "singtel",
-      "source": "./skills/singtel",
-      "description": "singtel.com as MCP tools: Read plans on shop.singtel.com. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "singtel": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/singtel.com"
+          "url": "https://unbrowse.ai/mcp/semanticscholar.org"
         }
       }
     },
@@ -682,137 +172,17 @@
       }
     },
     {
-      "name": "timeanddate",
-      "source": "./skills/timeanddate",
-      "description": "timeanddate.com as MCP tools: Search timeanddate. Unofficial.",
+      "name": "alibaba",
+      "source": "./skills/alibaba",
+      "description": "alibaba.com as MCP tools: Search alibaba.com. Unofficial.",
       "strict": false,
       "skills": [
         "./"
       ],
       "mcpServers": {
-        "timeanddate": {
+        "alibaba": {
           "type": "http",
-          "url": "https://unbrowse.ai/mcp/timeanddate.com"
-        }
-      }
-    },
-    {
-      "name": "tvmaze",
-      "source": "./skills/tvmaze",
-      "description": "tvmaze.com as MCP tools: Search tvmaze. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "tvmaze": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/tvmaze.com"
-        }
-      }
-    },
-    {
-      "name": "usitc",
-      "source": "./skills/usitc",
-      "description": "usitc.gov as MCP tools: Search HTS codes by keyword. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "usitc": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/usitc.gov"
-        }
-      }
-    },
-    {
-      "name": "vuejs",
-      "source": "./skills/vuejs",
-      "description": "vuejs.org as MCP tools: Search vuejs. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "vuejs": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/vuejs.org"
-        }
-      }
-    },
-    {
-      "name": "wikidata",
-      "source": "./skills/wikidata",
-      "description": "wikidata.org as MCP tools: Search wikidata. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "wikidata": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/wikidata.org"
-        }
-      }
-    },
-    {
-      "name": "ashbyhq",
-      "source": "./skills/ashbyhq",
-      "description": "ashbyhq.com as MCP tools: Ashby job board: open jobs. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "ashbyhq": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/ashbyhq.com"
-        }
-      }
-    },
-    {
-      "name": "google",
-      "source": "./skills/google",
-      "description": "google.com as MCP tools: Google News search (RSS). Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "google": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/google.com"
-        }
-      }
-    },
-    {
-      "name": "greenhouse",
-      "source": "./skills/greenhouse",
-      "description": "greenhouse.io as MCP tools: Greenhouse job board: open jobs. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "greenhouse": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/greenhouse.io"
-        }
-      }
-    },
-    {
-      "name": "lever",
-      "source": "./skills/lever",
-      "description": "lever.co as MCP tools: Lever job board: open postings. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "lever": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/lever.co"
+          "url": "https://unbrowse.ai/mcp/alibaba.com"
         }
       }
     },
@@ -832,152 +202,17 @@
       }
     },
     {
-      "name": "onemap-gov-sg",
-      "source": "./skills/onemap-gov-sg",
-      "description": "onemap.gov.sg as MCP tools: Read ss search on www.onemap.gov.sg. Unofficial.",
+      "name": "propertyguru-com-sg",
+      "source": "./skills/propertyguru-com-sg",
+      "description": "propertyguru.com.sg as MCP tools: Search propertyguru.com.sg. Unofficial.",
       "strict": false,
       "skills": [
         "./"
       ],
       "mcpServers": {
-        "onemap-gov-sg": {
+        "propertyguru-com-sg": {
           "type": "http",
-          "url": "https://unbrowse.ai/mcp/onemap.gov.sg"
-        }
-      }
-    },
-    {
-      "name": "packagist",
-      "source": "./skills/packagist",
-      "description": "packagist.org as MCP tools: Search packagist. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "packagist": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/packagist.org"
-        }
-      }
-    },
-    {
-      "name": "python",
-      "source": "./skills/python",
-      "description": "python.org as MCP tools: Search pythondocs. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "python": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/python.org"
-        }
-      }
-    },
-    {
-      "name": "redfin",
-      "source": "./skills/redfin",
-      "description": "redfin.com as MCP tools: Redfin search: homes for sale in a region. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "redfin": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/redfin.com"
-        }
-      }
-    },
-    {
-      "name": "remoteok",
-      "source": "./skills/remoteok",
-      "description": "remoteok.com as MCP tools: Search remoteok. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "remoteok": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/remoteok.com"
-        }
-      }
-    },
-    {
-      "name": "wikimedia",
-      "source": "./skills/wikimedia",
-      "description": "wikimedia.org as MCP tools: Search commons. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "wikimedia": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/wikimedia.org"
-        }
-      }
-    },
-    {
-      "name": "wikivoyage",
-      "source": "./skills/wikivoyage",
-      "description": "wikivoyage.org as MCP tools: Search wikivoyage. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "wikivoyage": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/wikivoyage.org"
-        }
-      }
-    },
-    {
-      "name": "airbnb",
-      "source": "./skills/airbnb",
-      "description": "airbnb.com as MCP tools: Airbnb search: stays in a location. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "airbnb": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/airbnb.com"
-        }
-      }
-    },
-    {
-      "name": "airbnb-com-sg",
-      "source": "./skills/airbnb-com-sg",
-      "description": "airbnb.com.sg as MCP tools: Airbnb search: stays in a location. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "airbnb-com-sg": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/airbnb.com.sg"
-        }
-      }
-    },
-    {
-      "name": "theresanaiforthat",
-      "source": "./skills/theresanaiforthat",
-      "description": "theresanaiforthat.com as MCP tools: Search AI tools by keyword. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "theresanaiforthat": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/theresanaiforthat.com"
+          "url": "https://unbrowse.ai/mcp/propertyguru.com.sg"
         }
       }
     }

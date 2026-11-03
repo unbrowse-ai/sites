@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.unbrowse-ai/usedesk-ru",
+  "title": "Unbrowse for Usedesk (unofficial)",
+  "description": "usedesk.ru as MCP tools: marsique — Юздеск 161951: основной отчёт, теги. Unofficial.",
+  "version": "1.0.0",
+  "websiteUrl": "https://unbrowse.ai/sites/usedesk.ru",
+  "repository": {
+    "url": "https://github.com/unbrowse-ai/unbrowse",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://unbrowse.ai/mcp/usedesk.ru"
+    }
+  ]
+}

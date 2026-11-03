@@ -1,6 +1,6 @@
 ---
 name: semanticscholar
-description: "Semanticscholar (semanticscholar.org) for agents: Paper detail with citations and references; Search semanticscholar — through Unbrowse's scoped MCP for semanticscholar.org (unofficial), which replays semanticscholar.org's own first-party API (no browser, verified results). Use when the user wants anything from semanticscholar.org, e.g. paper detail with citations and references."
+description: "Semanticscholar (semanticscholar.org) for agents: Paper detail with citations and references — through Unbrowse's scoped MCP for semanticscholar.org (unofficial), which replays semanticscholar.org's own first-party API (no browser, verified results). Use when the user wants anything from semanticscholar.org, e.g. paper detail with citations and references."
 ---
 
 # Unbrowse for Semanticscholar (semanticscholar.org)
@@ -52,28 +52,6 @@ Paper detail with citations and references. Inputs: q; query_string. Also takes 
 
 ```json
 {"q":"<q>","query_string":"<query_string>"}
-```
-
-### `semanticscholar_org__post_search` — Search semanticscholar
-
-Search semanticscholar. Inputs: query. Also takes the site's own parameters, each optional (left out, the recorded value is sent): page (recorded: 1); pageSize (recorded: 10); sort (recorded: "relevance"); yearFilter; requireViewablePdf (recorded: false); hydrateWithDdb (recorded: true). Returns results, query, querySuggestions, totalPages, totalResults, stats, matchedAuthors, matchedEntity. Read-only on semanticscholar.org.
-
-- `query` (string, required) — query (typed during “fill Search text”)
-- `page` (integer) — optional, e.g. 1
-- `sort` (string) — optional, e.g. "relevance"
-- `yearFilter` (string) — optional, e.g. null
-- `requireViewablePdf` (string) — optional, e.g. false
-- `hydrateWithDdb` (string) — optional, e.g. true
-- `includeTldrs` (string) — optional, e.g. true
-- `performTitleMatch` (string) — optional, e.g. true
-- `includeBadges` (string) — optional, e.g. true
-- `getQuerySuggestions` (string) — optional, e.g. false
-- `includePdfVisibility` (string) — optional, e.g. true
-- `select` (array) — Keep only these parts of the result: dots walk keys, [] maps over a list, a final {a,b} keeps several keys (e.g. "results[].{title,url}"). Unmatched paths come back in selectMissing.
-- 1 more of the site's own parameters (locale, paging and the like), sent as recorded
-
-```json
-{"query":"<query>"}
 ```
 
 Always there too: `unbrowse_run` (a task on semanticscholar.org in plain words), `unbrowse_inspect`, `unbrowse_resume`, `unbrowse_scrape` and `unbrowse_map` (any page on semanticscholar.org), and the recorded cloud browser `unbrowse_browse_open` → `unbrowse_browse_act` → `unbrowse_browse_finish`. Hosts that reject dotted names show them with `_` (`unbrowse_run`).

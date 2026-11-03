@@ -716,12 +716,12 @@
     }
   },
   "propertyguru-com-sg": {
-    "hash": "65683131b188c9c3",
-    "version": "1.0.1",
+    "hash": "386b626e8646dd33",
+    "version": "1.0.2",
     "published": {
-      "smithery": "65683131b188c9c3",
+      "smithery": "386b626e8646dd33",
       "smithery-mcp": "bd83af53b6337d65",
-      "smithery-meta": "65683131b188c9c3"
+      "smithery-meta": "386b626e8646dd33"
     }
   },
   "trustradius": {
@@ -743,12 +743,12 @@
     }
   },
   "alibaba": {
-    "hash": "07681f8f21776cab",
-    "version": "1.0.1",
+    "hash": "8c6454fe041747d2",
+    "version": "1.0.2",
     "published": {
-      "smithery": "07681f8f21776cab",
+      "smithery": "8c6454fe041747d2",
       "smithery-mcp": "022c1896c12590ad",
-      "smithery-meta": "07681f8f21776cab"
+      "smithery-meta": "8c6454fe041747d2"
     }
   },
   "capterra": {
@@ -959,10 +959,10 @@
     "published": {}
   },
   "craigslist": {
-    "hash": "30a82edc62af713b",
-    "version": "1.0.1",
+    "hash": "571970f777e67d74",
+    "version": "1.0.2",
     "published": {
-      "smithery": "30a82edc62af713b"
+      "smithery": "571970f777e67d74"
     }
   },
   "greenhouse": {
@@ -1049,10 +1049,10 @@
     }
   },
   "semanticscholar": {
-    "hash": "45cc5142765f58b9",
-    "version": "1.0.0",
+    "hash": "ae5367e91b62ec25",
+    "version": "1.0.1",
     "published": {
-      "smithery": "45cc5142765f58b9"
+      "smithery": "ae5367e91b62ec25"
     }
   },
   "bing": {
@@ -1075,7 +1075,9 @@
   "skyscanner": {
     "hash": "bbe8dd4efc321bd7",
     "version": "1.0.0",
-    "published": {}
+    "published": {
+      "smithery": "bbe8dd4efc321bd7"
+    }
   },
   "konnectbot": {
     "hash": "99d5f0bd19c855ad",
@@ -1094,11 +1096,34 @@
   "poshmark": {
     "hash": "cefc0175f570b4d0",
     "version": "1.0.0",
-    "published": {}
+    "published": {
+      "smithery": "cefc0175f570b4d0"
+    }
   },
   "theresanaiforthat": {
     "hash": "d93856261da55328",
     "version": "1.0.0",
     "published": {}
+  },
+  "usedesk-ru": {
+    "hash": "66dc72a24670a8ed",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "66dc72a24670a8ed"
+    }
+  },
+  "datos-gob-ar": {
+    "hash": "595ef2bfa419fcfa",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "595ef2bfa419fcfa"
+    }
+  },
+  "qq": {
+    "hash": "fc1917fdfe7132a4",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "fc1917fdfe7132a4"
+    }
   }
 }

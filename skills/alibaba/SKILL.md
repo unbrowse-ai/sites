@@ -1,6 +1,6 @@
 ---
 name: alibaba
-description: "Alibaba (alibaba.com) for agents: Search products by keyword; Search alibaba.com — through Unbrowse's scoped MCP for alibaba.com (unofficial), which replays alibaba.com's own first-party API (no browser, verified results). Use when the user wants anything from alibaba.com, e.g. search products by keyword."
+description: "Alibaba (alibaba.com) for agents: Search alibaba.com — through Unbrowse's scoped MCP for alibaba.com (unofficial), which replays alibaba.com's own first-party API (no browser, verified results). Use when the user wants anything from alibaba.com, e.g. search alibaba.com."
 ---
 
 # Unbrowse for Alibaba (alibaba.com)
@@ -25,20 +25,6 @@ The first connect signs in to Unbrowse with OAuth (free tier, only verified resu
 If none of the tools below are in this session's tool list, the server is not connected or not signed in: say so and stop. Do not fetch alibaba.com some other way and present it as this skill's result.
 
 ## Tools
-
-### `alibaba_com__get_trade_search` — Search products by keyword
-
-Search products by keyword. Inputs: search_keyword. Also takes the site's own parameters, each optional (left out, the recorded value is sent): tab (recorded: "all"); has4Tab (recorded: "true"); spm (recorded: "a2700.galleryofferlist.the-new-header_fy23_pc_search_bar.searchButton"). Returns the page's title, readable text and links. Read-only on alibaba.com.
-
-- `search_keyword` (string, required) — search keyword (typed during “fill Search Alibaba”)
-- `tab` (string) — optional, e.g. "all"
-- `has4Tab` (string) — optional, e.g. "true"
-- `spm` (string) — optional, e.g. "a2700.galleryofferlist.the-new-header_fy23_pc_search_bar.searchButton"
-- `select` (array) — Keep only these parts of the result: dots walk keys, [] maps over a list, a final {a,b} keeps several keys (e.g. "results[].{title,url}"). Unmatched paths come back in selectMissing.
-
-```json
-{"search_keyword":"<search_keyword>"}
-```
 
 ### `alibaba_com__render_page` — Search alibaba.com
 
@@ -69,7 +55,7 @@ Always there too: `unbrowse_run` (a task on alibaba.com in plain words), `unbrow
 Every tool is also a REST call:
 
 ```sh
-curl -s https://unbrowse.ai/api/v1/sites/alibaba.com/call/alibaba_com__get_trade_search \
+curl -s https://unbrowse.ai/api/v1/sites/alibaba.com/call/alibaba_com__render_page \
   -H "authorization: Bearer $UNBROWSE_API_KEY" -H "content-type: application/json" \
   -d '{"search_keyword":"<search_keyword>"}'
 ```

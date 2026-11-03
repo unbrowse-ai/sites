@@ -1,6 +1,6 @@
 ---
 name: craigslist
-description: "Craigslist (craigslist.org) for agents: Search craigslist.org; Craigslist search: posts in a city and category; Read a craigslist.org page by max_price — through Unbrowse's scoped MCP for craigslist.org (unofficial), which replays craigslist.org's own first-party API (no browser, verified results). Use when the user wants anything from craigslist.org, e.g. search craigslist.org."
+description: "Craigslist (craigslist.org) for agents: Search craigslist.org; Read a craigslist.org page by max_price — through Unbrowse's scoped MCP for craigslist.org (unofficial), which replays craigslist.org's own first-party API (no browser, verified results). Use when the user wants anything from craigslist.org, e.g. search craigslist.org."
 ---
 
 # Unbrowse for Craigslist (craigslist.org)
@@ -36,20 +36,6 @@ Search craigslist.org. Inputs: max. Also takes the site's own parameters, each o
 
 ```json
 {"max":"<max>"}
-```
-
-### `sapi_craigslist_org__get_search_full` — Craigslist search: posts in a city and category
-
-Craigslist search: posts in a city and category. Inputs: batch; searchPath; query. Also takes the site's own parameters, each optional (left out, the recorded value is sent): cc (recorded: "US"). Returns apiVersion, configId, configTs, data, errors. Read-only on sapi.craigslist.org.
-
-- `batch` (string, required) — batch (typed during “search”)
-- `searchPath` (string, required) — searchPath (typed during “search”)
-- `query` (string, required) — query (typed during “search”)
-- `cc` (string) — optional, e.g. "US"
-- `select` (array) — Keep only these parts of the result: dots walk keys, [] maps over a list, a final {a,b} keeps several keys (e.g. "results[].{title,url}"). Unmatched paths come back in selectMissing.
-
-```json
-{"batch":"<batch>","searchPath":"<searchPath>","query":"<query>"}
 ```
 
 ### `sfbay_craigslist_org__read_page` — Read a craigslist.org page by max_price

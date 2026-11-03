@@ -1,6 +1,6 @@
 ---
 name: propertyguru-com-sg
-description: "Propertyguru (propertyguru.com.sg) for agents: PropertyGuru property listings for sale; PropertyGuru agent's active listings; Search propertyguru.com.sg; Read a propertyguru.com.sg slug page — through Unbrowse's scoped MCP for propertyguru.com.sg (unofficial), which replays propertyguru.com.sg's own first-party API (no browser, verified results). Use when the user wants anything from propertyguru.com.sg, e.g. propertyguru property listings for sale."
+description: "Propertyguru (propertyguru.com.sg) for agents: Search propertyguru.com.sg — through Unbrowse's scoped MCP for propertyguru.com.sg (unofficial), which replays propertyguru.com.sg's own first-party API (no browser, verified results). Use when the user wants anything from propertyguru.com.sg, e.g. search propertyguru.com.sg."
 ---
 
 # Unbrowse for Propertyguru (propertyguru.com.sg)
@@ -26,35 +26,6 @@ If none of the tools below are in this session's tool list, the server is not co
 
 ## Tools
 
-### `propertyguru_com_sg__get_property_for_sale` — PropertyGuru property listings for sale
-
-PropertyGuru property listings for sale. Inputs: propertyTypeCode. Also takes the site's own parameters, each optional (left out, the recorded value is sent): propertyTypeGroup (recorded: "N"). Returns the page's title, readable text and links. Read-only on propertyguru.com.sg.
-
-- `propertyTypeCode` (string, required)
-- `propertyTypeGroup` (string) — optional, e.g. "N"
-- `select` (array) — Keep only these parts of the result: dots walk keys, [] maps over a list, a final {a,b} keeps several keys (e.g. "results[].{title,url}"). Unmatched paths come back in selectMissing.
-
-```json
-{"propertyTypeCode":"<propertyTypeCode>"}
-```
-
-### `propertyguru_com_sg__get_agent_profile_active_listings` — PropertyGuru agent's active listings
-
-PropertyGuru agent's active listings. Inputs: agent_id; limit; page. Also takes the site's own parameters, each optional (left out, the recorded value is sent): region (recorded: "sg"); marketplace (recorded: "pg"); sort (recorded: "date"); order (recorded: "desc"). Returns isSuccess, data, timestamp, path. Read-only on propertyguru.com.sg.
-
-- `agent_id` (integer, required) — agent id
-- `limit` (integer, required)
-- `page` (integer, required)
-- `marketplace` (string) — optional, e.g. "pg"
-- `sort` (string) — optional, e.g. "date"
-- `order` (string) — optional, e.g. "desc"
-- `select` (array) — Keep only these parts of the result: dots walk keys, [] maps over a list, a final {a,b} keeps several keys (e.g. "results[].{title,url}"). Unmatched paths come back in selectMissing.
-- 1 more of the site's own parameters (locale, paging and the like), sent as recorded
-
-```json
-{"agent_id":"<agent_id>","limit":"<limit>","page":"<page>"}
-```
-
 ### `propertyguru_com_sg__render_page` — Search propertyguru.com.sg
 
 Search propertyguru.com.sg. Inputs: PropertyGuru_Search. Returns the page's title, readable text and links. Read-only on propertyguru.com.sg.
@@ -64,17 +35,6 @@ Search propertyguru.com.sg. Inputs: PropertyGuru_Search. Returns the page's titl
 
 ```json
 {"PropertyGuru_Search":"<PropertyGuru_Search>"}
-```
-
-### `propertyguru_com_sg__read_page` — Read a propertyguru.com.sg slug page
-
-Read a propertyguru.com.sg slug page. Inputs: slug. Returns the page's title, readable text and links. Read-only on propertyguru.com.sg.
-
-- `slug` (string, required)
-- `select` (array) — Keep only these parts of the result: dots walk keys, [] maps over a list, a final {a,b} keeps several keys (e.g. "results[].{title,url}"). Unmatched paths come back in selectMissing.
-
-```json
-{"slug":"<slug>"}
 ```
 
 Always there too: `unbrowse_run` (a task on propertyguru.com.sg in plain words), `unbrowse_inspect`, `unbrowse_resume`, `unbrowse_scrape` and `unbrowse_map` (any page on propertyguru.com.sg), and the recorded cloud browser `unbrowse_browse_open` → `unbrowse_browse_act` → `unbrowse_browse_finish`. Hosts that reject dotted names show them with `_` (`unbrowse_run`).
@@ -92,9 +52,9 @@ Always there too: `unbrowse_run` (a task on propertyguru.com.sg in plain words),
 Every tool is also a REST call:
 
 ```sh
-curl -s https://unbrowse.ai/api/v1/sites/propertyguru.com.sg/call/propertyguru_com_sg__get_property_for_sale \
+curl -s https://unbrowse.ai/api/v1/sites/propertyguru.com.sg/call/propertyguru_com_sg__render_page \
   -H "authorization: Bearer $UNBROWSE_API_KEY" -H "content-type: application/json" \
-  -d '{"propertyTypeCode":"<propertyTypeCode>"}'
+  -d '{"PropertyGuru_Search":"<PropertyGuru_Search>"}'
 ```
 
 OpenAPI: https://unbrowse.ai/api/v1/sites/propertyguru.com.sg/openapi.json. Every other site: the general Unbrowse skill (https://github.com/unbrowse-ai/unbrowse) and https://unbrowse.ai/mcp.

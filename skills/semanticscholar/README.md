@@ -5,7 +5,6 @@ semanticscholar.org as agent tools, compiled by [Unbrowse](https://unbrowse.ai) 
 | Tool | What it does |
 |---|---|
 | `semanticscholar_org__get_paper_by_id` | Paper detail with citations and references |
-| `semanticscholar_org__post_search` | Search semanticscholar |
 
 **MCP** (remote, streamable HTTP, OAuth): `https://unbrowse.ai/mcp/semanticscholar.org`
 
