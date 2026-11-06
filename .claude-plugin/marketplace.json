@@ -37,21 +37,6 @@
       }
     },
     {
-      "name": "carousell-sg",
-      "source": "./skills/carousell-sg",
-      "description": "carousell.sg as MCP tools: Search listings by query with max price and sort order. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "carousell-sg": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/carousell.sg"
-        }
-      }
-    },
-    {
       "name": "konnectbot",
       "source": "./skills/konnectbot",
       "description": "konnectbot.com as MCP tools: Search the documentation. Unofficial.",
@@ -97,17 +82,17 @@
       }
     },
     {
-      "name": "rakuten-co-jp",
-      "source": "./skills/rakuten-co-jp",
-      "description": "rakuten.co.jp as MCP tools: Search Rakuten for PlayStation 5 Pro listings. Unofficial.",
+      "name": "acuityscheduling",
+      "source": "./skills/acuityscheduling",
+      "description": "acuityscheduling.com as MCP tools: Yay Clay Philadelphia class availability. Unofficial.",
       "strict": false,
       "skills": [
         "./"
       ],
       "mcpServers": {
-        "rakuten-co-jp": {
+        "acuityscheduling": {
           "type": "http",
-          "url": "https://unbrowse.ai/mcp/rakuten.co.jp"
+          "url": "https://unbrowse.ai/mcp/acuityscheduling.com"
         }
       }
     },
@@ -168,36 +153,6 @@
         "skyscanner": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/skyscanner.net"
-        }
-      }
-    },
-    {
-      "name": "alibaba",
-      "source": "./skills/alibaba",
-      "description": "alibaba.com as MCP tools: Search alibaba.com. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "alibaba": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/alibaba.com"
-        }
-      }
-    },
-    {
-      "name": "myworkdayjobs",
-      "source": "./skills/myworkdayjobs",
-      "description": "myworkdayjobs.com as MCP tools: Search jobs by keyword, location and category on the DBS Careers job",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "myworkdayjobs": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/myworkdayjobs.com"
         }
       }
     },

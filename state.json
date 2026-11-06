@@ -1125,5 +1125,12 @@
     "published": {
       "smithery": "fc1917fdfe7132a4"
     }
+  },
+  "acuityscheduling": {
+    "hash": "798f8ef74561eba5",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "798f8ef74561eba5"
+    }
   }
 }
