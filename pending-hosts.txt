@@ -1,6 +1,5 @@
 # Site hosts a Smithery listing is waiting for; lekt9/unbrowse6 .github/workflows/site-hosts.yml attaches them.
 acuityscheduling-com-mcp.unbrowse.ai
-datos-gob-ar-mcp.unbrowse.ai
 konnectbot-com-mcp.unbrowse.ai
 poshmark-com-mcp.unbrowse.ai
 qq-com-mcp.unbrowse.ai

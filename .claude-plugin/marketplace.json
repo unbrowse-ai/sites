@@ -52,21 +52,6 @@
       }
     },
     {
-      "name": "datos-gob-ar",
-      "source": "./skills/datos-gob-ar",
-      "description": "datos.gob.ar as MCP tools: Datos Argentina dataset search. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "datos-gob-ar": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/datos.gob.ar"
-        }
-      }
-    },
-    {
       "name": "craigslist",
       "source": "./skills/craigslist",
       "description": "craigslist.org as MCP tools: Search craigslist.org. Unofficial.",
@@ -153,21 +138,6 @@
         "skyscanner": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/skyscanner.net"
-        }
-      }
-    },
-    {
-      "name": "propertyguru-com-sg",
-      "source": "./skills/propertyguru-com-sg",
-      "description": "propertyguru.com.sg as MCP tools: Search propertyguru.com.sg. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "propertyguru-com-sg": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/propertyguru.com.sg"
         }
       }
     }
