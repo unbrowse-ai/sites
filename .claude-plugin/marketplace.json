@@ -125,21 +125,6 @@
           "url": "https://unbrowse.ai/mcp/semanticscholar.org"
         }
       }
-    },
-    {
-      "name": "skyscanner",
-      "source": "./skills/skyscanner",
-      "description": "skyscanner.net as MCP tools: Search flights: enter origin, destination, dates and travellers, then s",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "skyscanner": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/skyscanner.net"
-        }
-      }
     }
   ]
 }

@@ -18,6 +18,5 @@ claude mcp add --transport http airbnb https://unbrowse.ai/mcp/airbnb.com
 | Poshmark (poshmark.com) | [`poshmark`](skills/poshmark/SKILL.md) | `https://unbrowse.ai/mcp/poshmark.com` | 1 |
 | Qq (qq.com) | [`qq`](skills/qq/SKILL.md) | `https://unbrowse.ai/mcp/qq.com` | 1 |
 | Semanticscholar (semanticscholar.org) | [`semanticscholar`](skills/semanticscholar/SKILL.md) | `https://unbrowse.ai/mcp/semanticscholar.org` | 1 |
-| Skyscanner (skyscanner.net) | [`skyscanner`](skills/skyscanner/SKILL.md) | `https://unbrowse.ai/mcp/skyscanner.net` | 1 |
 
 Any other site: the general [Unbrowse](https://github.com/unbrowse-ai/unbrowse) skill and `https://unbrowse.ai/mcp`.
