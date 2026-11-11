@@ -22,21 +22,6 @@
       }
     },
     {
-      "name": "arxiv",
-      "source": "./skills/arxiv",
-      "description": "arxiv.org as MCP tools: Search arXiv with advanced field filters such as author, title, subject cate",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "arxiv": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/arxiv.org"
-        }
-      }
-    },
-    {
       "name": "konnectbot",
       "source": "./skills/konnectbot",
       "description": "konnectbot.com as MCP tools: Search the documentation. Unofficial.",
@@ -48,21 +33,6 @@
         "konnectbot": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/konnectbot.com"
-        }
-      }
-    },
-    {
-      "name": "craigslist",
-      "source": "./skills/craigslist",
-      "description": "craigslist.org as MCP tools: Search craigslist.org. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "craigslist": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/craigslist.org"
         }
       }
     },
@@ -108,21 +78,6 @@
         "qq": {
           "type": "http",
           "url": "https://unbrowse.ai/mcp/qq.com"
-        }
-      }
-    },
-    {
-      "name": "semanticscholar",
-      "source": "./skills/semanticscholar",
-      "description": "semanticscholar.org as MCP tools: Paper detail with citations and references. Unofficial.",
-      "strict": false,
-      "skills": [
-        "./"
-      ],
-      "mcpServers": {
-        "semanticscholar": {
-          "type": "http",
-          "url": "https://unbrowse.ai/mcp/semanticscholar.org"
         }
       }
     }

@@ -3,5 +3,4 @@ acuityscheduling-com-mcp.unbrowse.ai
 konnectbot-com-mcp.unbrowse.ai
 poshmark-com-mcp.unbrowse.ai
 qq-com-mcp.unbrowse.ai
-semanticscholar-org-mcp.unbrowse.ai
 usedesk-ru-mcp.unbrowse.ai
