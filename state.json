@@ -1132,5 +1132,12 @@
     "published": {
       "smithery": "798f8ef74561eba5"
     }
+  },
+  "lazada-sg": {
+    "hash": "f8d12578e22881d8",
+    "version": "1.0.0",
+    "published": {
+      "smithery": "f8d12578e22881d8"
+    }
   }
 }

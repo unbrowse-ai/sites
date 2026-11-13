@@ -52,17 +52,17 @@
       }
     },
     {
-      "name": "poshmark",
-      "source": "./skills/poshmark",
-      "description": "poshmark.com as MCP tools: Search marketplace listings by keyword. Unofficial.",
+      "name": "lazada-sg",
+      "source": "./skills/lazada-sg",
+      "description": "lazada.sg as MCP tools: Search Lazada product listings. Unofficial.",
       "strict": false,
       "skills": [
         "./"
       ],
       "mcpServers": {
-        "poshmark": {
+        "lazada-sg": {
           "type": "http",
-          "url": "https://unbrowse.ai/mcp/poshmark.com"
+          "url": "https://unbrowse.ai/mcp/lazada.sg"
         }
       }
     },
